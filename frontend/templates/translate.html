@@ -1,0 +1,210 @@
+{% extends 'base.html' %}
+
+{% block title %}Translate - GestureConnect Marathi Sign Language Translation{% endblock %}
+
+{% block content %}
+<div class="container py-4">
+  <!-- Page Header -->
+  <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-center mb-4 pb-2 border-bottom">
+    <div>
+      <h3 class="fw-bold mb-1" style="color: var(--gc-primary-dark);">Bilingual Translation Studio</h3>
+      <p class="text-muted small mb-0">Convert Marathi or English speech and text into Marathi Sign Language 3D avatar animations.</p>
+    </div>
+    <div class="mt-2 mt-md-0 d-flex gap-2">
+      <span class="badge bg-primary-subtle text-primary border border-primary-subtle p-2">
+        <i class="bi bi-shield-check me-1"></i> Canonical Sign ID Engine Active
+      </span>
+    </div>
+  </div>
+
+  <div class="row g-4">
+    <!-- LEFT COLUMN: Input Acquisition (Text & Speech) -->
+    <div class="col-lg-5">
+      <div class="gc-card mb-4">
+        <div class="gc-card-header">
+          <span class="d-flex align-items-center">
+            <i class="bi bi-input-cursor-text me-2 text-primary"></i> Input Acquisition
+          </span>
+          <div class="d-flex align-items-center gap-2">
+            <label for="input-language-select" class="small text-muted fw-semibold mb-0">Language:</label>
+            <select id="input-language-select" class="form-select form-select-sm" style="width: 120px;">
+              <option value="mr" selected>Marathi (मराठी)</option>
+              <option value="en">English</option>
+              <option value="auto">Auto-Detect</option>
+            </select>
+          </div>
+        </div>
+        
+        <div class="gc-card-body">
+          <!-- Text Input Area -->
+          <div class="mb-3">
+            <label for="translation-text-input" class="form-label small fw-semibold text-secondary">
+              Enter Text or Speak below:
+            </label>
+            <textarea 
+              id="translation-text-input" 
+              class="form-control" 
+              rows="4" 
+              placeholder="उदा. नमस्कार मला पाणी पाहिजे / Hello I need water..."
+              style="font-size: 1.05rem; resize: vertical;"
+            ></textarea>
+          </div>
+
+          <!-- Action Buttons Bar -->
+          <div class="d-flex flex-wrap gap-2 align-items-center justify-content-between mb-3">
+            <div class="d-flex gap-2">
+              <button id="btn-translate" class="btn btn-gc-primary">
+                <i class="bi bi-arrow-repeat me-1"></i> Translate
+              </button>
+              <button id="btn-clear-text" class="btn btn-outline-secondary btn-sm" title="Clear text">
+                <i class="bi bi-x-circle me-1"></i> Clear
+              </button>
+            </div>
+            <div class="small text-muted fst-italic">Ctrl+Enter to translate</div>
+          </div>
+
+          <!-- Speech Input Section -->
+          <div class="p-3 bg-light rounded-3 border">
+            <div class="d-flex align-items-center gap-3">
+              <button id="btn-speech-mic" class="btn btn-primary gc-mic-btn shadow-sm" title="Click to speak (Marathi or English)">
+                <i class="bi bi-mic"></i>
+              </button>
+              <div class="flex-grow-1">
+                <div class="fw-semibold text-dark small mb-1">Microphone Speech Input</div>
+                <div id="speech-status-text" class="small text-muted">Click microphone to dictate in Marathi or English.</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- English Mapping Trace Feedback (if applicable) -->
+          <div id="mapping-trace-box" class="alert alert-info py-2 px-3 mt-3 mb-0 small d-none">
+            <i class="bi bi-arrow-left-right me-1"></i>
+            <span id="mapping-trace-text"></span>
+          </div>
+
+          <!-- Sample Phrases Pills -->
+          <div class="mt-4 pt-3 border-top">
+            <div class="small text-muted fw-semibold mb-2">Quick Test Phrases:</div>
+            <div class="d-flex flex-wrap gap-2">
+              {% for p in sample_phrases %}
+                <button 
+                  class="btn btn-sm btn-outline-secondary gc-sample-pill" 
+                  data-text="{{ p.mr }}" 
+                  data-lang="mr"
+                  title="English: {{ p.en }}"
+                >
+                  {{ p.mr }}
+                </button>
+              {% endfor %}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- RIGHT COLUMN: 3D Sign Language Video Player & Sequence Composition -->
+    <div class="col-lg-7">
+      <div class="gc-card">
+        <div class="gc-card-header">
+          <span class="d-flex align-items-center">
+            <i class="bi bi-camera-video me-2 text-primary"></i> 3D Sign Language Output
+          </span>
+          <span class="badge bg-dark-subtle text-dark border font-monospace small">Blender 3D Humanoid Asset Layer</span>
+        </div>
+
+        <div class="gc-card-body p-3">
+          <!-- Video Player Container -->
+          <div class="gc-player-wrapper mb-3">
+            <div class="gc-player-overlay">
+              <div id="current-sign-badge" class="gc-sign-indicator">
+                Waiting for input...
+              </div>
+              <div id="sign-counter-badge" class="gc-counter-indicator">
+                0 of 0
+              </div>
+            </div>
+
+            <video 
+              id="sign-video-player" 
+              class="gc-video-element" 
+              playsinline
+              muted
+              preload="auto"
+            >
+              <p class="text-white text-center p-4">Your browser does not support HTML5 video.</p>
+            </video>
+          </div>
+
+          <!-- Player Controls Bar -->
+          <div class="d-flex align-items-center justify-content-between p-2 bg-light rounded-3 border mb-3">
+            <div class="d-flex gap-2">
+              <button id="btn-player-prev" class="btn btn-sm btn-outline-dark gc-control-btn" disabled>
+                <i class="bi bi-skip-backward-fill"></i> Previous
+              </button>
+              <button id="btn-player-play" class="btn btn-sm btn-gc-primary gc-control-btn">
+                <i class="bi bi-play-fill"></i> Play
+              </button>
+              <button id="btn-player-next" class="btn btn-sm btn-outline-dark gc-control-btn" disabled>
+                Next <i class="bi bi-skip-forward-fill"></i>
+              </button>
+            </div>
+            <button id="btn-player-replay" class="btn btn-sm btn-outline-secondary gc-control-btn">
+              <i class="bi bi-arrow-counterclockwise"></i> Replay
+            </button>
+          </div>
+
+          <!-- Detected/Translated Sign Sequence Chips -->
+          <div class="mb-3">
+            <div class="d-flex justify-content-between align-items-center mb-2">
+              <span class="small fw-bold text-secondary text-uppercase" style="letter-spacing: 0.05em;">
+                Generated Sign Sequence:
+              </span>
+              <span class="small text-muted" style="font-size: 0.78rem;">
+                <span class="badge bg-warning text-dark me-1">🔤</span> Fingerspelled Fallback
+              </span>
+            </div>
+            <div id="sign-chips-container" class="gc-chips-container">
+              <span class="text-muted small fst-italic">Translate a sentence or phrase to generate sign animation sequence.</span>
+            </div>
+          </div>
+
+          <!-- Translation & Vocabulary Metrics Status -->
+          <div class="row g-2 pt-2 border-top">
+            <div class="col-3">
+              <div class="gc-stat-box text-center p-2">
+                <div id="stat-in-vocab" class="fw-bold text-success fs-5">0</div>
+                <div class="small text-muted" style="font-size: 0.72rem;">In Vocabulary</div>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="gc-stat-box text-center p-2">
+                <div id="stat-fingerspelled" class="fw-bold text-warning fs-5">0</div>
+                <div class="small text-muted" style="font-size: 0.72rem;">Fingerspelled</div>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="gc-stat-box text-center p-2">
+                <div id="stat-total-signs" class="fw-bold text-primary fs-5">0</div>
+                <div class="small text-muted" style="font-size: 0.72rem;">Total Signs</div>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="gc-stat-box text-center p-2">
+                <div id="stat-latency" class="fw-bold text-secondary fs-5">0 ms</div>
+                <div class="small text-muted" style="font-size: 0.72rem;">Latency</div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
+
+{% block extra_js %}
+<script src="/static/js/player.js"></script>
+<script src="/static/js/speech.js"></script>
+<script src="/static/js/translate.js"></script>
+{% endblock %}

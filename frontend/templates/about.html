@@ -1,0 +1,107 @@
+{% extends 'base.html' %}
+
+{% block title %}About - GestureConnect Research & Architecture{% endblock %}
+
+{% block content %}
+<div class="container py-4">
+  <!-- Header -->
+  <div class="mb-4 pb-2 border-bottom">
+    <h3 class="fw-bold mb-1" style="color: var(--gc-primary-dark);">About GestureConnect</h3>
+    <p class="text-muted small mb-0">Bilingual Speech and Text to Marathi Sign Language (MSL) Translation System Architecture.</p>
+  </div>
+
+  <div class="row g-4">
+    <!-- Architecture Overview -->
+    <div class="col-lg-8">
+      <div class="gc-card p-4 mb-4">
+        <h5 class="fw-bold text-primary mb-3">
+          <i class="bi bi-diagram-3-fill me-2"></i> System Architecture & Pipeline Flow
+        </h5>
+        <p class="text-muted small">
+          GestureConnect is designed to empower hearing-impaired individuals and assistive communication by bridging English and Marathi text and Marathi speech into Marathi Sign Language (MSL) using a customized 3D humanoid avatar.
+        </p>
+
+        <div class="p-3 bg-dark text-light rounded-3 font-monospace small mb-4">
+          <div class="text-info fw-bold mb-2">END-TO-END TRANSLATION FLOW:</div>
+          <div>English / Marathi Text  OR  Marathi Speech</div>
+          <div class="text-secondary ms-3">↓ (Speech-to-Text via Google Web Speech / STT API)</div>
+          <div>Common Text Representation</div>
+          <div class="text-secondary ms-3">↓ (Unicode NFC normalization, punctuation & whitespace cleaning)</div>
+          <div>Text Preprocessing & Tokenization</div>
+          <div class="text-secondary ms-3">↓ (English → Marathi controlled lexical mapping if English)</div>
+          <div>Hierarchical Linguistic Mapping (5 Priorities)</div>
+          <div class="text-secondary ms-3">├── Priority 1: Phrase-level matching</div>
+          <div class="text-secondary ms-3">├── Priority 2: Exact word-level matching</div>
+          <div class="text-secondary ms-3">├── Priority 3: Normalized-form matching</div>
+          <div class="text-secondary ms-3">├── Priority 4: Synonym & lexical mapping</div>
+          <div class="text-secondary ms-3">└── Priority 5: Out-of-vocabulary character fingerspelling fallback</div>
+          <div class="text-secondary ms-3">↓</div>
+          <div>Canonical Sign Identifiers (e.g. SIGN_HELLO, SIGN_WATER)</div>
+          <div class="text-secondary ms-3">↓ (Decoupled Asset Resolution)</div>
+          <div>Blender-rendered 3D Sign MP4 Clips (/media/animations/)</div>
+          <div class="text-secondary ms-3">↓</div>
+          <div>Sentence-level Sequential 3D Avatar Video Playback</div>
+        </div>
+
+        <h6 class="fw-bold text-dark mb-2">The Canonical Sign Identifier Bridge</h6>
+        <p class="text-muted small mb-3">
+          A fundamental architectural principle of GestureConnect is the total decoupling between the natural language processing (NLP) layer and the 3D visual animation asset layer. The language layer never directly depends on video file paths. Instead, all text tokens resolve to persistent, standardized <code>Canonical Sign IDs</code> (e.g., <code>SIGN_HELLO</code>, <code>SIGN_WATER</code>).
+        </p>
+
+        <h6 class="fw-bold text-dark mb-2">Out-of-Vocabulary (OOV) Handling</h6>
+        <p class="text-muted small mb-0">
+          When an input word does not exist as a whole-sign entry in the vocabulary database, it is not dropped or discarded. Instead, it is systematically decomposed into Devanagari or Latin graphemes and mapped to individual fingerspelling sign clips, while simultaneously being logged to the database for administrative review and vocabulary expansion.
+        </p>
+      </div>
+
+      <!-- Blender Integration Workflow -->
+      <div class="gc-card p-4">
+        <h5 class="fw-bold text-primary mb-3">
+          <i class="bi bi-box me-2"></i> Blender 3D Animation Asset Workflow
+        </h5>
+        <p class="text-muted small mb-3">
+          Blender is used as an offline authoring and rendering tool rather than a heavyweight runtime dependency. The web application plays pre-rendered MP4 video clips sequentially for maximum performance and cross-platform compatibility.
+        </p>
+
+        <ol class="small text-secondary ps-3 mb-0 d-flex flex-column gap-2">
+          <li><strong>Avatar Modeling:</strong> Rig and customize the common humanoid avatar mesh in Blender.</li>
+          <li><strong>Sign Animation:</strong> Animate specific MSL signs using keyframe bones for fingers, wrists, arms, and head posture.</li>
+          <li><strong>Render & Export:</strong> Render the sign clip at 24 FPS with transparent or studio gradient background into H.264 MP4 format.</li>
+          <li><strong>Asset Placement:</strong> Place the MP4 in the designated category directory inside <code>media/animations/&lt;category&gt;/&lt;filename&gt;.mp4</code>.</li>
+          <li><strong>Database Registration:</strong> Register the asset path with its Canonical Sign ID and linguistic metadata via the Django Admin panel or JSON seed file.</li>
+          <li><strong>Immediate Availability:</strong> The translation engine immediately resolves and plays the rendered 3D animation without requiring application restarts.</li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- Sidebar Info -->
+    <div class="col-lg-4">
+      <div class="gc-card p-4 mb-4">
+        <h6 class="fw-bold text-dark mb-3">Technology Stack</h6>
+        <ul class="list-unstyled small text-secondary d-flex flex-column gap-2 mb-0">
+          <li><strong>Backend:</strong> Python 3.12, Django 5.1, Django REST Framework</li>
+          <li><strong>Database:</strong> SQLite (dev) / MySQL-ready architecture</li>
+          <li><strong>Frontend:</strong> HTML5, CSS3, JavaScript, Bootstrap 5</li>
+          <li><strong>Speech Recognition:</strong> Web Speech API (mr-IN) + SpeechRecognition API</li>
+          <li><strong>3D Animation:</strong> Blender-authored MP4 clips with humanoid avatar</li>
+          <li><strong>NLP Preprocessing:</strong> Unicode NFC normalization, Devanagari tokenizer</li>
+        </ul>
+      </div>
+
+      <div class="gc-card p-4">
+        <h6 class="fw-bold text-dark mb-3">Strict Project Scope Boundaries</h6>
+        <div class="small text-muted mb-2">
+          Per the research specifications, the following are strictly excluded from the current scope:
+        </div>
+        <ul class="small text-muted ps-3 mb-0 d-flex flex-column gap-1">
+          <li>✕ Sign-to-text / Sign-to-speech recognition</li>
+          <li>✕ MediaPipe or webcam gesture tracking</li>
+          <li>✕ CNN / LSTM gesture classifiers</li>
+          <li>✕ Sensor gloves or external hardware</li>
+          <li>✕ Generative LLM hallucinations for core translation</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

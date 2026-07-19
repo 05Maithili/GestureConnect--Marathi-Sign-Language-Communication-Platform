@@ -1,0 +1,153 @@
+{% extends 'base.html' %}
+
+{% block title %}GestureConnect - Bilingual Speech & Text to Marathi Sign Language Translation{% endblock %}
+
+{% block content %}
+<!-- Hero Section -->
+<section class="gc-hero text-center text-lg-start">
+  <div class="container">
+    <div class="row align-items-center gy-5">
+      <div class="col-lg-7">
+        <div class="d-inline-flex align-items-center gap-2 px-3 py-1 rounded-pill bg-white bg-opacity-10 border border-white border-opacity-25 text-white small mb-3">
+          <i class="bi bi-stars text-warning"></i>
+          <span>Bilingual Assistive Communication Platform</span>
+        </div>
+        <h1 class="gc-hero-title mb-3">GestureConnect</h1>
+        <p class="gc-hero-subtitle">
+          Breaking communication barriers through seamless translation of English & Marathi speech and text into Marathi Sign Language (MSL) with a customized 3D avatar.
+        </p>
+        <div class="d-flex flex-wrap gap-3 justify-content-center justify-content-lg-start">
+          <a href="{% url 'translator:translate' %}" class="btn btn-lg btn-gc-primary shadow-sm">
+            <i class="bi bi-translate me-2"></i> Start Translation
+          </a>
+          <a href="{% url 'translator:vocabulary' %}" class="btn btn-lg btn-outline-light">
+            <i class="bi bi-search me-2"></i> Explore Vocabulary
+          </a>
+        </div>
+      </div>
+      <div class="col-lg-5">
+        <div class="gc-card border-0 shadow-lg p-3 text-dark bg-white rounded-4">
+          <div class="d-flex align-items-center justify-content-between border-bottom pb-3 mb-3">
+            <span class="fw-bold text-primary"><i class="bi bi-cpu me-2"></i>System Status</span>
+            <span class="badge bg-success-subtle text-success border border-success-subtle">Online & Ready</span>
+          </div>
+          <div class="row g-3">
+            <div class="col-6">
+              <div class="gc-stat-box">
+                <div class="gc-stat-number">{{ vocab_count|default:50 }}</div>
+                <div class="gc-stat-label">Sign Vocabulary</div>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="gc-stat-box">
+                <div class="gc-stat-number">{{ categories_count|default:8 }}</div>
+                <div class="gc-stat-label">Categories</div>
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="p-3 bg-light rounded-3 small">
+                <div class="fw-semibold mb-1 text-secondary">Demonstration Pipeline:</div>
+                <div class="text-muted d-flex align-items-center gap-1 flex-wrap font-monospace" style="font-size: 0.78rem;">
+                  <span class="badge bg-primary">Text / Speech</span>
+                  <span>→</span>
+                  <span class="badge bg-secondary">Preprocess</span>
+                  <span>→</span>
+                  <span class="badge bg-info text-dark">Sign IDs</span>
+                  <span>→</span>
+                  <span class="badge bg-success">3D Avatar</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Core Features Section -->
+<section class="py-5">
+  <div class="container py-4">
+    <div class="text-center mb-5">
+      <h2 class="fw-bold" style="color: var(--gc-primary-dark);">Architectural Highlights</h2>
+      <p class="text-muted" style="max-width: 600px; margin: auto;">
+        Strictly designed following the GestureConnect research paper methodology with clean separation between linguistic layers and 3D visual assets.
+      </p>
+    </div>
+
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="gc-card h-100 p-4">
+          <div class="d-inline-flex p-3 rounded-3 bg-primary-subtle text-primary mb-3 fs-4">
+            <i class="bi bi-mic"></i>
+          </div>
+          <h5 class="fw-bold mb-2">Bilingual Speech & Text</h5>
+          <p class="text-muted small mb-0">
+            Accepts Marathi text, English text, and Marathi speech via microphone. Both modalities converge into a common normalized text representation.
+          </p>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="gc-card h-100 p-4">
+          <div class="d-inline-flex p-3 rounded-3 bg-info-subtle text-info-emphasis mb-3 fs-4">
+            <i class="bi bi-diagram-3"></i>
+          </div>
+          <h5 class="fw-bold mb-2">5-Level Linguistic Mapping</h5>
+          <p class="text-muted small mb-0">
+            Multi-priority matching: Phrase-level → Exact word-level → Normalized-form → Lexical synonyms → Canonical Sign IDs.
+          </p>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="gc-card h-100 p-4">
+          <div class="d-inline-flex p-3 rounded-3 bg-warning-subtle text-warning-emphasis mb-3 fs-4">
+            <i class="bi bi-spellcheck"></i>
+          </div>
+          <h5 class="fw-bold mb-2">Fingerspelling Fallback</h5>
+          <p class="text-muted small mb-0">
+            Out-of-vocabulary words are never discarded. Words decompose into Devanagari and Latin alphabet animation sequences seamlessly.
+          </p>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="gc-card h-100 p-4">
+          <div class="d-inline-flex p-3 rounded-3 bg-success-subtle text-success mb-3 fs-4">
+            <i class="bi bi-person-video2"></i>
+          </div>
+          <h5 class="fw-bold mb-2">3D Avatar Sign Animations</h5>
+          <p class="text-muted small mb-0">
+            Pre-rendered Blender MP4 sign clips linked by Canonical Sign IDs. Sequential playback delivers smooth sentence-level Marathi Sign Language output.
+          </p>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="gc-card h-100 p-4">
+          <div class="d-inline-flex p-3 rounded-3 bg-secondary-subtle text-secondary-emphasis mb-3 fs-4">
+            <i class="bi bi-database-check"></i>
+          </div>
+          <h5 class="fw-bold mb-2">Decoupled Sign Database</h5>
+          <p class="text-muted small mb-0">
+            Structured sign vocabulary stores linguistic and biomechanical metadata. Easily expandable via Django Admin without touching translation logic.
+          </p>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="gc-card h-100 p-4">
+          <div class="d-inline-flex p-3 rounded-3 bg-danger-subtle text-danger mb-3 fs-4">
+            <i class="bi bi-speedometer2"></i>
+          </div>
+          <h5 class="fw-bold mb-2">Real-time Performance</h5>
+          <p class="text-muted small mb-0">
+            Lightweight in-memory token lookup, deterministic response latency, and verifiable evaluation metrics for academic reporting.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock %}

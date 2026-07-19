@@ -1,0 +1,94 @@
+{% extends 'base.html' %}
+
+{% block title %}Translation History - GestureConnect{% endblock %}
+
+{% block content %}
+<div class="container py-4">
+  <!-- Header -->
+  <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-center mb-4 pb-2 border-bottom">
+    <div>
+      <h3 class="fw-bold mb-1" style="color: var(--gc-primary-dark);">Translation History</h3>
+      <p class="text-muted small mb-0">Audit log of recent bilingual text and speech translation sessions.</p>
+    </div>
+    <div class="mt-2 mt-md-0">
+      <span class="badge bg-secondary-subtle text-secondary border fs-6 px-3 py-2 rounded-pill">
+        Total Sessions: {{ total_translations }}
+      </span>
+    </div>
+  </div>
+
+  <!-- History Records Table -->
+  <div class="gc-card overflow-hidden">
+    <div class="table-responsive">
+      <table class="table table-hover align-middle mb-0">
+        <thead class="table-light">
+          <tr>
+            <th scope="col" style="width: 5%;">#</th>
+            <th scope="col" style="width: 10%;">Mode</th>
+            <th scope="col" style="width: 8%;">Lang</th>
+            <th scope="col" style="width: 25%;">Raw Input Text</th>
+            <th scope="col" style="width: 25%;">Normalized / Marathi Form</th>
+            <th scope="col" style="width: 15%;">Sign Sequence</th>
+            <th scope="col" style="width: 12%;">Latency</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for item in history %}
+            <tr>
+              <td class="text-muted small font-monospace">{{ item.id }}</td>
+              <td>
+                {% if item.input_mode == 'speech' %}
+                  <span class="badge bg-info-subtle text-info-emphasis border border-info-subtle">
+                    <i class="bi bi-mic me-1"></i> Speech
+                  </span>
+                {% else %}
+                  <span class="badge bg-light text-dark border">
+                    <i class="bi bi-keyboard me-1"></i> Text
+                  </span>
+                {% endif %}
+              </td>
+              <td>
+                <span class="badge bg-dark-subtle text-dark text-uppercase">{{ item.input_language }}</span>
+              </td>
+              <td class="fw-semibold text-dark">
+                {{ item.input_text }}
+              </td>
+              <td class="text-secondary">
+                {{ item.normalized_text }}
+                {% if item.fallback_words %}
+                  <div class="small text-warning-emphasis mt-1">
+                    <i class="bi bi-exclamation-triangle me-1"></i>
+                    Fingerspelled: {{ item.fallback_words|join:", " }}
+                  </div>
+                {% endif %}
+              </td>
+              <td>
+                <div class="d-flex flex-wrap gap-1">
+                  {% for s in item.generated_sign_sequence %}
+                    <span class="badge {% if s.is_fallback %}bg-warning-subtle text-warning-emphasis border border-warning{% else %}bg-primary-subtle text-primary border border-primary-subtle{% endif %}" style="font-size: 0.72rem;">
+                      {{ s.marathi_term|default:s.sign_id }}
+                    </span>
+                  {% empty %}
+                    <span class="text-muted small">None</span>
+                  {% endfor %}
+                </div>
+              </td>
+              <td>
+                <span class="small text-muted">{{ item.processing_time_ms }} ms</span>
+                <div class="text-muted" style="font-size: 0.7rem;">{{ item.created_at|date:"M d, H:i" }}</div>
+              </td>
+            </tr>
+          {% empty %}
+            <tr>
+              <td colspan="7" class="text-center py-5 text-muted">
+                <i class="bi bi-clock-history fs-1 d-block mb-2 opacity-50"></i>
+                No translation sessions recorded yet. Use the Translate studio to begin.
+              </td>
+            </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+{% endblock %}
