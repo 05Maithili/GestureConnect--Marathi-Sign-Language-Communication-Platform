@@ -1,0 +1,43 @@
+{
+    "beautiful": [
+        "pretty",
+        "gorgeous",
+        "lovely"
+    ],
+    "big large": [
+        "big",
+        "large",
+        "huge",
+        "giant",
+        "massive"
+    ],
+    "car": [
+        "automobile",
+        "vehicle"
+    ],
+    "doctor": [
+        "physician"
+    ],
+    "sick": [
+        "ill",
+        "unwell"
+    ],
+    "small little": [
+        "small",
+        "little",
+        "tiny"
+    ],
+    "store or shop": [
+        "store",
+        "shop",
+        "market"
+    ],
+    "street or road": [
+        "street",
+        "road",
+        "path"
+    ],
+    "student": [
+        "pupil"
+    ]
+}

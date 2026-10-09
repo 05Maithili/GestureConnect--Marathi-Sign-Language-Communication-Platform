@@ -1,0 +1,9 @@
+{
+    "total_samples": 1048,
+    "train_samples": 786,
+    "val_samples": 131,
+    "test_samples": 131,
+    "total_errors": 0,
+    "errors": [],
+    "leakage_test_passed": true
+}

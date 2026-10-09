@@ -1,0 +1,26 @@
+{
+    "total_source_samples_detected": 1236,
+    "total_valid_samples": 1048,
+    "missing_invalid_samples": 188,
+    "total_sign_ids": 262,
+    "train_count": 786,
+    "val_count": 131,
+    "test_count": 131,
+    "split_percentages": {
+        "train": 75.0,
+        "val": 12.5,
+        "test": 12.5
+    },
+    "sequence_length_statistics": {
+        "min": 1,
+        "max": 130,
+        "avg": 64.07
+    },
+    "feature_dimensions": {
+        "pose": "33x4",
+        "left_hand": "21x3",
+        "right_hand": "21x3"
+    },
+    "preprocessing_strategy": "dynamic_padding_and_masking",
+    "random_seed": 42
+}

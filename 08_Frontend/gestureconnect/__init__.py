@@ -1,0 +1,1 @@
+"""GestureConnect Django Project Package."""

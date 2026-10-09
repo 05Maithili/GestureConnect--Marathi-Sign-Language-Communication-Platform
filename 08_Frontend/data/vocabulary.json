@@ -1,0 +1,877 @@
+[
+  {
+    "sign_id": "SIGN_HELLO",
+    "marathi_term": "नमस्कार",
+    "english_gloss": "hello",
+    "category": "greetings",
+    "sign_type": "lexical",
+    "animation_asset": "animations/greetings/hello.mp4",
+    "synonyms": ["नमस्ते", "प्रणाम", "हाय"],
+    "metadata": {
+      "hand_shape": "open_palm_folded",
+      "motion": "chest_to_forehead",
+      "two_handed": true,
+      "description": "Both palms joined together in front of the chest moving slightly upwards with a slight nod."
+    }
+  },
+  {
+    "sign_id": "SIGN_THANK_YOU",
+    "marathi_term": "धन्यवाद",
+    "english_gloss": "thank you",
+    "category": "greetings",
+    "sign_type": "lexical",
+    "animation_asset": "animations/greetings/thank_you.mp4",
+    "synonyms": ["आभार", "थँक यू"],
+    "metadata": {
+      "hand_shape": "flat_hand",
+      "motion": "chin_forward",
+      "two_handed": false,
+      "description": "Fingertips touch chin then extend forward towards listener."
+    }
+  },
+  {
+    "sign_id": "SIGN_WELCOME",
+    "marathi_term": "स्वागत",
+    "english_gloss": "welcome",
+    "category": "greetings",
+    "sign_type": "lexical",
+    "animation_asset": "animations/greetings/welcome.mp4",
+    "synonyms": ["सुस्वागतम"],
+    "metadata": {
+      "hand_shape": "open_palms_up",
+      "motion": "sweep_inward",
+      "two_handed": true,
+      "description": "Open palms gesturing inward welcoming the person."
+    }
+  },
+  {
+    "sign_id": "SIGN_GOOD_MORNING",
+    "marathi_term": "शुभ प्रभात",
+    "english_gloss": "good morning",
+    "category": "greetings",
+    "sign_type": "phrase",
+    "animation_asset": "animations/greetings/good_morning.mp4",
+    "synonyms": ["सुप्रभात", "शुभ सकाळ"],
+    "metadata": {
+      "hand_shape": "sun_rise_motion",
+      "motion": "upward_arc",
+      "two_handed": false,
+      "description": "Hand rises upwards like the morning sun."
+    }
+  },
+  {
+    "sign_id": "SIGN_GOOD_NIGHT",
+    "marathi_term": "शुभ रात्री",
+    "english_gloss": "good night",
+    "category": "greetings",
+    "sign_type": "phrase",
+    "animation_asset": "animations/greetings/good_night.mp4",
+    "synonyms": ["शुभरात्री"],
+    "metadata": {
+      "hand_shape": "curved_over_horizon",
+      "motion": "downward_arc",
+      "two_handed": true,
+      "description": "Hand moves over the other arm indicating setting sun and night."
+    }
+  },
+  {
+    "sign_id": "SIGN_MOTHER",
+    "marathi_term": "आई",
+    "english_gloss": "mother",
+    "category": "family",
+    "sign_type": "lexical",
+    "animation_asset": "animations/family/mother.mp4",
+    "synonyms": ["माय", "माता", "मम्मी"],
+    "metadata": {
+      "hand_shape": "open_5_hand",
+      "motion": "thumb_tap_chin",
+      "two_handed": false,
+      "description": "Thumb of open hand taps the chin twice."
+    }
+  },
+  {
+    "sign_id": "SIGN_FATHER",
+    "marathi_term": "वडील",
+    "english_gloss": "father",
+    "category": "family",
+    "sign_type": "lexical",
+    "animation_asset": "animations/family/father.mp4",
+    "synonyms": ["बाबा", "पप्पा", "पिताजी", "आप्पा"],
+    "metadata": {
+      "hand_shape": "open_5_hand",
+      "motion": "thumb_tap_forehead",
+      "two_handed": false,
+      "description": "Thumb of open hand taps forehead twice."
+    }
+  },
+  {
+    "sign_id": "SIGN_BROTHER",
+    "marathi_term": "भाऊ",
+    "english_gloss": "brother",
+    "category": "family",
+    "sign_type": "lexical",
+    "animation_asset": "animations/family/brother.mp4",
+    "synonyms": ["दादा", "भ्राता"],
+    "metadata": {
+      "hand_shape": "l_hand_to_index",
+      "motion": "forehead_to_neutral",
+      "two_handed": true,
+      "description": "Male marker followed by both hands index parallel."
+    }
+  },
+  {
+    "sign_id": "SIGN_SISTER",
+    "marathi_term": "बहीण",
+    "english_gloss": "sister",
+    "category": "family",
+    "sign_type": "lexical",
+    "animation_asset": "animations/family/sister.mp4",
+    "synonyms": ["ताई", "दीदी", "भगिनी"],
+    "metadata": {
+      "hand_shape": "l_hand_to_index",
+      "motion": "chin_to_neutral",
+      "two_handed": true,
+      "description": "Female marker followed by parallel index fingers."
+    }
+  },
+  {
+    "sign_id": "SIGN_SON",
+    "marathi_term": "मुलगा",
+    "english_gloss": "son",
+    "category": "family",
+    "sign_type": "lexical",
+    "animation_asset": "animations/family/son.mp4",
+    "synonyms": ["पोरगा", "लेक"],
+    "metadata": {
+      "hand_shape": "height_indicator",
+      "motion": "chest_level_flat_palm",
+      "two_handed": false,
+      "description": "Hand indicates height of young male."
+    }
+  },
+  {
+    "sign_id": "SIGN_DAUGHTER",
+    "marathi_term": "मुलगी",
+    "english_gloss": "daughter",
+    "category": "family",
+    "sign_type": "lexical",
+    "animation_asset": "animations/family/daughter.mp4",
+    "synonyms": ["पोरगी", "कन्या"],
+    "metadata": {
+      "hand_shape": "height_indicator",
+      "motion": "chin_and_height",
+      "two_handed": false,
+      "description": "Female touch on cheek then height indication."
+    }
+  },
+  {
+    "sign_id": "SIGN_FRIEND",
+    "marathi_term": "मित्र",
+    "english_gloss": "friend",
+    "category": "family",
+    "sign_type": "lexical",
+    "animation_asset": "animations/family/friend.mp4",
+    "synonyms": ["दोस्त", "सखा", "मैत्रीण"],
+    "metadata": {
+      "hand_shape": "hooked_index",
+      "motion": "interlock_fingers",
+      "two_handed": true,
+      "description": "Index fingers interlock twice representing friendship."
+    }
+  },
+  {
+    "sign_id": "SIGN_I_ME",
+    "marathi_term": "मी",
+    "english_gloss": "i",
+    "category": "pronouns",
+    "sign_type": "lexical",
+    "animation_asset": "animations/pronouns/me.mp4",
+    "synonyms": ["मला", "माझे"],
+    "metadata": {
+      "hand_shape": "index_point",
+      "motion": "point_to_chest",
+      "two_handed": false,
+      "description": "Index finger points to signer's chest."
+    }
+  },
+  {
+    "sign_id": "SIGN_YOU",
+    "marathi_term": "तू",
+    "english_gloss": "you",
+    "category": "pronouns",
+    "sign_type": "lexical",
+    "animation_asset": "animations/pronouns/you.mp4",
+    "synonyms": ["तुम्ही", "तुला", "तुम्हाला", "तुझे", "तुमचे"],
+    "metadata": {
+      "hand_shape": "index_point",
+      "motion": "point_forward",
+      "two_handed": false,
+      "description": "Index finger points directly towards addressee."
+    }
+  },
+  {
+    "sign_id": "SIGN_HE",
+    "marathi_term": "तो",
+    "english_gloss": "he",
+    "category": "pronouns",
+    "sign_type": "lexical",
+    "animation_asset": "animations/pronouns/he.mp4",
+    "synonyms": ["त्याला", "त्याचे"],
+    "metadata": {
+      "hand_shape": "index_point",
+      "motion": "point_to_side",
+      "two_handed": false,
+      "description": "Index finger points to the side indicating third person male."
+    }
+  },
+  {
+    "sign_id": "SIGN_SHE",
+    "marathi_term": "ती",
+    "english_gloss": "she",
+    "category": "pronouns",
+    "sign_type": "lexical",
+    "animation_asset": "animations/pronouns/she.mp4",
+    "synonyms": ["तिला", "तिचे"],
+    "metadata": {
+      "hand_shape": "index_point",
+      "motion": "point_to_side_gentle",
+      "two_handed": false,
+      "description": "Index finger points slightly to the left side."
+    }
+  },
+  {
+    "sign_id": "SIGN_WE",
+    "marathi_term": "आम्ही",
+    "english_gloss": "we",
+    "category": "pronouns",
+    "sign_type": "lexical",
+    "animation_asset": "animations/pronouns/we.mp4",
+    "synonyms": ["आपण", "आम्हाला", "आपले"],
+    "metadata": {
+      "hand_shape": "index_arc",
+      "motion": "chest_left_to_right_arc",
+      "two_handed": false,
+      "description": "Index finger moves in an arc touching right shoulder then left shoulder."
+    }
+  },
+  {
+    "sign_id": "SIGN_THEY",
+    "marathi_term": "ते",
+    "english_gloss": "they",
+    "category": "pronouns",
+    "sign_type": "lexical",
+    "animation_asset": "animations/pronouns/they.mp4",
+    "synonyms": ["त्यांना", "त्यांचे"],
+    "metadata": {
+      "hand_shape": "index_sweep",
+      "motion": "sweep_sideways",
+      "two_handed": false,
+      "description": "Index finger sweeps across pointing at external group."
+    }
+  },
+  {
+    "sign_id": "SIGN_WATER",
+    "marathi_term": "पाणी",
+    "english_gloss": "water",
+    "category": "objects",
+    "sign_type": "lexical",
+    "animation_asset": "animations/objects/water.mp4",
+    "synonyms": ["जल", "नीर"],
+    "metadata": {
+      "hand_shape": "w_hand_or_cup",
+      "motion": "tap_chin_or_mouth",
+      "two_handed": false,
+      "description": "Index, middle, and ring finger form 'W' shape tapping chin twice."
+    }
+  },
+  {
+    "sign_id": "SIGN_FOOD",
+    "marathi_term": "अन्न",
+    "english_gloss": "food",
+    "category": "objects",
+    "sign_type": "lexical",
+    "animation_asset": "animations/objects/food.mp4",
+    "synonyms": ["जेवण", "खाद्य", "भात"],
+    "metadata": {
+      "hand_shape": "flattened_o",
+      "motion": "tap_lips_repeatedly",
+      "two_handed": false,
+      "description": "Fingertips brought together tapping towards mouth."
+    }
+  },
+  {
+    "sign_id": "SIGN_HOUSE",
+    "marathi_term": "घर",
+    "english_gloss": "house",
+    "category": "objects",
+    "sign_type": "lexical",
+    "animation_asset": "animations/objects/house.mp4",
+    "synonyms": ["सदन", "गृह", "निवास"],
+    "metadata": {
+      "hand_shape": "flat_palms_angled",
+      "motion": "roof_and_walls",
+      "two_handed": true,
+      "description": "Palms form roof triangle then move down to form vertical walls."
+    }
+  },
+  {
+    "sign_id": "SIGN_BOOK",
+    "marathi_term": "पुस्तक",
+    "english_gloss": "book",
+    "category": "objects",
+    "sign_type": "lexical",
+    "animation_asset": "animations/objects/book.mp4",
+    "synonyms": ["ग्रंथ", "वही"],
+    "metadata": {
+      "hand_shape": "flat_palms_together",
+      "motion": "open_like_book",
+      "two_handed": true,
+      "description": "Palms joined at edges open outwards like opening a book."
+    }
+  },
+  {
+    "sign_id": "SIGN_MONEY",
+    "marathi_term": "पैसे",
+    "english_gloss": "money",
+    "category": "objects",
+    "sign_type": "lexical",
+    "animation_asset": "animations/objects/money.mp4",
+    "synonyms": ["रुपये", "धन", "रोकड"],
+    "metadata": {
+      "hand_shape": "thumb_rub_fingertips",
+      "motion": "rubbing_motion",
+      "two_handed": false,
+      "description": "Thumb rubs along index and middle finger."
+    }
+  },
+  {
+    "sign_id": "SIGN_SCHOOL",
+    "marathi_term": "शाळा",
+    "english_gloss": "school",
+    "category": "objects",
+    "sign_type": "lexical",
+    "animation_asset": "animations/objects/school.mp4",
+    "synonyms": ["विद्यालय", "कॉलेज", "पाठशाळा"],
+    "metadata": {
+      "hand_shape": "flat_palms",
+      "motion": "clap_horizontal",
+      "two_handed": true,
+      "description": "Right palm claps down on left palm twice horizontally."
+    }
+  },
+  {
+    "sign_id": "SIGN_HOSPITAL",
+    "marathi_term": "रुग्णालय",
+    "english_gloss": "hospital",
+    "category": "objects",
+    "sign_type": "lexical",
+    "animation_asset": "animations/objects/hospital.mp4",
+    "synonyms": ["दवाखाना", "हॉस्पिटल"],
+    "metadata": {
+      "hand_shape": "h_hand_cross",
+      "motion": "draw_cross_on_shoulder",
+      "two_handed": false,
+      "description": "Two fingers draw cross symbol on upper arm."
+    }
+  },
+  {
+    "sign_id": "SIGN_CAR",
+    "marathi_term": "गाडी",
+    "english_gloss": "car",
+    "category": "objects",
+    "sign_type": "lexical",
+    "animation_asset": "animations/objects/car.mp4",
+    "synonyms": ["मोटार", "वाहन", "रिक्षा", "बस"],
+    "metadata": {
+      "hand_shape": "steering_grip",
+      "motion": "steer_wheel",
+      "two_handed": true,
+      "description": "Both hands mimic holding and turning a steering wheel."
+    }
+  },
+  {
+    "sign_id": "SIGN_PHONE",
+    "marathi_term": "फोन",
+    "english_gloss": "phone",
+    "category": "objects",
+    "sign_type": "lexical",
+    "animation_asset": "animations/objects/phone.mp4",
+    "synonyms": ["मोबाईल", "दूरध्वनी"],
+    "metadata": {
+      "hand_shape": "y_hand",
+      "motion": "thumb_to_ear_pinky_to_mouth",
+      "two_handed": false,
+      "description": "Y-hand shape held to ear and mouth."
+    }
+  },
+  {
+    "sign_id": "SIGN_MEDICINE",
+    "marathi_term": "औषध",
+    "english_gloss": "medicine",
+    "category": "objects",
+    "sign_type": "lexical",
+    "animation_asset": "animations/objects/medicine.mp4",
+    "synonyms": ["गोळी", "दवा"],
+    "metadata": {
+      "hand_shape": "middle_finger_swivel",
+      "motion": "swivel_in_palm",
+      "two_handed": true,
+      "description": "Middle finger grinds in palm representing pestle and mortar."
+    }
+  },
+  {
+    "sign_id": "SIGN_GO",
+    "marathi_term": "जाणे",
+    "english_gloss": "go",
+    "category": "verbs",
+    "sign_type": "lexical",
+    "animation_asset": "animations/verbs/go.mp4",
+    "synonyms": ["जा", "गेला", "निघणे", "जातो"],
+    "metadata": {
+      "hand_shape": "index_fingers_arc",
+      "motion": "point_away",
+      "two_handed": true,
+      "description": "Index fingers roll forward pointing away from body."
+    }
+  },
+  {
+    "sign_id": "SIGN_COME",
+    "marathi_term": "येणे",
+    "english_gloss": "come",
+    "category": "verbs",
+    "sign_type": "lexical",
+    "animation_asset": "animations/verbs/come.mp4",
+    "synonyms": ["ये", "आला", "येतो"],
+    "metadata": {
+      "hand_shape": "open_beckon",
+      "motion": "beckon_towards_body",
+      "two_handed": true,
+      "description": "Both hands sweep inwards towards body."
+    }
+  },
+  {
+    "sign_id": "SIGN_EAT",
+    "marathi_term": "खाणे",
+    "english_gloss": "eat",
+    "category": "verbs",
+    "sign_type": "lexical",
+    "animation_asset": "animations/verbs/eat.mp4",
+    "synonyms": ["खा", "खातो", "जेवतो", "खाल्ले"],
+    "metadata": {
+      "hand_shape": "closed_fingertips",
+      "motion": "bring_to_mouth",
+      "two_handed": false,
+      "description": "Fingers pinched bringing food to mouth."
+    }
+  },
+  {
+    "sign_id": "SIGN_DRINK",
+    "marathi_term": "पिणे",
+    "english_gloss": "drink",
+    "category": "verbs",
+    "sign_type": "lexical",
+    "animation_asset": "animations/verbs/drink.mp4",
+    "synonyms": ["पी", "पितो", "प्या"],
+    "metadata": {
+      "hand_shape": "c_cup_hand",
+      "motion": "tilt_to_mouth",
+      "two_handed": false,
+      "description": "C-hand shape tilts towards mouth as if drinking from glass."
+    }
+  },
+  {
+    "sign_id": "SIGN_GIVE",
+    "marathi_term": "देणे",
+    "english_gloss": "give",
+    "category": "verbs",
+    "sign_type": "lexical",
+    "animation_asset": "animations/verbs/give.mp4",
+    "synonyms": ["द्या", "दे", "देतो", "दिले"],
+    "metadata": {
+      "hand_shape": "flat_palms_forward",
+      "motion": "push_forward",
+      "two_handed": true,
+      "description": "Both hands extend forward with palms up offering something."
+    }
+  },
+  {
+    "sign_id": "SIGN_TAKE",
+    "marathi_term": "घेणे",
+    "english_gloss": "take",
+    "category": "verbs",
+    "sign_type": "lexical",
+    "animation_asset": "animations/verbs/take.mp4",
+    "synonyms": ["घ्या", "घे", "घेतो", "घेतले"],
+    "metadata": {
+      "hand_shape": "open_to_grasp",
+      "motion": "pull_inward",
+      "two_handed": false,
+      "description": "Hand reaches out and closes into fist while pulling inward."
+    }
+  },
+  {
+    "sign_id": "SIGN_SEE",
+    "marathi_term": "पाहणे",
+    "english_gloss": "see",
+    "category": "verbs",
+    "sign_type": "lexical",
+    "animation_asset": "animations/verbs/see.mp4",
+    "synonyms": ["बघणे", "बघा", "पहा", "बघतो"],
+    "metadata": {
+      "hand_shape": "v_hand",
+      "motion": "eyes_forward",
+      "two_handed": false,
+      "description": "V-fingers start near eyes and point outward."
+    }
+  },
+  {
+    "sign_id": "SIGN_SPEAK",
+    "marathi_term": "बोलणे",
+    "english_gloss": "speak",
+    "category": "verbs",
+    "sign_type": "lexical",
+    "animation_asset": "animations/verbs/speak.mp4",
+    "synonyms": ["बोला", "बोलतो", "सांगणे", "सांगा"],
+    "metadata": {
+      "hand_shape": "4_fingers_flutter",
+      "motion": "away_from_chin",
+      "two_handed": false,
+      "description": "Fingers flutter moving forward from chin."
+    }
+  },
+  {
+    "sign_id": "SIGN_READ",
+    "marathi_term": "वाचणे",
+    "english_gloss": "read",
+    "category": "verbs",
+    "sign_type": "lexical",
+    "animation_asset": "animations/verbs/read.mp4",
+    "synonyms": ["वाचा", "वाचतो", "वाचले"],
+    "metadata": {
+      "hand_shape": "v_hand_scan",
+      "motion": "scan_palm",
+      "two_handed": true,
+      "description": "V-fingers scan across opposite flat palm like reading lines."
+    }
+  },
+  {
+    "sign_id": "SIGN_WRITE",
+    "marathi_term": "लिहिणे",
+    "english_gloss": "write",
+    "category": "verbs",
+    "sign_type": "lexical",
+    "animation_asset": "animations/verbs/write.mp4",
+    "synonyms": ["लिहा", "लिहितो", "लिहिले"],
+    "metadata": {
+      "hand_shape": "pinch_pen",
+      "motion": "scribble_on_palm",
+      "two_handed": true,
+      "description": "Pinch grip pretends to write across open opposite palm."
+    }
+  },
+  {
+    "sign_id": "SIGN_WANT_NEED",
+    "marathi_term": "पाहिजे",
+    "english_gloss": "want",
+    "category": "verbs",
+    "sign_type": "lexical",
+    "animation_asset": "animations/verbs/want.mp4",
+    "synonyms": ["हवे", "गरज", "हवा"],
+    "metadata": {
+      "hand_shape": "claw_hands",
+      "motion": "pull_toward_chest",
+      "two_handed": true,
+      "description": "Curved claw hands pull back toward the torso."
+    }
+  },
+  {
+    "sign_id": "SIGN_HELP",
+    "marathi_term": "मदत",
+    "english_gloss": "help",
+    "category": "verbs",
+    "sign_type": "lexical",
+    "animation_asset": "animations/verbs/help.mp4",
+    "synonyms": ["साहाय्य", "मदत करा"],
+    "metadata": {
+      "hand_shape": "thumbs_up_on_palm",
+      "motion": "lift_upward",
+      "two_handed": true,
+      "description": "Closed fist with thumb up rests on open palm and lifts upward together."
+    }
+  },
+  {
+    "sign_id": "SIGN_STOP",
+    "marathi_term": "थांबणे",
+    "english_gloss": "stop",
+    "category": "verbs",
+    "sign_type": "lexical",
+    "animation_asset": "animations/verbs/stop.mp4",
+    "synonyms": ["थांबा", "थांबतो", "बंद"],
+    "metadata": {
+      "hand_shape": "chop_palm",
+      "motion": "vertical_hand_strikes_palm",
+      "two_handed": true,
+      "description": "Vertical hand chops into open flat palm sharply."
+    }
+  },
+  {
+    "sign_id": "SIGN_WHAT",
+    "marathi_term": "काय",
+    "english_gloss": "what",
+    "category": "questions",
+    "sign_type": "lexical",
+    "animation_asset": "animations/questions/what.mp4",
+    "synonyms": ["काये"],
+    "metadata": {
+      "hand_shape": "palms_up_side_to_side",
+      "motion": "shrug_shake",
+      "two_handed": true,
+      "description": "Both palms open facing upward shaking gently side to side with questioning facial expression."
+    }
+  },
+  {
+    "sign_id": "SIGN_WHERE",
+    "marathi_term": "कुठे",
+    "english_gloss": "where",
+    "category": "questions",
+    "sign_type": "lexical",
+    "animation_asset": "animations/questions/where.mp4",
+    "synonyms": ["कोठे", "किकडे"],
+    "metadata": {
+      "hand_shape": "index_side_to_side",
+      "motion": "wag_index",
+      "two_handed": false,
+      "description": "Index finger held upright wags side to side in search."
+    }
+  },
+  {
+    "sign_id": "SIGN_WHEN",
+    "marathi_term": "कधी",
+    "english_gloss": "when",
+    "category": "questions",
+    "sign_type": "lexical",
+    "animation_asset": "animations/questions/when.mp4",
+    "synonyms": ["केव्हा"],
+    "metadata": {
+      "hand_shape": "circle_index",
+      "motion": "circle_and_touch",
+      "two_handed": true,
+      "description": "Right index finger circles around left index and touches tip."
+    }
+  },
+  {
+    "sign_id": "SIGN_WHY",
+    "marathi_term": "का",
+    "english_gloss": "why",
+    "category": "questions",
+    "sign_type": "lexical",
+    "animation_asset": "animations/questions/why.mp4",
+    "synonyms": ["कशासाठी", "का म्हणून"],
+    "metadata": {
+      "hand_shape": "forehead_touch_to_y",
+      "motion": "draw_from_temple",
+      "two_handed": false,
+      "description": "Fingers touch forehead and pull away into Y-hand shape."
+    }
+  },
+  {
+    "sign_id": "SIGN_HOW",
+    "marathi_term": "कसे",
+    "english_gloss": "how",
+    "category": "questions",
+    "sign_type": "lexical",
+    "animation_asset": "animations/questions/how.mp4",
+    "synonyms": ["कशाप्रकारे", "कशी", "कसा"],
+    "metadata": {
+      "hand_shape": "curved_knuckles",
+      "motion": "roll_outward_palms_up",
+      "two_handed": true,
+      "description": "Knuckles touch and twist outward until palms face upward."
+    }
+  },
+  {
+    "sign_id": "SIGN_WHO",
+    "marathi_term": "कोण",
+    "english_gloss": "who",
+    "category": "questions",
+    "sign_type": "lexical",
+    "animation_asset": "animations/questions/who.mp4",
+    "synonyms": ["कोणास"],
+    "metadata": {
+      "hand_shape": "wiggle_index_at_chin",
+      "motion": "index_wiggles_near_lips",
+      "two_handed": false,
+      "description": "Index finger circles or wiggles in front of lips."
+    }
+  },
+  {
+    "sign_id": "SIGN_HOW_MUCH",
+    "marathi_term": "किती",
+    "english_gloss": "how much",
+    "category": "questions",
+    "sign_type": "lexical",
+    "animation_asset": "animations/questions/how_much.mp4",
+    "synonyms": ["कितपत"],
+    "metadata": {
+      "hand_shape": "fists_to_open_upward",
+      "motion": "throw_fingers_up",
+      "two_handed": true,
+      "description": "Hands open upwards throwing fingers open questioningly."
+    }
+  },
+  {
+    "sign_id": "SIGN_TODAY",
+    "marathi_term": "आज",
+    "english_gloss": "today",
+    "category": "time",
+    "sign_type": "lexical",
+    "animation_asset": "animations/time/today.mp4",
+    "synonyms": ["आजच्या दिवशी"],
+    "metadata": {
+      "hand_shape": "y_hands_drop",
+      "motion": "downward_thrust",
+      "two_handed": true,
+      "description": "Both Y-hands move down twice indicating present day."
+    }
+  },
+  {
+    "sign_id": "SIGN_TOMORROW",
+    "marathi_term": "उद्या",
+    "english_gloss": "tomorrow",
+    "category": "time",
+    "sign_type": "lexical",
+    "animation_asset": "animations/time/tomorrow.mp4",
+    "synonyms": ["पुढील दिवस"],
+    "metadata": {
+      "hand_shape": "thumb_chin_forward",
+      "motion": "forward_arc",
+      "two_handed": false,
+      "description": "A-hand thumb touches cheek/chin and rotates forward."
+    }
+  },
+  {
+    "sign_id": "SIGN_YESTERDAY",
+    "marathi_term": "काल",
+    "english_gloss": "yesterday",
+    "category": "time",
+    "sign_type": "lexical",
+    "animation_asset": "animations/time/yesterday.mp4",
+    "synonyms": ["गेलेला दिवस"],
+    "metadata": {
+      "hand_shape": "thumb_chin_backward",
+      "motion": "backward_arc",
+      "two_handed": false,
+      "description": "A-hand thumb touches cheek and moves back towards ear."
+    }
+  },
+  {
+    "sign_id": "SIGN_NOW",
+    "marathi_term": "आता",
+    "english_gloss": "now",
+    "category": "time",
+    "sign_type": "lexical",
+    "animation_asset": "animations/time/now.mp4",
+    "synonyms": ["सध्या"],
+    "metadata": {
+      "hand_shape": "bent_hands",
+      "motion": "drop_downward",
+      "two_handed": true,
+      "description": "Bent hands drop sharply downward in front of torso."
+    }
+  },
+  {
+    "sign_id": "SIGN_TIME",
+    "marathi_term": "वेळ",
+    "english_gloss": "time",
+    "category": "time",
+    "sign_type": "lexical",
+    "animation_asset": "animations/time/time.mp4",
+    "synonyms": ["समय", "कालखंड"],
+    "metadata": {
+      "hand_shape": "tap_wrist",
+      "motion": "index_taps_watch_area",
+      "two_handed": true,
+      "description": "Index finger taps the top of opposite wrist like a wristwatch."
+    }
+  },
+  {
+    "sign_id": "SIGN_ONE",
+    "marathi_term": "एक",
+    "english_gloss": "one",
+    "category": "numbers",
+    "sign_type": "number",
+    "animation_asset": "animations/numbers/one.mp4",
+    "synonyms": ["१"],
+    "metadata": {"hand_shape": "index_up", "motion": "hold", "two_handed": false}
+  },
+  {
+    "sign_id": "SIGN_TWO",
+    "marathi_term": "दोन",
+    "english_gloss": "two",
+    "category": "numbers",
+    "sign_type": "number",
+    "animation_asset": "animations/numbers/two.mp4",
+    "synonyms": ["२"],
+    "metadata": {"hand_shape": "index_middle_up", "motion": "hold", "two_handed": false}
+  },
+  {
+    "sign_id": "SIGN_THREE",
+    "marathi_term": "तीन",
+    "english_gloss": "three",
+    "category": "numbers",
+    "sign_type": "number",
+    "animation_asset": "animations/numbers/three.mp4",
+    "synonyms": ["३"],
+    "metadata": {"hand_shape": "three_fingers_up", "motion": "hold", "two_handed": false}
+  },
+  {
+    "sign_id": "SIGN_FOUR",
+    "marathi_term": "चार",
+    "english_gloss": "four",
+    "category": "numbers",
+    "sign_type": "number",
+    "animation_asset": "animations/numbers/four.mp4",
+    "synonyms": ["४"],
+    "metadata": {"hand_shape": "four_fingers_up", "motion": "hold", "two_handed": false}
+  },
+  {
+    "sign_id": "SIGN_FIVE",
+    "marathi_term": "पाच",
+    "english_gloss": "five",
+    "category": "numbers",
+    "sign_type": "number",
+    "animation_asset": "animations/numbers/five.mp4",
+    "synonyms": ["५"],
+    "metadata": {"hand_shape": "open_5_hand", "motion": "hold", "two_handed": false}
+  },
+  {
+    "sign_id": "SIGN_TEN",
+    "marathi_term": "दहा",
+    "english_gloss": "ten",
+    "category": "numbers",
+    "sign_type": "number",
+    "animation_asset": "animations/numbers/ten.mp4",
+    "synonyms": ["१०"],
+    "metadata": {"hand_shape": "thumbs_up_shake", "motion": "shake_thumb", "two_handed": false}
+  },
+  {
+    "sign_id": "SIGN_YES",
+    "marathi_term": "होय",
+    "english_gloss": "yes",
+    "category": "greetings",
+    "sign_type": "lexical",
+    "animation_asset": "animations/greetings/yes.mp4",
+    "synonyms": ["हो", "बरोबर"],
+    "metadata": {"hand_shape": "s_fist_nod", "motion": "nod_fist", "two_handed": false}
+  },
+  {
+    "sign_id": "SIGN_NO",
+    "marathi_term": "नाही",
+    "english_gloss": "no",
+    "category": "greetings",
+    "sign_type": "lexical",
+    "animation_asset": "animations/greetings/no.mp4",
+    "synonyms": ["नको"],
+    "metadata": {"hand_shape": "snap_fingers_shut", "motion": "close_index_middle_to_thumb", "two_handed": false}
+  }
+]

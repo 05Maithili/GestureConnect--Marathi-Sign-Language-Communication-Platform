@@ -1,0 +1,782 @@
+[
+  {
+    "phrase_en": "Hello how are you",
+    "cov_eng": 100.0,
+    "unsupported_eng": [],
+    "phrase_mr": "नमस्कार तू कसा आहेस",
+    "cov_mar": 100.0,
+    "unsupported_mar": []
+  },
+  {
+    "phrase_en": "Good morning",
+    "cov_eng": 0.0,
+    "unsupported_eng": [
+      "शुभ",
+      "प्रभात"
+    ],
+    "phrase_mr": "शुभ सकाळ",
+    "cov_mar": 100.0,
+    "unsupported_mar": []
+  },
+  {
+    "phrase_en": "Good afternoon",
+    "cov_eng": 100.0,
+    "unsupported_eng": [],
+    "phrase_mr": "शुभ दुपार",
+    "cov_mar": 100.0,
+    "unsupported_mar": []
+  },
+  {
+    "phrase_en": "Good evening",
+    "cov_eng": 100.0,
+    "unsupported_eng": [],
+    "phrase_mr": "शुभ संध्याकाळ",
+    "cov_mar": 100.0,
+    "unsupported_mar": []
+  },
+  {
+    "phrase_en": "Good night",
+    "cov_eng": 100.0,
+    "unsupported_eng": [],
+    "phrase_mr": "शुभ रात्री",
+    "cov_mar": 100.0,
+    "unsupported_mar": []
+  },
+  {
+    "phrase_en": "Thank you",
+    "cov_eng": 100.0,
+    "unsupported_eng": [],
+    "phrase_mr": "धन्यवाद",
+    "cov_mar": 100.0,
+    "unsupported_mar": []
+  },
+  {
+    "phrase_en": "I am happy",
+    "cov_eng": 50.0,
+    "unsupported_eng": [
+      "am"
+    ],
+    "phrase_mr": "मी आनंदी आहे",
+    "cov_mar": 40.0,
+    "unsupported_mar": [
+      "आहे"
+    ]
+  },
+  {
+    "phrase_en": "You are beautiful",
+    "cov_eng": 40.0,
+    "unsupported_eng": [
+      "are"
+    ],
+    "phrase_mr": "तू सुंदर आहेस",
+    "cov_mar": 33.33333333333333,
+    "unsupported_mar": [
+      "आहेस"
+    ]
+  },
+  {
+    "phrase_en": "Mother and father",
+    "cov_eng": 40.0,
+    "unsupported_eng": [
+      "and"
+    ],
+    "phrase_mr": "आई आणि वडील",
+    "cov_mar": 40.0,
+    "unsupported_mar": [
+      "आणि"
+    ]
+  },
+  {
+    "phrase_en": "Brother and sister",
+    "cov_eng": 40.0,
+    "unsupported_eng": [
+      "and"
+    ],
+    "phrase_mr": "भाऊ आणि बहीण",
+    "cov_mar": 40.0,
+    "unsupported_mar": [
+      "आणि"
+    ]
+  },
+  {
+    "phrase_en": "My grandfather is old",
+    "cov_eng": 25.0,
+    "unsupported_eng": [
+      "माझे",
+      "is"
+    ],
+    "phrase_mr": "माझे आजोबा जुने आहेत",
+    "cov_mar": 20.0,
+    "unsupported_mar": [
+      "माझे",
+      "आहेत"
+    ]
+  },
+  {
+    "phrase_en": "She is my wife",
+    "cov_eng": 25.0,
+    "unsupported_eng": [
+      "is",
+      "माझे"
+    ],
+    "phrase_mr": "ती माझी पत्नी आहे",
+    "cov_mar": 22.22222222222222,
+    "unsupported_mar": [
+      "माझी",
+      "आहे"
+    ]
+  },
+  {
+    "phrase_en": "He is a good husband",
+    "cov_eng": 50.0,
+    "unsupported_eng": [
+      "is",
+      "a"
+    ],
+    "phrase_mr": "तो एक चांगला पती आहे",
+    "cov_mar": 15.384615384615385,
+    "unsupported_mar": [
+      "एक",
+      "चांगला",
+      "आहे"
+    ]
+  },
+  {
+    "phrase_en": "The baby is sleeping",
+    "cov_eng": 7.142857142857142,
+    "unsupported_eng": [
+      "the",
+      "is",
+      "sleeping"
+    ],
+    "phrase_mr": "बाळ झोपत आहे",
+    "cov_mar": 12.5,
+    "unsupported_mar": [
+      "झोपत",
+      "आहे"
+    ]
+  },
+  {
+    "phrase_en": "I have a son and a daughter",
+    "cov_eng": 25.0,
+    "unsupported_eng": [
+      "have",
+      "a",
+      "and",
+      "a"
+    ],
+    "phrase_mr": "मला एक मुलगा आणि एक मुलगी आहे",
+    "cov_mar": 13.333333333333334,
+    "unsupported_mar": [
+      "मला",
+      "एक",
+      "आणि",
+      "एक",
+      "आहे"
+    ]
+  },
+  {
+    "phrase_en": "They are family",
+    "cov_eng": 40.0,
+    "unsupported_eng": [
+      "are"
+    ],
+    "phrase_mr": "ते कुटुंब आहेत",
+    "cov_mar": 33.33333333333333,
+    "unsupported_mar": [
+      "आहेत"
+    ]
+  },
+  {
+    "phrase_en": "He is my friend",
+    "cov_eng": 25.0,
+    "unsupported_eng": [
+      "is",
+      "माझे"
+    ],
+    "phrase_mr": "तो माझा मित्र आहे",
+    "cov_mar": 22.22222222222222,
+    "unsupported_mar": [
+      "माझा",
+      "आहे"
+    ]
+  },
+  {
+    "phrase_en": "I need medicine",
+    "cov_eng": 25.0,
+    "unsupported_eng": [
+      "पाहिजे"
+    ],
+    "phrase_mr": "मला औषध हवे आहे",
+    "cov_mar": 10.0,
+    "unsupported_mar": [
+      "मला",
+      "हवे",
+      "आहे"
+    ]
+  },
+  {
+    "phrase_en": "Where is the hospital",
+    "cov_eng": 12.5,
+    "unsupported_eng": [
+      "कुठे",
+      "आहे"
+    ],
+    "phrase_mr": "रुग्णालय कुठे आहे",
+    "cov_mar": 12.5,
+    "unsupported_mar": [
+      "कुठे",
+      "आहे"
+    ]
+  },
+  {
+    "phrase_en": "I am sick today",
+    "cov_eng": 60.0,
+    "unsupported_eng": [
+      "am"
+    ],
+    "phrase_mr": "मी आज आजारी आहे",
+    "cov_mar": 50.0,
+    "unsupported_mar": [
+      "आहे"
+    ]
+  },
+  {
+    "phrase_en": "Please call the doctor",
+    "cov_eng": 7.142857142857142,
+    "unsupported_eng": [
+      "please",
+      "call",
+      "the"
+    ],
+    "phrase_mr": "कृपया डॉक्टरला बोलावा",
+    "cov_mar": 0.0,
+    "unsupported_mar": [
+      "कृपया",
+      "डॉक्टरला",
+      "बोलावा"
+    ]
+  },
+  {
+    "phrase_en": "Where is the market",
+    "cov_eng": 10.0,
+    "unsupported_eng": [
+      "कुठे",
+      "is",
+      "the"
+    ],
+    "phrase_mr": "बाजार कुठे आहे",
+    "cov_mar": 12.5,
+    "unsupported_mar": [
+      "कुठे",
+      "आहे"
+    ]
+  },
+  {
+    "phrase_en": "I want money",
+    "cov_eng": 25.0,
+    "unsupported_eng": [
+      "पाहिजे"
+    ],
+    "phrase_mr": "मला पैसे हवे आहेत",
+    "cov_mar": 9.090909090909092,
+    "unsupported_mar": [
+      "मला",
+      "हवे",
+      "आहेत"
+    ]
+  },
+  {
+    "phrase_en": "Where is the bathroom",
+    "cov_eng": 10.0,
+    "unsupported_eng": [
+      "कुठे",
+      "is",
+      "the"
+    ],
+    "phrase_mr": "स्नानगृह कुठे आहे",
+    "cov_mar": 12.5,
+    "unsupported_mar": [
+      "कुठे",
+      "आहे"
+    ]
+  },
+  {
+    "phrase_en": "Open the door",
+    "cov_eng": 12.5,
+    "unsupported_eng": [
+      "open",
+      "the"
+    ],
+    "phrase_mr": "दार उघडा",
+    "cov_mar": 20.0,
+    "unsupported_mar": [
+      "उघडा"
+    ]
+  },
+  {
+    "phrase_en": "Close the window",
+    "cov_eng": 11.11111111111111,
+    "unsupported_eng": [
+      "close",
+      "the"
+    ],
+    "phrase_mr": "खिडकी बंद करा",
+    "cov_mar": 14.285714285714285,
+    "unsupported_mar": [
+      "बंद",
+      "करा"
+    ]
+  },
+  {
+    "phrase_en": "Today is monday",
+    "cov_eng": 50.0,
+    "unsupported_eng": [
+      "is"
+    ],
+    "phrase_mr": "आज सोमवार आहे",
+    "cov_mar": 40.0,
+    "unsupported_mar": [
+      "आहे"
+    ]
+  },
+  {
+    "phrase_en": "Tomorrow is tuesday",
+    "cov_eng": 50.0,
+    "unsupported_eng": [
+      "is"
+    ],
+    "phrase_mr": "उद्या मंगळवार आहे",
+    "cov_mar": 40.0,
+    "unsupported_mar": [
+      "आहे"
+    ]
+  },
+  {
+    "phrase_en": "Yesterday was sunday",
+    "cov_eng": 40.0,
+    "unsupported_eng": [
+      "was"
+    ],
+    "phrase_mr": "काल रविवार होता",
+    "cov_mar": 33.33333333333333,
+    "unsupported_mar": [
+      "होता"
+    ]
+  },
+  {
+    "phrase_en": "What time is it",
+    "cov_eng": 28.57142857142857,
+    "unsupported_eng": [
+      "काय",
+      "is"
+    ],
+    "phrase_mr": "वेळ काय आहे",
+    "cov_mar": 14.285714285714285,
+    "unsupported_mar": [
+      "काय",
+      "आहे"
+    ]
+  },
+  {
+    "phrase_en": "One hour and one minute",
+    "cov_eng": 22.22222222222222,
+    "unsupported_eng": [
+      "एक",
+      "and",
+      "एक"
+    ],
+    "phrase_mr": "एक तास आणि एक मिनिट",
+    "cov_mar": 22.22222222222222,
+    "unsupported_mar": [
+      "एक",
+      "आणि",
+      "एक"
+    ]
+  },
+  {
+    "phrase_en": "Next week",
+    "cov_eng": 20.0,
+    "unsupported_eng": [
+      "next"
+    ],
+    "phrase_mr": "पुढील आठवडा",
+    "cov_mar": 16.666666666666664,
+    "unsupported_mar": [
+      "पुढील"
+    ]
+  },
+  {
+    "phrase_en": "Next month",
+    "cov_eng": 20.0,
+    "unsupported_eng": [
+      "next"
+    ],
+    "phrase_mr": "पुढील महिना",
+    "cov_mar": 16.666666666666664,
+    "unsupported_mar": [
+      "पुढील"
+    ]
+  },
+  {
+    "phrase_en": "This year",
+    "cov_eng": 20.0,
+    "unsupported_eng": [
+      "this"
+    ],
+    "phrase_mr": "हे वर्ष",
+    "cov_mar": 33.33333333333333,
+    "unsupported_mar": [
+      "हे"
+    ]
+  },
+  {
+    "phrase_en": "Summer season",
+    "cov_eng": 100.0,
+    "unsupported_eng": [],
+    "phrase_mr": "उन्हाळा ऋतू",
+    "cov_mar": 100.0,
+    "unsupported_mar": []
+  },
+  {
+    "phrase_en": "Winter is cold",
+    "cov_eng": 50.0,
+    "unsupported_eng": [
+      "is"
+    ],
+    "phrase_mr": "हिवाळा थंड आहे",
+    "cov_mar": 40.0,
+    "unsupported_mar": [
+      "आहे"
+    ]
+  },
+  {
+    "phrase_en": "Monsoon is wet",
+    "cov_eng": 50.0,
+    "unsupported_eng": [
+      "is"
+    ],
+    "phrase_mr": "पावसाळा ओले आहे",
+    "cov_mar": 40.0,
+    "unsupported_mar": [
+      "आहे"
+    ]
+  },
+  {
+    "phrase_en": "Where is the train station",
+    "cov_eng": 10.0,
+    "unsupported_eng": [
+      "कुठे",
+      "is",
+      "the"
+    ],
+    "phrase_mr": "रेल्वे स्थानक कुठे आहे",
+    "cov_mar": 12.5,
+    "unsupported_mar": [
+      "कुठे",
+      "आहे"
+    ]
+  },
+  {
+    "phrase_en": "I need a train ticket",
+    "cov_eng": 22.22222222222222,
+    "unsupported_eng": [
+      "पाहिजे",
+      "a"
+    ],
+    "phrase_mr": "मला रेल्वे तिकीट हवे आहे",
+    "cov_mar": 10.0,
+    "unsupported_mar": [
+      "मला",
+      "हवे",
+      "आहे"
+    ]
+  },
+  {
+    "phrase_en": "The bus is slow",
+    "cov_eng": 10.0,
+    "unsupported_eng": [
+      "the",
+      "गाडी",
+      "is"
+    ],
+    "phrase_mr": "बस हळू आहे",
+    "cov_mar": 40.0,
+    "unsupported_mar": [
+      "आहे"
+    ]
+  },
+  {
+    "phrase_en": "The car is fast",
+    "cov_eng": 10.0,
+    "unsupported_eng": [
+      "the",
+      "गाडी",
+      "is"
+    ],
+    "phrase_mr": "कार जलद आहे",
+    "cov_mar": 40.0,
+    "unsupported_mar": [
+      "आहे"
+    ]
+  },
+  {
+    "phrase_en": "Where is the school",
+    "cov_eng": 12.5,
+    "unsupported_eng": [
+      "कुठे",
+      "आहे"
+    ],
+    "phrase_mr": "शाळा कुठे आहे",
+    "cov_mar": 12.5,
+    "unsupported_mar": [
+      "कुठे",
+      "आहे"
+    ]
+  },
+  {
+    "phrase_en": "He is a student",
+    "cov_eng": 40.0,
+    "unsupported_eng": [
+      "is",
+      "a"
+    ],
+    "phrase_mr": "तो एक विद्यार्थी आहे",
+    "cov_mar": 28.57142857142857,
+    "unsupported_mar": [
+      "एक",
+      "आहे"
+    ]
+  },
+  {
+    "phrase_en": "The teacher is good",
+    "cov_eng": 28.57142857142857,
+    "unsupported_eng": [
+      "the",
+      "is"
+    ],
+    "phrase_mr": "शिक्षक चांगले आहेत",
+    "cov_mar": 33.33333333333333,
+    "unsupported_mar": [
+      "आहेत"
+    ]
+  },
+  {
+    "phrase_en": "Go to the office",
+    "cov_eng": 10.0,
+    "unsupported_eng": [
+      "जाणे",
+      "to",
+      "the"
+    ],
+    "phrase_mr": "कार्यालय जा",
+    "cov_mar": 33.33333333333333,
+    "unsupported_mar": [
+      "जा"
+    ]
+  },
+  {
+    "phrase_en": "Where is the temple",
+    "cov_eng": 10.0,
+    "unsupported_eng": [
+      "कुठे",
+      "is",
+      "the"
+    ],
+    "phrase_mr": "मंदिर कुठे आहे",
+    "cov_mar": 12.5,
+    "unsupported_mar": [
+      "कुठे",
+      "आहे"
+    ]
+  },
+  {
+    "phrase_en": "Where is the bank",
+    "cov_eng": 10.0,
+    "unsupported_eng": [
+      "कुठे",
+      "is",
+      "the"
+    ],
+    "phrase_mr": "बँक कुठे आहे",
+    "cov_mar": 12.5,
+    "unsupported_mar": [
+      "कुठे",
+      "आहे"
+    ]
+  },
+  {
+    "phrase_en": "The book is heavy",
+    "cov_eng": 28.57142857142857,
+    "unsupported_eng": [
+      "the",
+      "is"
+    ],
+    "phrase_mr": "पुस्तक जड आहे",
+    "cov_mar": 40.0,
+    "unsupported_mar": [
+      "आहे"
+    ]
+  },
+  {
+    "phrase_en": "The pen is cheap",
+    "cov_eng": 28.57142857142857,
+    "unsupported_eng": [
+      "the",
+      "is"
+    ],
+    "phrase_mr": "पेन स्वस्त आहे",
+    "cov_mar": 40.0,
+    "unsupported_mar": [
+      "आहे"
+    ]
+  },
+  {
+    "phrase_en": "The laptop is expensive",
+    "cov_eng": 28.57142857142857,
+    "unsupported_eng": [
+      "the",
+      "is"
+    ],
+    "phrase_mr": "लॅपटॉप महाग आहे",
+    "cov_mar": 40.0,
+    "unsupported_mar": [
+      "आहे"
+    ]
+  },
+  {
+    "phrase_en": "Red blue and green",
+    "cov_eng": 50.0,
+    "unsupported_eng": [
+      "and"
+    ],
+    "phrase_mr": "लाल निळा आणि हिरवा",
+    "cov_mar": 50.0,
+    "unsupported_mar": [
+      "आणि"
+    ]
+  },
+  {
+    "phrase_en": "Black and white",
+    "cov_eng": 40.0,
+    "unsupported_eng": [
+      "and"
+    ],
+    "phrase_mr": "काळा आणि पांढरा",
+    "cov_mar": 40.0,
+    "unsupported_mar": [
+      "आणि"
+    ]
+  },
+  {
+    "phrase_en": "The chair is comfortable",
+    "cov_eng": 5.88235294117647,
+    "unsupported_eng": [
+      "the",
+      "is",
+      "comfortable"
+    ],
+    "phrase_mr": "खुर्ची आरामदायक आहे",
+    "cov_mar": 8.333333333333332,
+    "unsupported_mar": [
+      "आरामदायक",
+      "आहे"
+    ]
+  },
+  {
+    "phrase_en": "Turn on the light",
+    "cov_eng": 10.0,
+    "unsupported_eng": [
+      "turn",
+      "on",
+      "the"
+    ],
+    "phrase_mr": "प्रकाश चालू करा",
+    "cov_mar": 12.5,
+    "unsupported_mar": [
+      "चालू",
+      "करा"
+    ]
+  },
+  {
+    "phrase_en": "Turn on the television",
+    "cov_eng": 10.0,
+    "unsupported_eng": [
+      "turn",
+      "on",
+      "the"
+    ],
+    "phrase_mr": "दूरदर्शन चालू करा",
+    "cov_mar": 12.5,
+    "unsupported_mar": [
+      "चालू",
+      "करा"
+    ]
+  },
+  {
+    "phrase_en": "The dog is small",
+    "cov_eng": 28.57142857142857,
+    "unsupported_eng": [
+      "the",
+      "is"
+    ],
+    "phrase_mr": "कुत्रा लहान आहे",
+    "cov_mar": 40.0,
+    "unsupported_mar": [
+      "आहे"
+    ]
+  },
+  {
+    "phrase_en": "The cat is beautiful",
+    "cov_eng": 28.57142857142857,
+    "unsupported_eng": [
+      "the",
+      "is"
+    ],
+    "phrase_mr": "मांजर सुंदर आहे",
+    "cov_mar": 40.0,
+    "unsupported_mar": [
+      "आहे"
+    ]
+  },
+  {
+    "phrase_en": "The horse is strong",
+    "cov_eng": 28.57142857142857,
+    "unsupported_eng": [
+      "the",
+      "is"
+    ],
+    "phrase_mr": "घोडा मजबूत आहे",
+    "cov_mar": 40.0,
+    "unsupported_mar": [
+      "आहे"
+    ]
+  },
+  {
+    "phrase_en": "The bird is high",
+    "cov_eng": 28.57142857142857,
+    "unsupported_eng": [
+      "the",
+      "is"
+    ],
+    "phrase_mr": "पक्षी उंच आहे",
+    "cov_mar": 40.0,
+    "unsupported_mar": [
+      "आहे"
+    ]
+  },
+  {
+    "phrase_en": "The cow is big",
+    "cov_eng": 28.57142857142857,
+    "unsupported_eng": [
+      "the",
+      "is"
+    ],
+    "phrase_mr": "गाय मोठी आहे",
+    "cov_mar": 12.5,
+    "unsupported_mar": [
+      "मोठी",
+      "आहे"
+    ]
+  }
+]

@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{% block title %}GestureConnect - Bilingual Speech & Text to Indian Sign Language{% endblock %}</title>
+  <meta name="description" content="AI-Powered Bilingual English and Marathi speech & text to Indian Sign Language (ISL/MSL) translation platform with 3D avatar visualization.">
+  
+  <!-- Google Fonts: Inter & Noto Sans Devanagari for Marathi -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Noto+Sans+Devanagari:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  
+  <!-- Custom Modern Stylesheet -->
+  <link rel="stylesheet" href="/static/css/style.css">
+  {% block extra_css %}{% endblock %}
+</head>
+<body>
+
+  <div class="gc-app">
+    <!-- Sidebar Backdrop for Mobile -->
+    <div class="gc-sidebar-overlay" id="gcSidebarOverlay"></div>
+
+    <!-- Professional Left Sidebar -->
+    <aside class="gc-sidebar" id="gcSidebar">
+      <!-- Brand Header with Collapse Button -->
+      <div class="d-flex align-items-center justify-content-between p-3 border-bottom" style="border-color: var(--gc-sidebar-divider) !important;">
+        <a class="gc-sidebar-logo p-0 border-0 m-0" href="{% url 'translator:home' %}">
+          <div class="gc-sidebar-logo-icon">
+            <i class="bi bi-person-arms-up"></i>
+          </div>
+          <div>
+            <div class="gc-sidebar-logo-name">GestureConnect</div>
+            <div class="gc-sidebar-logo-tag">Bilingual ISL Platform</div>
+          </div>
+        </a>
+        <button class="gc-sidebar-close-btn" id="gc-sidebar-close-btn" title="Close / Collapse Menu">
+          <i class="bi bi-three-dots-vertical"></i>
+        </button>
+      </div>
+
+      <!-- Navigation Menu -->
+      <div class="gc-sidebar-nav">
+        <div class="gc-sidebar-section">Main Menu</div>
+        <a class="gc-sidebar-link {% if request.resolver_match.url_name == 'home' %}active{% endif %}" href="{% url 'translator:home' %}">
+          <i class="bi bi-grid-1x2"></i>
+          <span>Dashboard</span>
+        </a>
+        <a class="gc-sidebar-link {% if request.resolver_match.url_name == 'translate' %}active{% endif %}" href="{% url 'translator:translate' %}">
+          <i class="bi bi-translate"></i>
+          <span>Translation Studio</span>
+        </a>
+        <a class="gc-sidebar-link {% if request.resolver_match.url_name == 'vocabulary' %}active{% endif %}" href="{% url 'translator:vocabulary' %}">
+          <i class="bi bi-journal-text"></i>
+          <span>Sign Vocabulary</span>
+        </a>
+        <a class="gc-sidebar-link {% if request.resolver_match.url_name == 'history' %}active{% endif %}" href="{% url 'translator:history' %}">
+          <i class="bi bi-clock-history"></i>
+          <span>Session History</span>
+        </a>
+        <a class="gc-sidebar-link {% if request.resolver_match.url_name == 'evaluation' %}active{% endif %}" href="{% url 'translator:evaluation' %}">
+          <i class="bi bi-graph-up"></i>
+          <span>Evaluation & Metrics</span>
+        </a>
+        <a class="gc-sidebar-link {% if request.resolver_match.url_name == 'about' %}active{% endif %}" href="{% url 'translator:about' %}">
+          <i class="bi bi-diagram-3"></i>
+          <span>How It Works</span>
+        </a>
+
+        <div class="gc-sidebar-divider"></div>
+        <div class="gc-sidebar-section">System & Tools</div>
+        <a class="gc-sidebar-link" href="#" data-bs-toggle="modal" data-bs-target="#settingsModal">
+          <i class="bi bi-gear"></i>
+          <span>Settings</span>
+        </a>
+        <a class="gc-sidebar-link" href="#" data-bs-toggle="modal" data-bs-target="#accessibilityModal">
+          <i class="bi bi-universal-access"></i>
+          <span>Accessibility</span>
+        </a>
+        <a class="gc-sidebar-link" href="#" data-bs-toggle="modal" data-bs-target="#helpModal">
+          <i class="bi bi-question-circle"></i>
+          <span>Help & FAQ</span>
+        </a>
+        <a class="gc-sidebar-link" href="/admin/" target="_blank">
+          <i class="bi bi-shield-lock"></i>
+          <span>Django Admin</span>
+        </a>
+      </div>
+
+      <!-- User Profile Card -->
+      <div class="gc-sidebar-profile" data-bs-toggle="modal" data-bs-target="#profileModal" title="Click to view profile">
+        <div class="gc-sidebar-avatar">HS</div>
+        <div class="overflow-hidden">
+          <div class="gc-sidebar-user-name text-truncate">Hardik Sonawane</div>
+          <div class="gc-sidebar-user-role">Lead Researcher</div>
+        </div>
+        <i class="bi bi-chevron-right ms-auto text-muted small"></i>
+      </div>
+    </aside>
+
+    <!-- Main Workspace -->
+    <div class="gc-main">
+      <!-- Sticky Top Header Bar -->
+      <header class="gc-topbar">
+        <div class="gc-topbar-left">
+          <button class="gc-sidebar-toggle" id="gc-sidebar-toggle" aria-label="Toggle navigation drawer">
+            <i class="bi bi-list"></i>
+          </button>
+          <div>
+            <div class="gc-topbar-page-title d-flex align-items-center gap-2 flex-wrap">
+              {% block page_title %}GestureConnect Platform{% endblock %}
+            </div>
+            <div class="gc-topbar-breadcrumb d-flex align-items-center gap-1">
+              <i class="bi bi-universal-access text-primary me-1" style="font-size: 0.82rem;"></i>
+              {% block breadcrumb %}AI-Powered English &amp; Marathi to Indian Sign Language{% endblock %}
+            </div>
+          </div>
+        </div>
+
+        <div class="gc-topbar-right">
+          <!-- Active Language Mode Indicator -->
+          <div class="d-none d-md-flex align-items-center gap-1 px-2 py-1 rounded-pill bg-light border small text-muted">
+            <i class="bi bi-globe2 text-primary"></i>
+            <span class="fw-semibold text-dark">Bilingual</span>
+            <span class="badge bg-primary-subtle text-primary border border-primary-subtle">EN + MR</span>
+          </div>
+
+          <!-- Accessibility Quick Button -->
+          <button class="gc-icon-btn" data-bs-toggle="modal" data-bs-target="#accessibilityModal" title="Accessibility Center">
+            <i class="bi bi-universal-access"></i>
+          </button>
+
+          <!-- Theme Mode Switcher -->
+          <button class="gc-icon-btn" id="gc-theme-toggle" title="Switch Theme">
+            <i class="bi bi-moon-stars-fill"></i>
+          </button>
+
+          <!-- Notifications Dropdown -->
+          <div class="dropdown">
+            <button class="gc-icon-btn" data-bs-toggle="dropdown" aria-expanded="false" title="Notifications">
+              <i class="bi bi-bell"></i>
+              <span class="gc-notification-dot"></span>
+            </button>
+            <ul class="dropdown-menu dropdown-menu-end shadow-lg border p-2" style="min-width: 290px;">
+              <li class="dropdown-header fw-bold text-dark px-2">System Notifications</li>
+              <li><hr class="dropdown-divider my-1"></li>
+              <li>
+                <div class="p-2 rounded bg-light-subtle small mb-1">
+                  <div class="fw-semibold text-primary"><i class="bi bi-cpu me-1"></i> 3D Avatar Ready</div>
+                  <div class="text-muted" style="font-size: 0.76rem;">Blender humanoid avatar sequence engine active.</div>
+                </div>
+              </li>
+              <li>
+                <div class="p-2 rounded bg-light-subtle small mb-1">
+                  <div class="fw-semibold text-success"><i class="bi bi-check2-circle me-1"></i> Vocabulary Updated</div>
+                  <div class="text-muted" style="font-size: 0.76rem;">54 canonical signs mapped across 8 categories.</div>
+                </div>
+              </li>
+              <li>
+                <div class="p-2 rounded bg-light-subtle small">
+                  <div class="fw-semibold text-info"><i class="bi bi-mic me-1"></i> Speech STT Active</div>
+                  <div class="text-muted" style="font-size: 0.76rem;">Bilingual English and Marathi speech recognition online.</div>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Quick User Avatar Menu -->
+          <button class="gc-profile-btn" data-bs-toggle="modal" data-bs-target="#profileModal">
+            <div class="gc-profile-avatar">HS</div>
+            <span class="gc-profile-name d-none d-sm-inline">Hardik</span>
+          </button>
+        </div>
+      </header>
+
+      <!-- Dynamic Page Content -->
+      <div class="gc-content">
+        {% block content %}{% endblock %}
+      </div>
+
+      <!-- Clean Minimal Footer -->
+      <footer class="py-3 px-4 border-top bg-white bg-opacity-50 mt-auto">
+        <div class="d-flex flex-column flex-md-row justify-content-between align-items-center small text-muted gap-2">
+          <div class="d-flex align-items-center gap-2">
+            <span class="fw-bold text-dark">GestureConnect</span>
+            <span>&bull;</span>
+            <span>Connecting Words to Signs</span>
+            <span>&bull;</span>
+            <span class="badge bg-light text-secondary border">Final Year Capstone Project</span>
+          </div>
+          <div class="d-flex gap-3">
+            <a href="{% url 'translator:about' %}" class="text-muted text-decoration-none hover-primary">Architecture</a>
+            <a href="{% url 'translator:evaluation' %}" class="text-muted text-decoration-none hover-primary">Evaluation</a>
+            <a href="#" data-bs-toggle="modal" data-bs-target="#helpModal" class="text-muted text-decoration-none hover-primary">Help & FAQ</a>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </div>
+
+  <!-- Accessibility Center Modal -->
+  <div class="modal fade" id="accessibilityModal" tabindex="-1" aria-labelledby="accessibilityModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content border-0 shadow-lg rounded-4">
+        <div class="modal-header border-bottom pb-3">
+          <h5 class="modal-title fw-bold text-dark" id="accessibilityModalLabel">
+            <i class="bi bi-universal-access text-primary me-2"></i> Accessibility Center
+          </h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body p-4">
+          <p class="text-muted small mb-4">
+            Customize the visual presentation and assistive controls to suit your reading and navigation preferences.
+          </p>
+
+          <div class="mb-4">
+            <label for="acc-font-size" class="gc-form-label">Font Scaling</label>
+            <select id="acc-font-size" class="form-select">
+              <option value="normal">Standard Font (100%)</option>
+              <option value="large">Large Font (115%)</option>
+              <option value="xl">Extra Large Font (130%)</option>
+            </select>
+          </div>
+
+          <div class="form-check form-switch mb-3">
+            <input class="form-check-input" type="checkbox" role="switch" id="acc-high-contrast">
+            <label class="form-check-label fw-semibold text-dark small" for="acc-high-contrast">
+              High Contrast Interface
+            </label>
+            <div class="text-muted" style="font-size: 0.78rem;">Increases boundary contrast between text, cards, and backgrounds.</div>
+          </div>
+
+          <div class="form-check form-switch mb-3">
+            <input class="form-check-input" type="checkbox" role="switch" id="acc-reduced-motion">
+            <label class="form-check-label fw-semibold text-dark small" for="acc-reduced-motion">
+              Reduced Motion
+            </label>
+            <div class="text-muted" style="font-size: 0.78rem;">Suppresses decorative page transitions and floating animations.</div>
+          </div>
+        </div>
+        <div class="modal-footer border-top">
+          <button type="button" class="btn btn-gc-primary w-100" data-bs-dismiss="modal">Apply & Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Settings Modal -->
+  <div class="modal fade" id="settingsModal" tabindex="-1" aria-labelledby="settingsModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content border-0 shadow-lg rounded-4">
+        <div class="modal-header border-bottom pb-3">
+          <h5 class="modal-title fw-bold text-dark" id="settingsModalLabel">
+            <i class="bi bi-gear-fill text-primary me-2"></i> Application Settings
+          </h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body p-4">
+          <div class="mb-3">
+            <label class="gc-form-label">Default Input Language</label>
+            <select class="form-select" id="settings-default-lang">
+              <option value="auto" selected>Auto-Detect (Marathi or English)</option>
+              <option value="mr">Marathi (मराठी)</option>
+              <option value="en">English</option>
+            </select>
+          </div>
+
+          <div class="mb-3">
+            <label class="gc-form-label">3D Avatar Playback Speed</label>
+            <select class="form-select" id="settings-playback-speed">
+              <option value="0.75">0.75x (Slower - Ideal for Learning)</option>
+              <option value="1.0" selected>1.0x (Standard Speed)</option>
+              <option value="1.25">1.25x (Fast)</option>
+            </select>
+          </div>
+
+          <div class="form-check form-switch mb-3">
+            <input class="form-check-input" type="checkbox" id="settings-auto-play" checked>
+            <label class="form-check-label fw-semibold text-dark small" for="settings-auto-play">
+              Auto-Play Animation upon Translation
+            </label>
+          </div>
+
+          <div class="form-check form-switch mb-3">
+            <input class="form-check-input" type="checkbox" id="settings-save-history" checked>
+            <label class="form-check-label fw-semibold text-dark small" for="settings-save-history">
+              Save Translations to Audit Session History
+            </label>
+          </div>
+        </div>
+        <div class="modal-footer border-top">
+          <button type="button" class="btn btn-secondary btn-sm" data-bs-dismiss="modal">Cancel</button>
+          <button type="button" class="btn btn-gc-primary btn-sm" data-bs-dismiss="modal" onclick="showNotification('Settings saved successfully.', 'success')">Save Changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- User Profile Modal -->
+  <div class="modal fade" id="profileModal" tabindex="-1" aria-labelledby="profileModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content border-0 shadow-lg rounded-4">
+        <div class="modal-header border-bottom pb-3">
+          <h5 class="modal-title fw-bold text-dark" id="profileModalLabel">
+            <i class="bi bi-person-badge text-primary me-2"></i> User Profile
+          </h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body p-4">
+          <div class="d-flex align-items-center gap-3 mb-4">
+            <div style="width: 60px; height: 60px; border-radius: 50%; background: linear-gradient(135deg, #8b5cf6, #4c0e8f); color: #fff; font-size: 1.5rem; font-weight: 700; display: flex; align-items: center; justify-content: center;">
+              HS
+            </div>
+            <div>
+              <h5 class="fw-bold mb-0 text-dark">Hardik Sonawane</h5>
+              <div class="text-muted small">hardik@gestureconnect.internal</div>
+              <div class="badge bg-primary-subtle text-primary border border-primary-subtle mt-1">Lead Researcher & Developer</div>
+            </div>
+          </div>
+
+          <div class="row g-2 mb-4 text-center">
+            <div class="col-4">
+              <div class="p-2 rounded bg-light border">
+                <div class="fw-bold text-dark fs-5">124</div>
+                <div class="text-muted" style="font-size: 0.72rem;">Total Translations</div>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="p-2 rounded bg-light border">
+                <div class="fw-bold text-primary fs-5">72</div>
+                <div class="text-muted" style="font-size: 0.72rem;">Speech Sessions</div>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="p-2 rounded bg-light border">
+                <div class="fw-bold text-success fs-5">52</div>
+                <div class="text-muted" style="font-size: 0.72rem;">Text Sessions</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="small">
+            <div class="d-flex justify-content-between py-2 border-bottom">
+              <span class="text-muted">Primary Language</span>
+              <span class="fw-semibold text-dark">Bilingual (Marathi + English)</span>
+            </div>
+            <div class="d-flex justify-content-between py-2 border-bottom">
+              <span class="text-muted">Target Modality</span>
+              <span class="fw-semibold text-dark">Indian Sign Language (ISL/MSL)</span>
+            </div>
+            <div class="d-flex justify-content-between py-2">
+              <span class="text-muted">Avatar Model</span>
+              <span class="fw-semibold text-dark">Blender 3D Humanoid Asset Layer</span>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer border-top">
+          <a href="{% url 'translator:history' %}" class="btn btn-outline-secondary btn-sm">View History</a>
+          <button type="button" class="btn btn-gc-primary btn-sm" data-bs-dismiss="modal">Done</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Help & Support Modal -->
+  <div class="modal fade" id="helpModal" tabindex="-1" aria-labelledby="helpModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content border-0 shadow-lg rounded-4">
+        <div class="modal-header border-bottom pb-3">
+          <h5 class="modal-title fw-bold text-dark" id="helpModalLabel">
+            <i class="bi bi-question-circle text-primary me-2"></i> How to Use GestureConnect
+          </h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body p-4">
+          <div class="row g-4">
+            <div class="col-md-6">
+              <div class="p-3 rounded-3 bg-light border h-100">
+                <h6 class="fw-bold text-primary mb-2"><i class="bi bi-keyboard me-2"></i> Text Input</h6>
+                <p class="small text-muted mb-0">
+                  Type any sentence in Marathi (Devanagari script) or English. The NLP engine normalizes tokens, resolves lexical synonyms, and maps to canonical sign IDs. Press <kbd>Ctrl+Enter</kbd> to translate instantly.
+                </p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="p-3 rounded-3 bg-light border h-100">
+                <h6 class="fw-bold text-info mb-2"><i class="bi bi-mic me-2"></i> Microphone Speech Input</h6>
+                <p class="small text-muted mb-0">
+                  Click the microphone icon and speak clearly into your mic. The Web Speech API recognizes speech in real-time, displays the transcript, and automatically launches the translation pipeline.
+                </p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="p-3 rounded-3 bg-light border h-100">
+                <h6 class="fw-bold text-success mb-2"><i class="bi bi-camera-video me-2"></i> 3D Avatar Sign Playback</h6>
+                <p class="small text-muted mb-0">
+                  Each translated word triggers a smooth 3D sign animation clip rendered from Blender. Use the player controls to pause, replay, change speed, or step forward/back through the sentence signs.
+                </p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="p-3 rounded-3 bg-light border h-100">
+                <h6 class="fw-bold text-warning mb-2"><i class="bi bi-spellcheck me-2"></i> Fingerspelling Fallback</h6>
+                <p class="small text-muted mb-0">
+                  Words outside the predefined vocabulary are never discarded. They are decomposed into character letters and fingerspelled so the signer can understand any proper noun or new term.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer border-top">
+          <button type="button" class="btn btn-gc-primary" data-bs-dismiss="modal">Got it, Let's Translate!</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Notification Toast Container -->
+  <div id="toast-container" class="position-fixed top-0 end-0 p-3" style="z-index: 9999;"></div>
+
+  <!-- Bootstrap 5 JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Global App JS -->
+  <script src="/static/js/main.js"></script>
+  {% block extra_js %}{% endblock %}
+</body>
+</html>

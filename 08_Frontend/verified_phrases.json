@@ -1,0 +1,125 @@
+[
+  {
+    "en": "Hello how are you",
+    "mr": "नमस्कार तू कसा आहेस",
+    "cov_eng": 100.0,
+    "cov_mar": 100.0,
+    "unsupported_eng": [],
+    "unsupported_mar": []
+  },
+  {
+    "en": "Good morning mother",
+    "mr": "शुभ सकाळ आई",
+    "cov_eng": 11.11111111111111,
+    "cov_mar": 100.0,
+    "unsupported_eng": [
+      "शुभ",
+      "प्रभात"
+    ],
+    "unsupported_mar": []
+  },
+  {
+    "en": "Good afternoon father",
+    "mr": "शुभ दुपार वडील",
+    "cov_eng": 100.0,
+    "cov_mar": 100.0,
+    "unsupported_eng": [],
+    "unsupported_mar": []
+  },
+  {
+    "en": "Good evening friend",
+    "mr": "शुभ संध्याकाळ मित्र",
+    "cov_eng": 100.0,
+    "cov_mar": 100.0,
+    "unsupported_eng": [],
+    "unsupported_mar": []
+  },
+  {
+    "en": "Good night",
+    "mr": "शुभ रात्री",
+    "cov_eng": 100.0,
+    "cov_mar": 100.0,
+    "unsupported_eng": [],
+    "unsupported_mar": []
+  },
+  {
+    "en": "Thank you",
+    "mr": "धन्यवाद",
+    "cov_eng": 100.0,
+    "cov_mar": 100.0,
+    "unsupported_eng": [],
+    "unsupported_mar": []
+  },
+  {
+    "en": "Today is sunday",
+    "mr": "आज रविवार आहे",
+    "cov_eng": 50.0,
+    "cov_mar": 40.0,
+    "unsupported_eng": [
+      "is"
+    ],
+    "unsupported_mar": [
+      "आहे"
+    ]
+  },
+  {
+    "en": "Tomorrow is monday",
+    "mr": "उद्या सोमवार आहे",
+    "cov_eng": 50.0,
+    "cov_mar": 40.0,
+    "unsupported_eng": [
+      "is"
+    ],
+    "unsupported_mar": [
+      "आहे"
+    ]
+  },
+  {
+    "en": "Winter is cold",
+    "mr": "हिवाळा थंड आहे",
+    "cov_eng": 50.0,
+    "cov_mar": 40.0,
+    "unsupported_eng": [
+      "is"
+    ],
+    "unsupported_mar": [
+      "आहे"
+    ]
+  },
+  {
+    "en": "Summer is hot",
+    "mr": "उन्हाळा गरम आहे",
+    "cov_eng": 50.0,
+    "cov_mar": 40.0,
+    "unsupported_eng": [
+      "is"
+    ],
+    "unsupported_mar": [
+      "आहे"
+    ]
+  },
+  {
+    "en": "Monsoon is wet",
+    "mr": "पावसाळा ओले आहे",
+    "cov_eng": 50.0,
+    "cov_mar": 40.0,
+    "unsupported_eng": [
+      "is"
+    ],
+    "unsupported_mar": [
+      "आहे"
+    ]
+  },
+  {
+    "en": "Spring is beautiful",
+    "mr": "वसंत ऋतू सुंदर आहे",
+    "cov_eng": 50.0,
+    "cov_mar": 40.0,
+    "unsupported_eng": [
+      "is"
+    ],
+    "unsupported_mar": [
+      "आहे"
+    ]
+  }
+]

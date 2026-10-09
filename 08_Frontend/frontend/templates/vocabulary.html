@@ -1,0 +1,333 @@
+{% extends 'base.html' %}
+
+{% block title %}Sign Vocabulary Database - GestureConnect{% endblock %}
+
+{% block page_title %}Canonical Sign Vocabulary{% endblock %}
+{% block breadcrumb %}Explore mapped Marathi terms, English glosses, and associated 3D animation assets{% endblock %}
+
+{% block content %}
+<div class="container-fluid px-0">
+
+  <!-- Header -->
+  <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-center mb-4 pb-2 border-bottom">
+    <div>
+      <h2 class="gc-page-title mb-1">Sign Vocabulary Database</h2>
+      <p class="gc-page-subtitle">Inspect canonical sign identifiers, Marathi lexical terms, English glosses, and 3D Blender keyframe clips.</p>
+    </div>
+    <div class="mt-2 mt-md-0 d-flex gap-2">
+      <span class="badge bg-primary-subtle text-primary border border-primary-subtle fs-6 px-3 py-2 rounded-pill">
+        Total: {{ total_count }} Canonical Signs
+      </span>
+      <a href="{% url 'translator:translate' %}" class="btn btn-sm btn-gc-primary">
+        <i class="bi bi-translate me-1"></i> Open Studio
+      </a>
+    </div>
+  </div>
+
+  <!-- Search & Filter Controls -->
+  <div class="gc-card p-3 mb-4">
+    <form method="GET" action="{% url 'translator:vocabulary' %}" class="row g-2 align-items-center">
+      <div class="col-lg-5 col-md-12">
+        <div class="input-group">
+          <span class="input-group-text bg-light border-end-0"><i class="bi bi-search text-muted"></i></span>
+          <input 
+            type="text" 
+            name="q" 
+            class="form-control border-start-0" 
+            placeholder="Search by Marathi term, English gloss, or Sign ID..."
+            value="{{ query|default:'' }}"
+          >
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-sm-6">
+        <select name="category" class="form-select" onchange="this.form.submit()">
+          <option value="all">All Categories</option>
+          {% for code, label in categories %}
+            <option value="{{ code }}" {% if selected_category == code %}selected{% endif %}>{{ label }}</option>
+          {% endfor %}
+        </select>
+      </div>
+
+      <div class="col-lg-2 col-sm-6">
+        <select name="sign_type" class="form-select" onchange="this.form.submit()">
+          <option value="all">All Sign Types</option>
+          <option value="lexical" {% if selected_sign_type == 'lexical' %}selected{% endif %}>Lexical Sign</option>
+          <option value="phrase" {% if selected_sign_type == 'phrase' %}selected{% endif %}>Phrase Sign</option>
+          <option value="number" {% if selected_sign_type == 'number' %}selected{% endif %}>Numeric Sign</option>
+          <option value="fingerspell" {% if selected_sign_type == 'fingerspell' %}selected{% endif %}>Fingerspelling</option>
+        </select>
+      </div>
+
+      <div class="col-lg-2 col-12 d-flex gap-2">
+        <button type="submit" class="btn btn-gc-primary w-100">
+          <i class="bi bi-funnel me-1"></i> Filter
+        </button>
+        {% if query or selected_category or selected_sign_type %}
+          <a href="{% url 'translator:vocabulary' %}" class="btn btn-outline-secondary" title="Reset filters">
+            <i class="bi bi-x-lg"></i>
+          </a>
+        {% endif %}
+      </div>
+    </form>
+  </div>
+
+  <!-- Vocabulary Table -->
+  <div class="gc-card overflow-hidden shadow-sm">
+    <div class="table-responsive">
+      <table class="table table-hover align-middle mb-0">
+        <thead class="table-light">
+          <tr>
+            <th scope="col" style="width: 14%;">Canonical Sign ID</th>
+            <th scope="col" style="width: 14%;">Marathi Term</th>
+            <th scope="col" style="width: 13%;">English Gloss</th>
+            <th scope="col" style="width: 10%;">Category</th>
+            <th scope="col" style="width: 10%;">Dataset Status</th>
+            <th scope="col" style="width: 11%;">Sign Type</th>
+            <th scope="col" style="width: 16%;">Base Sign</th>
+            <th scope="col" class="text-end" style="width: 12%;">Animation</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for sign in vocabulary %}
+            <tr>
+              <td>
+                <span class="badge bg-light text-dark border font-monospace fw-bold">
+                  {{ sign.sign_id }}
+                </span>
+              </td>
+              <td>
+                <span class="fs-6 fw-bold text-dark">{{ sign.marathi_term }}</span>
+                {% if sign.synonyms %}
+                  <div class="small text-muted" style="font-size: 0.76rem;">
+                    Synonyms: {{ sign.synonyms|slice:":2"|join:", " }}
+                  </div>
+                {% endif %}
+              </td>
+              <td>
+                <span class="fw-semibold text-secondary">{{ sign.english_gloss }}</span>
+              </td>
+              <td>
+                <span class="badge bg-secondary-subtle text-secondary text-capitalize border">
+                  {{ sign.get_category_display }}
+                </span>
+              </td>
+              <td>
+                {% if sign.metadata.dataset_status == 'Available' %}
+                  <span class="badge bg-success-subtle text-success border border-success-subtle"><i class="bi bi-check-circle me-1"></i> Available</span>
+                {% elif sign.metadata.dataset_status == 'Missing' %}
+                  <span class="badge bg-danger-subtle text-danger border border-danger-subtle"><i class="bi bi-x-circle me-1"></i> Missing</span>
+                {% else %}
+                  <span class="badge bg-warning-subtle text-warning border border-warning-subtle"><i class="bi bi-exclamation-circle me-1"></i> Needs Review</span>
+                {% endif %}
+              </td>
+              <td>
+                <span class="small text-muted text-capitalize">{{ sign.get_sign_type_display }}</span>
+              </td>
+              <td>
+                {% if sign.base_sign_video %}
+                  <button 
+                    type="button"
+                    class="btn btn-sm btn-outline-primary btn-play-base-sign d-flex align-items-center gap-1"
+                    data-sign-id="{{ sign.sign_id }}"
+                    data-marathi="{{ sign.marathi_term }}"
+                    data-english="{{ sign.english_gloss }}"
+                    data-video-url="{{ sign.base_sign_video }}"
+                  >
+                    <i class="bi bi-play-circle-fill"></i> Play Base Sign
+                  </button>
+                {% else %}
+                  <span class="badge bg-secondary-subtle text-secondary border border-secondary-subtle">
+                    <i class="bi bi-camera-video-off me-1"></i> Video unavailable
+                  </span>
+                {% endif %}
+              </td>
+              <td class="text-end">
+                <button 
+                  type="button"
+                  class="btn btn-sm btn-gc-outline btn-preview-sign"
+                  data-sign-id="{{ sign.sign_id }}"
+                  data-marathi="{{ sign.marathi_term }}"
+                  data-english="{{ sign.english_gloss }}"
+                  data-category="{{ sign.get_category_display }}"
+                  data-asset="/media/{{ sign.animation_asset }}"
+                  data-metadata='{{ sign.metadata|default:"{}"|safe }}'
+                >
+                  <i class="bi bi-play-circle me-1"></i> Preview
+                </button>
+              </td>
+            </tr>
+          {% empty %}
+            <tr>
+              <td colspan="8" class="text-center py-5 text-muted">
+                <i class="bi bi-journal-x fs-1 d-block mb-2 text-secondary opacity-50"></i>
+                No sign vocabulary entries found matching your search.
+              </td>
+            </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+</div>
+
+<!-- Modal: Base Sign Video Player -->
+<div class="modal fade" id="baseSignModal" tabindex="-1" aria-labelledby="baseSignModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content border-0 shadow-lg rounded-4 overflow-hidden">
+      <div class="modal-header border-bottom pb-3 bg-dark text-white">
+        <h5 class="modal-title d-flex align-items-center gap-2" id="baseSignModalLabel">
+          <i class="bi bi-camera-video-fill text-primary"></i>
+          <span id="base-modal-title">Base Sign Video</span>
+        </h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body p-0 bg-black">
+        <div class="gc-player-wrapper w-100 d-flex justify-content-center align-items-center" style="min-height: 400px;">
+          <video id="base-modal-video" class="w-100 h-100" controls playsinline preload="none" style="max-height: 70vh; object-fit: contain;"></video>
+        </div>
+      </div>
+      <div class="modal-footer bg-light justify-content-between">
+        <div>
+          <span id="base-modal-marathi" class="fw-bold fs-5 text-dark me-2"></span>
+          <span id="base-modal-english" class="text-secondary fw-medium border-start ps-2"></span>
+        </div>
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal: Sign Animation & Metadata Preview (Phase 2) -->
+<div class="modal fade" id="previewSignModal" tabindex="-1" aria-labelledby="previewSignModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content border-0 shadow-lg rounded-4 overflow-hidden">
+      <div class="modal-header border-bottom pb-3" style="background: var(--gc-sidebar-bg); color: #fff;">
+        <h5 class="modal-title d-flex align-items-center gap-2" id="previewSignModalLabel">
+          <i class="bi bi-camera-video text-info"></i>
+          <span id="modal-sign-title">Sign Preview</span>
+        </h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body p-4">
+        <div class="row g-4 align-items-center">
+          <div class="col-md-7">
+            <div class="gc-player-wrapper" style="min-height: 280px; background: #0d0720;">
+              <video id="modal-preview-video" class="gc-video-element" controls playsinline loop style="width: 100%; height: 280px; object-fit: contain;"></video>
+            </div>
+          </div>
+          <div class="col-md-5">
+            <h5 id="modal-marathi-term" class="fw-bold mb-1 text-primary"></h5>
+            <div id="modal-english-gloss" class="text-secondary fw-semibold mb-3"></div>
+            
+            <div class="list-group list-group-flush small mb-3">
+              <div class="list-group-item px-0 py-1 d-flex justify-content-between">
+                <span class="text-muted">Canonical ID:</span>
+                <span id="modal-sign-id" class="font-monospace fw-bold"></span>
+              </div>
+              <div class="list-group-item px-0 py-1 d-flex justify-content-between">
+                <span class="text-muted">Category:</span>
+                <span id="modal-category" class="fw-semibold"></span>
+              </div>
+              <div class="list-group-item px-0 py-1 d-flex justify-content-between">
+                <span class="text-muted">Hand Shape:</span>
+                <span id="modal-hand-shape" class="text-secondary"></span>
+              </div>
+              <div class="list-group-item px-0 py-1 d-flex justify-content-between">
+                <span class="text-muted">Motion Pattern:</span>
+                <span id="modal-motion" class="text-secondary"></span>
+              </div>
+            </div>
+
+            <div class="p-3 bg-light rounded-3 small text-muted border">
+              <div class="fw-semibold text-dark mb-1">Sign Description:</div>
+              <div id="modal-description" class="fst-italic"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
+
+{% block extra_js %}
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const modalEl = document.getElementById('previewSignModal');
+  const previewModal = new bootstrap.Modal(modalEl);
+  const video = document.getElementById('modal-preview-video');
+
+  document.querySelectorAll('.btn-preview-sign').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const signId = btn.dataset.signId;
+      const marathi = btn.dataset.marathi;
+      const english = btn.dataset.english;
+      const category = btn.dataset.category;
+      const assetUrl = btn.dataset.asset;
+      
+      let metadata = {};
+      try {
+        metadata = JSON.parse(btn.dataset.metadata || '{}');
+      } catch(e) {}
+
+      document.getElementById('modal-sign-title').textContent = `${signId} (${marathi})`;
+      document.getElementById('modal-marathi-term').textContent = marathi;
+      document.getElementById('modal-english-gloss').textContent = `English: ${english}`;
+      document.getElementById('modal-sign-id').textContent = signId;
+      document.getElementById('modal-category').textContent = category;
+      document.getElementById('modal-hand-shape').textContent = metadata.hand_shape || 'Standard';
+      document.getElementById('modal-motion').textContent = metadata.motion || 'Standard';
+      document.getElementById('modal-description').textContent = metadata.description || '3D Blender-rendered avatar gesture sequence.';
+
+      video.src = assetUrl;
+      video.load();
+      previewModal.show();
+      video.play().catch(() => {});
+    });
+  });
+
+  // Base Sign Modal Logic
+  const baseModalEl = document.getElementById('baseSignModal');
+  const baseModal = new bootstrap.Modal(baseModalEl);
+  const baseVideo = document.getElementById('base-modal-video');
+  let triggerButton = null;
+
+  document.querySelectorAll('.btn-play-base-sign').forEach(btn => {
+    btn.addEventListener('click', () => {
+      triggerButton = btn; // Save reference to return focus later
+      const signId = btn.dataset.signId;
+      const marathi = btn.dataset.marathi;
+      const english = btn.dataset.english;
+      const videoUrl = btn.dataset.videoUrl;
+
+      document.getElementById('base-modal-title').textContent = `${signId} - Base Sign`;
+      document.getElementById('base-modal-marathi').textContent = marathi;
+      document.getElementById('base-modal-english').textContent = english;
+
+      baseVideo.src = videoUrl;
+      baseVideo.load();
+      baseModal.show();
+      baseVideo.play().catch(e => console.warn("Auto-play blocked:", e));
+    });
+  });
+
+  // Clean up and pause when modal closes
+  baseModalEl.addEventListener('hidden.bs.modal', () => {
+    baseVideo.pause();
+    baseVideo.src = "";
+    if (triggerButton) {
+      triggerButton.focus();
+    }
+  });
+
+  // Also clean up phase 2 modal
+  modalEl.addEventListener('hidden.bs.modal', () => {
+    video.pause();
+    video.src = "";
+  });
+});
+
+</script>
+{% endblock %}

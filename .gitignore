@@ -1,0 +1,39 @@
+# Virtual Environments
+venv_mp/
+venv_mp310/
+.venv/
+venv/
+env/
+
+# Python/Django
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+*.sqlite3
+*.log
+08_Frontend/.env
+.env
+check_codec.py
+inspect_video.py
+signid_shower.png
+
+# Large Datasets and AI Models (Excluded)
+02_INCLUDE_Dataset_Optimized/
+02_INCLUDE_Dataset_Web/
+GestureConnect_Colab_Training_Data.zip
+Colab_Training_Package/
+python.zip
+py310/
+
+# Generated checkpoints/outputs
+03_MediaPipe_Landmarks/
+05_AI_Model/Checkpoints/
+05_AI_Model/Logs/
+06_3D_Avatar/Exported/
+*.mov
+*.mp4
+
+# Nested Git
+08_Frontend/.git/

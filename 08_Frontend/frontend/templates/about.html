@@ -1,0 +1,220 @@
+{% extends 'base.html' %}
+
+{% block title %}How It Works & About - GestureConnect Architecture{% endblock %}
+
+{% block page_title %}Architecture & How It Works{% endblock %}
+{% block breadcrumb %}Visual 8-step engineering pipeline &amp; bilingual Indian Sign Language methodology{% endblock %}
+
+{% block content %}
+<div class="container-fluid px-0">
+
+  <!-- Header Banner -->
+  <div class="gc-card p-4 p-lg-5 mb-4 border-0 position-relative overflow-hidden" style="background: linear-gradient(135deg, #1e0a3c 0%, #3b0764 45%, #581c87 85%, #6d28d9 100%); color: #fff;">
+    <div class="row align-items-center gy-4 position-relative" style="z-index: 2;">
+      <div class="col-lg-8">
+        <div class="d-inline-flex align-items-center gap-2 px-3 py-1 rounded-pill mb-3" style="background: rgba(255,255,255,0.12); border: 1px solid rgba(255,255,255,0.2); font-size: 0.8rem; color: #e9d5ff;">
+          <i class="bi bi-diagram-3-fill text-warning"></i>
+          <span>Engineering Architecture &amp; Methodology</span>
+        </div>
+        <h1 class="fw-bold mb-2 display-6" style="letter-spacing: -0.02em;">
+          How GestureConnect Works
+        </h1>
+        <p class="mb-4 text-light opacity-75" style="max-width: 650px; font-size: 1.05rem; line-height: 1.6;">
+          GestureConnect bridges the communication divide for hearing-impaired communities by translating English and Marathi text and speech into Indian Sign Language (ISL/MSL) using a decoupled 3D humanoid avatar.
+        </p>
+        <div class="d-flex flex-wrap gap-3">
+          <a href="{% url 'translator:translate' %}" class="btn btn-gc-primary btn-lg shadow">
+            <i class="bi bi-play-circle me-2"></i> Launch Studio
+          </a>
+          <a href="{% url 'translator:vocabulary' %}" class="btn btn-outline-light btn-lg">
+            <i class="bi bi-journal-text me-2"></i> Browse Sign Catalog
+          </a>
+        </div>
+      </div>
+      <div class="col-lg-4 text-lg-end">
+        <div class="p-3 rounded-4 shadow-sm text-start" style="background: rgba(255,255,255,0.08); backdrop-filter: blur(12px); border: 1px solid rgba(255,255,255,0.15);">
+          <div class="text-white fw-bold mb-1"><i class="bi bi-shield-check text-info me-2"></i>Key Principle</div>
+          <div class="small text-light opacity-75 mb-2">Decoupled Architecture: NLP Layer is completely isolated from 3D Asset Resolution via Canonical Sign IDs.</div>
+          <span class="badge bg-primary text-white">Academic Final Year Capstone</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 8-Step Visual Engineering Flow (Section 30) -->
+  <div class="gc-card p-4 mb-4 shadow-sm">
+    <div class="text-center mb-4">
+      <span class="badge bg-primary-subtle text-primary border border-primary-subtle px-3 py-1 rounded-pill mb-2">8-Stage Technical Flow</span>
+      <h3 class="fw-bold text-dark">End-to-End System Pipeline</h3>
+      <p class="text-muted small" style="max-width: 600px; margin: auto;">
+        From natural language acquisition to 3D avatar keyframe execution in under 45 milliseconds.
+      </p>
+    </div>
+
+    <div class="row g-3">
+      <!-- Step 1 -->
+      <div class="col-xl-3 col-md-6">
+        <div class="p-3 rounded-3 bg-light border h-100 position-relative">
+          <div class="d-flex align-items-center justify-content-between mb-2">
+            <span class="badge bg-primary rounded-circle p-2">01</span>
+            <i class="bi bi-input-cursor-text text-primary fs-5"></i>
+          </div>
+          <h6 class="fw-bold text-dark mb-1">1. User Input</h6>
+          <p class="small text-muted mb-0">Accepts spoken voice via microphone or typed text in either English or Marathi Devanagari script.</p>
+        </div>
+      </div>
+
+      <!-- Step 2 -->
+      <div class="col-xl-3 col-md-6">
+        <div class="p-3 rounded-3 bg-light border h-100 position-relative">
+          <div class="d-flex align-items-center justify-content-between mb-2">
+            <span class="badge bg-primary rounded-circle p-2">02</span>
+            <i class="bi bi-mic text-info fs-5"></i>
+          </div>
+          <h6 class="fw-bold text-dark mb-1">2. Speech Recognition</h6>
+          <p class="small text-muted mb-0">Web Speech API converts acoustic audio streams into normalized UTF-8 text representation with real-time transcription.</p>
+        </div>
+      </div>
+
+      <!-- Step 3 -->
+      <div class="col-xl-3 col-md-6">
+        <div class="p-3 rounded-3 bg-light border h-100 position-relative">
+          <div class="d-flex align-items-center justify-content-between mb-2">
+            <span class="badge bg-primary rounded-circle p-2">03</span>
+            <i class="bi bi-globe2 text-success fs-5"></i>
+          </div>
+          <h6 class="fw-bold text-dark mb-1">3. Language Detection</h6>
+          <p class="small text-muted mb-0">Script-level Unicode inspection differentiates Devanagari vs Latin characters to route pipeline logic appropriately.</p>
+        </div>
+      </div>
+
+      <!-- Step 4 -->
+      <div class="col-xl-3 col-md-6">
+        <div class="p-3 rounded-3 bg-light border h-100 position-relative">
+          <div class="d-flex align-items-center justify-content-between mb-2">
+            <span class="badge bg-primary rounded-circle p-2">04</span>
+            <i class="bi bi-cpu text-warning fs-5"></i>
+          </div>
+          <h6 class="fw-bold text-dark mb-1">4. NLP Preprocessing</h6>
+          <p class="small text-muted mb-0">Performs Unicode NFC normalization, punctuation filtering, stopword handling, and morphological tokenization.</p>
+        </div>
+      </div>
+
+      <!-- Step 5 -->
+      <div class="col-xl-3 col-md-6">
+        <div class="p-3 rounded-3 bg-light border h-100 position-relative">
+          <div class="d-flex align-items-center justify-content-between mb-2">
+            <span class="badge bg-primary rounded-circle p-2">05</span>
+            <i class="bi bi-arrow-left-right text-primary fs-5"></i>
+          </div>
+          <h6 class="fw-bold text-dark mb-1">5. 5-Tier Sign Mapping</h6>
+          <p class="small text-muted mb-0">Hierarchical resolution: Phrases &rarr; Exact words &rarr; Normalized stems &rarr; Synonyms &rarr; Fingerspelling fallback.</p>
+        </div>
+      </div>
+
+      <!-- Step 6 -->
+      <div class="col-xl-3 col-md-6">
+        <div class="p-3 rounded-3 bg-light border h-100 position-relative">
+          <div class="d-flex align-items-center justify-content-between mb-2">
+            <span class="badge bg-primary rounded-circle p-2">06</span>
+            <i class="bi bi-fingerprint text-info fs-5"></i>
+          </div>
+          <h6 class="fw-bold text-dark mb-1">6. Canonical Sign IDs</h6>
+          <p class="small text-muted mb-0">Standardized tokens (e.g. <code>SIGN_MOTHER</code>, <code>SIGN_WATER</code>) bridge language logic to visual animation assets.</p>
+        </div>
+      </div>
+
+      <!-- Step 7 -->
+      <div class="col-xl-3 col-md-6">
+        <div class="p-3 rounded-3 bg-light border h-100 position-relative">
+          <div class="d-flex align-items-center justify-content-between mb-2">
+            <span class="badge bg-primary rounded-circle p-2">07</span>
+            <i class="bi bi-person-arms-up text-success fs-5"></i>
+          </div>
+          <h6 class="fw-bold text-dark mb-1">7. 3D Avatar Rendering</h6>
+          <p class="small text-muted mb-0">Blender humanoid avatar (slaygurl.glb asset layer) keyframes arm, hand, finger, and facial posture smoothly.</p>
+        </div>
+      </div>
+
+      <!-- Step 8 -->
+      <div class="col-xl-3 col-md-6">
+        <div class="p-3 rounded-3 bg-light border h-100 position-relative">
+          <div class="d-flex align-items-center justify-content-between mb-2">
+            <span class="badge bg-primary rounded-circle p-2">08</span>
+            <i class="bi bi-check2-circle text-primary fs-5"></i>
+          </div>
+          <h6 class="fw-bold text-dark mb-1">8. ISL Sequence Output</h6>
+          <p class="small text-muted mb-0">Sentence-level seamless playback delivers natural Indian Sign Language communication to the user in real time.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Detailed Architecture Sections (Section 31) -->
+  <div class="row g-4 mb-4">
+    <div class="col-lg-7">
+      <div class="gc-card p-4 h-100 shadow-sm">
+        <h5 class="fw-bold text-dark mb-3">
+          <i class="bi bi-lightbulb-fill text-warning me-2"></i> Our Vision &amp; Problem Statement
+        </h5>
+        <p class="text-secondary small line-height-lg mb-3">
+          Over 63 million individuals in India experience significant auditory impairment. In regional settings across Maharashtra, access to certified bilingual Marathi &amp; English sign language interpreters is critically limited in public transit, hospitals, educational institutions, and civic services.
+        </p>
+        <p class="text-secondary small line-height-lg mb-4">
+          <strong>GestureConnect</strong> addresses this challenge with an accessible web-based translation platform. Rather than requiring bulky sensor gloves or proprietary hardware, any user with a smartphone or laptop can speak or type in English or Marathi and receive immediate, grammatically aligned Indian Sign Language output via an expressive 3D humanoid avatar.
+        </p>
+
+        <h6 class="fw-bold text-dark mb-2">Key Engineering Innovations</h6>
+        <ul class="small text-secondary ps-3 mb-0 d-flex flex-column gap-2">
+          <li><strong>Bilingual Convergence:</strong> Both English and Marathi inputs converge into unified canonical linguistic representations.</li>
+          <li><strong>Zero-Loss Fingerspelling Fallback:</strong> Out-of-vocabulary words are never dropped; they decompose into character-level sign animations.</li>
+          <li><strong>Offline Authoring, Instant Web Execution:</strong> 3D keyframe animations authored in Blender run seamlessly via web-native video playback without heavy GPU requirements.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="col-lg-5">
+      <div class="gc-card p-4 h-100 shadow-sm">
+        <h5 class="fw-bold text-dark mb-3">
+          <i class="bi bi-stack text-primary me-2"></i> Technology Stack
+        </h5>
+        
+        <div class="d-flex flex-column gap-2 small">
+          <div class="p-2 rounded bg-light border d-flex justify-content-between align-items-center">
+            <span class="fw-semibold text-dark">Backend Framework</span>
+            <span class="badge bg-primary-subtle text-primary border">Python 3.12 / Django 5.1</span>
+          </div>
+          <div class="p-2 rounded bg-light border d-flex justify-content-between align-items-center">
+            <span class="fw-semibold text-dark">REST API Layer</span>
+            <span class="badge bg-info-subtle text-info-emphasis border">Django REST Framework</span>
+          </div>
+          <div class="p-2 rounded bg-light border d-flex justify-content-between align-items-center">
+            <span class="fw-semibold text-dark">Speech Recognition</span>
+            <span class="badge bg-warning-subtle text-warning-emphasis border">Web Speech API (mr-IN / en-IN)</span>
+          </div>
+          <div class="p-2 rounded bg-light border d-flex justify-content-between align-items-center">
+            <span class="fw-semibold text-dark">3D Asset Layer</span>
+            <span class="badge bg-success-subtle text-success border">Blender Humanoid (slaygurl.glb)</span>
+          </div>
+          <div class="p-2 rounded bg-light border d-flex justify-content-between align-items-center">
+            <span class="fw-semibold text-dark">Database</span>
+            <span class="badge bg-secondary-subtle text-dark border">SQLite / MySQL-Ready</span>
+          </div>
+          <div class="p-2 rounded bg-light border d-flex justify-content-between align-items-center">
+            <span class="fw-semibold text-dark">Frontend UI System</span>
+            <span class="badge bg-light text-dark border">CSS3 Custom Tokens + Bootstrap 5</span>
+          </div>
+        </div>
+
+        <div class="mt-4 pt-3 border-top text-center">
+          <div class="small text-muted mb-2">Questions about the architecture?</div>
+          <a href="#" class="btn btn-sm btn-gc-outline" data-bs-toggle="modal" data-bs-target="#helpModal">
+            <i class="bi bi-question-circle me-1"></i> View Help &amp; FAQ
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+{% endblock %}

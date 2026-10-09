@@ -1,0 +1,110 @@
+{
+  "generated_at": "2026-10-08T14:55:42.453655",
+  "script_version": "2.0",
+  "mode": "dry_run",
+  "opencv_available": false,
+  "paths": {
+    "original_root": "F:\\Final_Year_Project\\01_INCLUDE_Dataset_Original",
+    "optimized_root": "F:\\Final_Year_Project\\02_INCLUDE_Dataset_Optimized",
+    "logs_dir": "F:\\Final_Year_Project\\Scripts\\Logs"
+  },
+  "output_structure": "02_INCLUDE_Dataset_Optimized/<WORD>/<video>  (NO category layer)",
+  "stats": {
+    "categories": 15,
+    "total_words_in_source": 262,
+    "unique_words_in_output": 262,
+    "duplicate_words_excluded": 0,
+    "duplicate_word_names": [],
+    "total_videos_original": 4257,
+    "total_videos_valid": 4257,
+    "total_videos_selected": 1048,
+    "words_with_4_videos": 262,
+    "words_with_3_videos": 0,
+    "words_below_minimum": 0,
+    "words_below_minimum_list": [],
+    "estimated_size_mb": 13213.04
+  },
+  "copy_results": "dry_run_no_copy",
+  "selection_config": {
+    "min_videos_per_word": 3,
+    "target_videos_per_word": 4,
+    "method": "deterministic_uniform_spread"
+  },
+  "per_category_breakdown": {
+    "Adjectives": {
+      "words": 59,
+      "original_videos": 788,
+      "valid_videos": 788
+    },
+    "Animals": {
+      "words": 8,
+      "original_videos": 161,
+      "valid_videos": 161
+    },
+    "Clothes": {
+      "words": 10,
+      "original_videos": 198,
+      "valid_videos": 198
+    },
+    "Colours": {
+      "words": 11,
+      "original_videos": 222,
+      "valid_videos": 222
+    },
+    "Days_and_Time": {
+      "words": 21,
+      "original_videos": 298,
+      "valid_videos": 298
+    },
+    "Electronics": {
+      "words": 10,
+      "original_videos": 140,
+      "valid_videos": 140
+    },
+    "Greetings": {
+      "words": 9,
+      "original_videos": 190,
+      "valid_videos": 190
+    },
+    "Home": {
+      "words": 27,
+      "original_videos": 379,
+      "valid_videos": 379
+    },
+    "Jobs": {
+      "words": 16,
+      "original_videos": 225,
+      "valid_videos": 225
+    },
+    "Means_of_Transportation": {
+      "words": 9,
+      "original_videos": 186,
+      "valid_videos": 186
+    },
+    "People": {
+      "words": 26,
+      "original_videos": 513,
+      "valid_videos": 513
+    },
+    "Places": {
+      "words": 19,
+      "original_videos": 380,
+      "valid_videos": 380
+    },
+    "Pronouns": {
+      "words": 8,
+      "original_videos": 168,
+      "valid_videos": 168
+    },
+    "Seasons": {
+      "words": 6,
+      "original_videos": 85,
+      "valid_videos": 85
+    },
+    "Society": {
+      "words": 23,
+      "original_videos": 324,
+      "valid_videos": 324
+    }
+  }
+}

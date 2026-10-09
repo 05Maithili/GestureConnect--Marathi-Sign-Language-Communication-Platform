@@ -1,0 +1,415 @@
+{% extends 'base.html' %}
+
+{% block title %}Translate to Indian Sign Language - GestureConnect{% endblock %}
+
+{% block page_title %}
+  <span>Bilingual Translation Studio</span>
+  <span class="badge bg-primary-subtle text-primary border border-primary-subtle d-inline-flex align-items-center gap-1 px-2 py-1 rounded-pill" style="font-size: 0.72rem;">
+    <i class="bi bi-heart-fill text-danger"></i> Hearing Accessibility
+  </span>
+{% endblock %}
+{% block breadcrumb %}Empowering Communication &bull; Converting English &amp; Marathi into Indian Sign Language (ISL/MSL){% endblock %}
+
+{% block content %}
+<div class="container-fluid px-0">
+
+  <!-- Studio Header with Accessibility Mission -->
+  <div class="d-flex flex-column flex-lg-row justify-content-between align-items-lg-center mb-4 pb-3 border-bottom gap-3">
+    <div>
+      <div class="d-inline-flex align-items-center gap-2 px-3 py-1 rounded-pill mb-2 gc-mission-pill">
+        <i class="bi bi-universal-access text-primary"></i>
+        <span class="fw-semibold text-primary" style="font-size: 0.78rem;">AI Assistive Platform for Deaf &amp; Hard-of-Hearing Communities</span>
+        <span class="badge bg-success-subtle text-success border border-success-subtle px-2 py-0" style="font-size: 0.68rem;">Active</span>
+      </div>
+      <h2 class="gc-page-title mb-1 d-flex align-items-center gap-2 flex-wrap">
+        <span>Translate English &amp; Marathi to Indian Sign Language</span>
+      </h2>
+      <p class="gc-page-subtitle text-secondary" style="max-width: 720px;">
+        Bridging the communication divide by converting spoken voice and typed sentences into natural, expressive 3D Indian Sign Language animations.
+      </p>
+    </div>
+    <div class="d-flex flex-wrap gap-2 align-items-center flex-shrink-0">
+      <span class="badge bg-primary-subtle text-primary border border-primary-subtle px-3 py-2 rounded-pill">
+        <i class="bi bi-cpu-fill me-1"></i> Canonical Sign Engine Active
+      </span>
+      <span class="badge bg-success-subtle text-success border border-success-subtle px-3 py-2 rounded-pill">
+        <i class="bi bi-person-arms-up me-1"></i> 3D Blender Avatar Ready
+      </span>
+    </div>
+  </div>
+
+  <div class="row g-4">
+    <!-- =========================================================================
+         LEFT COLUMN: Dual Input Acquisition (Text & Speech)
+         ========================================================================= -->
+    <div class="col-lg-5">
+      <div class="gc-card mb-4 shadow-sm">
+        
+        <!-- Input Tabs Header (Section 13) -->
+        <div class="gc-card-header pb-0 border-bottom-0">
+          <ul class="nav nav-pills w-100 gc-tabs" id="inputTab" role="tablist">
+            <li class="nav-item flex-fill" role="presentation">
+              <button class="nav-link active w-100 py-2 d-flex align-items-center justify-content-center gap-2" id="text-tab" data-bs-toggle="pill" data-bs-target="#tab-text-mode" type="button" role="tab">
+                <i class="bi bi-keyboard"></i>
+                <span class="fw-semibold">Text Input</span>
+              </button>
+            </li>
+            <li class="nav-item flex-fill" role="presentation">
+              <button class="nav-link w-100 py-2 d-flex align-items-center justify-content-center gap-2" id="speech-tab" data-bs-toggle="pill" data-bs-target="#tab-speech-mode" type="button" role="tab">
+                <i class="bi bi-mic"></i>
+                <span class="fw-semibold">Speech Input</span>
+              </button>
+            </li>
+          </ul>
+        </div>
+
+        <div class="gc-card-body pt-3">
+          <!-- Language Selector -->
+          <div class="d-flex align-items-center justify-content-between mb-3 p-2 rounded-3 bg-light border">
+            <label for="input-language-select" class="small fw-semibold text-secondary mb-0">
+              <i class="bi bi-translate me-1 text-primary"></i> Input Language:
+            </label>
+            <select id="input-language-select" class="form-select form-select-sm" style="max-width: 170px;">
+              <option value="auto" selected>Auto Detect</option>
+              <option value="en">English</option>
+              <option value="mr">Marathi (मराठी)</option>
+            </select>
+          </div>
+
+          <!-- Tab Content -->
+          <div class="tab-content" id="inputTabContent">
+
+            <!-- MODE 1: Text Input Panel (Section 13) -->
+            <div class="tab-pane fade show active" id="tab-text-mode" role="tabpanel">
+              <div class="mb-2 position-relative">
+                <textarea 
+                  id="translation-text-input" 
+                  class="gc-form-control gc-textarea" 
+                  rows="4" 
+                  maxlength="500"
+                  placeholder="Type your sentence here in English or Marathi... (उदा. 'माझी आई घरी जात आहे' or 'My mother is going home')"
+                  style="font-size: 1.05rem;"
+                ></textarea>
+              </div>
+
+              <!-- Character Count & Helper -->
+              <div class="d-flex justify-content-between align-items-center small text-muted mb-3">
+                <span id="char-counter">0 / 500 characters</span>
+                <span class="fst-italic"><kbd class="bg-light text-muted border">Ctrl+Enter</kbd> to translate</span>
+              </div>
+
+              <!-- Action Buttons -->
+              <div class="d-flex gap-2">
+                <button id="btn-translate" class="btn btn-gc-primary flex-grow-1 py-2">
+                  <i class="bi bi-arrow-repeat me-1"></i> Translate to ISL
+                </button>
+                <button id="btn-clear-text" class="btn btn-outline-secondary px-3" title="Clear text">
+                  <i class="bi bi-x-circle me-1"></i> Clear
+                </button>
+              </div>
+            </div>
+
+            <!-- MODE 2: Speech Input Panel (Section 14) -->
+            <div class="tab-pane fade" id="tab-speech-mode" role="tabpanel">
+              <div class="p-4 rounded-3 text-center mb-3" style="background: var(--gc-bg-secondary); border: 1.5px dashed var(--gc-border);">
+                
+                <!-- Voice Language Mode Selector -->
+                <div class="d-flex flex-wrap justify-content-center align-items-center gap-2 mb-3">
+                  <span class="small fw-semibold text-secondary">Speak In:</span>
+                  <div class="btn-group btn-group-sm" role="group" id="speech-lang-pill-group">
+                    <input type="radio" class="btn-check" name="speechVoiceLang" id="voice-lang-en" value="en" autocomplete="off" checked>
+                    <label class="btn btn-outline-primary px-3 py-1 fw-semibold" for="voice-lang-en">
+                      <i class="bi bi-globe me-1"></i> English (en-IN)
+                    </label>
+
+                    <input type="radio" class="btn-check" name="speechVoiceLang" id="voice-lang-mr" value="mr" autocomplete="off">
+                    <label class="btn btn-outline-primary px-3 py-1 fw-semibold" for="voice-lang-mr">
+                      <i class="bi bi-translate me-1"></i> Marathi (मराठी)
+                    </label>
+                  </div>
+                </div>
+
+                <!-- Animated Mic Button -->
+                <div class="position-relative d-inline-block mb-3">
+                  <button id="btn-speech-mic" class="btn btn-primary rounded-circle shadow-lg d-flex align-items-center justify-content-center m-auto" style="width: 76px; height: 76px; font-size: 2rem; background: linear-gradient(135deg, #8b5cf6, #6d28d9); border: none; transition: transform 0.2s;" title="Click to speak">
+                    <i class="bi bi-mic"></i>
+                  </button>
+                  <div id="mic-pulse-ring" class="d-none position-absolute top-50 start-50 translate-middle rounded-circle border border-2 border-primary" style="width: 100px; height: 100px; pointer-events: none; animation: pulse 1.5s infinite;"></div>
+                </div>
+
+                <h6 id="speech-prompt-heading" class="fw-bold text-dark mb-1">Speak your sentence</h6>
+                <p id="speech-status-text" class="small text-muted mb-3" style="max-width: 360px; margin: auto;">
+                  Tap the microphone and speak in English (e.g. "I need water", "My mother is going home").
+                </p>
+
+                <!-- Audio Waveform Visualizer Bar Placeholder -->
+                <div id="waveform-visualizer" class="d-none justify-content-center align-items-center gap-1 mb-3" style="height: 28px;">
+                  <span class="bg-primary rounded" style="width: 4px; height: 12px; animation: wave 0.8s infinite 0.1s;"></span>
+                  <span class="bg-primary rounded" style="width: 4px; height: 22px; animation: wave 0.8s infinite 0.2s;"></span>
+                  <span class="bg-primary rounded" style="width: 4px; height: 28px; animation: wave 0.8s infinite 0.3s;"></span>
+                  <span class="bg-primary rounded" style="width: 4px; height: 18px; animation: wave 0.8s infinite 0.4s;"></span>
+                  <span class="bg-primary rounded" style="width: 4px; height: 10px; animation: wave 0.8s infinite 0.5s;"></span>
+                </div>
+
+                <!-- Speech Transcript Display -->
+                <div id="speech-transcript-box" class="p-3 bg-white rounded-3 border text-start small d-none">
+                  <div class="d-flex justify-content-between align-items-center text-muted mb-1" style="font-size: 0.72rem;">
+                    <span class="fw-bold text-uppercase">Recognized Speech:</span>
+                    <span id="speech-detected-lang" class="badge bg-primary-subtle text-primary">Marathi</span>
+                  </div>
+                  <div id="speech-transcript-text" class="fw-semibold text-dark fs-6"></div>
+                </div>
+              </div>
+
+              <!-- Action Buttons for Speech -->
+              <div class="d-flex gap-2">
+                <button id="btn-speech-translate" class="btn btn-gc-primary flex-grow-1 py-2">
+                  <i class="bi bi-arrow-repeat me-1"></i> Translate Speech to ISL
+                </button>
+                <button id="btn-speech-rerecord" class="btn btn-outline-secondary px-3" title="Re-record speech">
+                  <i class="bi bi-arrow-clockwise me-1"></i> Re-record
+                </button>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- ===================================================================
+               Translation Processing State Tracker (Section 18)
+               =================================================================== -->
+          <div id="processing-state-box" class="p-3 rounded-3 mt-3 border d-none" style="background: var(--gc-primary-subtle); border-color: var(--gc-border-light);">
+            <div class="d-flex align-items-center gap-2 mb-2">
+              <div class="spinner-border spinner-border-sm text-primary" role="status"></div>
+              <span class="fw-bold text-primary small">Processing your input...</span>
+            </div>
+            <div class="d-flex flex-column gap-1 small text-secondary font-monospace" style="font-size: 0.78rem;">
+              <div id="proc-step-1" class="text-success"><i class="bi bi-check-circle-fill me-1"></i> NLP analysis &amp; tokenization</div>
+              <div id="proc-step-2" class="text-success"><i class="bi bi-check-circle-fill me-1"></i> Canonical SIGN_ID resolution</div>
+              <div id="proc-step-3" class="text-success"><i class="bi bi-check-circle-fill me-1"></i> Local video retrieval</div>
+            </div>
+          </div>
+
+          <!-- English Mapping Trace Feedback -->
+          <div id="mapping-trace-box" class="alert alert-info py-2 px-3 mt-3 mb-0 small d-none">
+            <i class="bi bi-arrow-left-right me-1"></i>
+            <span id="mapping-trace-text"></span>
+          </div>
+
+          <!-- Quick Test Phrase Pills -->
+          <div class="mt-4 pt-3 border-top">
+            <div class="d-flex justify-content-between align-items-center mb-2">
+              <div class="small fw-semibold text-secondary">Try Verified ISL Quick Phrases:</div>
+              <span class="badge bg-success-subtle text-success border border-success-subtle" style="font-size: 0.65rem;">
+                <i class="bi bi-check-circle-fill me-1"></i> All {{ sample_phrases|length }} phrases are 100% video-supported
+              </span>
+            </div>
+            
+            <div class="row g-2">
+              <!-- Marathi Phrases Box -->
+              <div class="col-md-6">
+                <div class="bg-light border rounded p-2" style="max-height: 160px; overflow-y: auto;">
+                  <div class="small fw-bold text-primary mb-2 border-bottom pb-1">Marathi (मराठी)</div>
+                  <div class="d-flex flex-wrap gap-2">
+                    {% for p in sample_phrases %}
+                      <button 
+                        type="button"
+                        class="btn btn-sm btn-outline-secondary gc-sample-pill text-nowrap" 
+                        data-text="{{ p.mr }}" 
+                        data-lang="mr"
+                        title="Meaning: {{ p.en }} | Supported: 100%"
+                      >
+                        {{ p.mr }}
+                      </button>
+                    {% endfor %}
+                  </div>
+                </div>
+              </div>
+              
+              <!-- English Phrases Box -->
+              <div class="col-md-6">
+                <div class="bg-light border rounded p-2" style="max-height: 160px; overflow-y: auto;">
+                  <div class="small fw-bold text-info mb-2 border-bottom pb-1">English</div>
+                  <div class="d-flex flex-wrap gap-2">
+                    {% for p in sample_phrases %}
+                      <button 
+                        type="button"
+                        class="btn btn-sm btn-outline-secondary gc-sample-pill text-nowrap" 
+                        data-text="{{ p.en }}" 
+                        data-lang="en"
+                        title="Meaning: {{ p.mr }} | Supported: 100%"
+                      >
+                        {{ p.en }}
+                      </button>
+                    {% endfor %}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- =========================================================================
+         RIGHT COLUMN: 3D Avatar Panel & Sequential Sign Player
+         ========================================================================= -->
+    <div class="col-lg-7">
+      
+      <!-- Phase Selector -->
+      <div class="d-flex bg-light border rounded-3 p-1 mb-3" role="group">
+        <input type="radio" class="btn-check" name="phaseMode" id="mode-phase1" value="phase1" autocomplete="off" checked>
+        <label class="btn btn-outline-primary flex-fill border-0 fw-bold" for="mode-phase1">
+          <i class="bi bi-camera-video"></i> Phase 1: Base Model Sign Language
+        </label>
+        
+        <input type="radio" class="btn-check" name="phaseMode" id="mode-phase2" value="phase2" autocomplete="off">
+        <label class="btn btn-outline-secondary flex-fill border-0 fw-bold text-muted" for="mode-phase2">
+          <i class="bi bi-person-arms-up"></i> Phase 2: 3D Avatar Slaygurl
+        </label>
+      </div>
+
+      <div class="gc-card shadow-sm" id="player-card">
+        
+        <!-- Header -->
+        <div class="gc-card-header" id="player-header">
+          <span class="d-flex align-items-center">
+            <i class="bi bi-camera-video me-2 text-primary"></i> Local Video Player
+          </span>
+          <div class="d-flex align-items-center gap-2">
+            <span class="badge bg-success-subtle text-success border border-success-subtle small">Phase 1 Active</span>
+          </div>
+        </div>
+
+        <div class="gc-card-body p-3">
+          
+          <!-- Avatar Viewport / Video Player Container -->
+          <div class="gc-player-wrapper mb-3 position-relative" style="background: #0d0720; min-height: 400px;">
+            
+            <!-- Overlay Badges (Section 16, 20) -->
+            <div class="gc-player-overlay d-flex flex-row justify-content-between align-items-end w-100" style="position: absolute; top: auto; bottom: 14px; left: 0; padding: 0 14px; z-index: 10; pointer-events: none;">
+              <div id="current-sign-badge" class="gc-sign-indicator shadow text-truncate" style="max-width: 70%;">
+                Waiting for input...
+              </div>
+              <div id="sign-counter-badge" class="gc-counter-indicator shadow flex-shrink-0">
+                0 of 0
+              </div>
+            </div>
+
+            <!-- Video Player Element -->
+            <video 
+              id="sign-video-player" 
+              class="gc-video-element" 
+              playsinline
+              muted
+              preload="auto"
+              style="width: 100%; height: 400px; object-fit: contain;"
+            >
+              <p class="text-white text-center p-4">Your browser does not support HTML5 video.</p>
+            </video>
+
+            <!-- Initial Neutral / Empty State Overlay (Section 17) -->
+            <div id="avatar-empty-state" class="position-absolute top-50 start-50 translate-middle text-center" style="pointer-events: none;">
+              <div class="gc-avatar-placeholder-icon text-white opacity-25 mb-2">
+                <i class="bi bi-camera-video fs-1"></i>
+              </div>
+              <p class="text-light opacity-50 small mb-0" style="max-width: 250px;">
+                Your sign translation will appear here. Enter text or speak to begin.
+              </p>
+            </div>
+            
+            <!-- Phase 2 Placeholder Overlay -->
+            <div id="phase2-empty-state" class="position-absolute top-50 start-50 translate-middle text-center d-none" style="pointer-events: none;">
+              <div class="gc-avatar-placeholder-icon text-white opacity-50 mb-2">
+                <i class="bi bi-person-arms-up" style="font-size: 3rem;"></i>
+              </div>
+              <h5 class="text-white">3D Avatar Mode</h5>
+              <p class="text-warning small mb-0" style="max-width: 300px;">
+                Coming in Phase 2.<br>The Slaygurl 3D avatar renderer will use the same SIGN_ID sequence for animated sign-language output.
+              </p>
+            </div>
+          </div>
+
+          <!-- Avatar Playback Controls Bar (Section 16) -->
+          <div class="d-flex flex-wrap align-items-center justify-content-between p-2 rounded-3 mb-3 gap-2" style="background: var(--gc-bg); border: 1px solid var(--gc-border);">
+            <div class="d-flex align-items-center gap-1">
+              <button id="btn-player-prev" class="btn btn-sm btn-outline-secondary gc-control-btn" disabled title="Previous Sign">
+                <i class="bi bi-skip-backward-fill"></i>
+              </button>
+              <button id="btn-player-play" class="btn btn-sm btn-gc-primary gc-control-btn px-3" title="Play / Pause">
+                <i class="bi bi-play-fill me-1"></i> Play
+              </button>
+              <button id="btn-player-next" class="btn btn-sm btn-outline-secondary gc-control-btn" disabled title="Next Sign">
+                <i class="bi bi-skip-forward-fill"></i>
+              </button>
+              <button id="btn-player-replay" class="btn btn-sm btn-outline-secondary gc-control-btn" title="Replay Sequence">
+                <i class="bi bi-arrow-counterclockwise"></i>
+              </button>
+            </div>
+
+            <div class="d-flex align-items-center gap-2">
+              <label for="player-speed-select" class="small text-muted fw-semibold mb-0" style="font-size: 0.78rem;">Speed:</label>
+              <select id="player-speed-select" class="form-select form-select-sm" style="width: 85px;">
+                <option value="0.5">0.5x</option>
+                <option value="0.75">0.75x</option>
+                <option value="1.0" selected>1.0x</option>
+                <option value="1.25">1.25x</option>
+                <option value="1.5">1.5x</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- ===================================================================
+               Processed Input & Token Analysis
+               =================================================================== -->
+          <div class="mb-3">
+            <div class="d-flex justify-content-between align-items-center mb-2">
+              <span class="small fw-bold text-secondary text-uppercase" style="letter-spacing: 0.05em;">
+                Word Analysis:
+              </span>
+              <span class="small text-muted" id="word-analysis-summary" style="font-size: 0.76rem;">
+                <!-- Filled dynamically -->
+              </span>
+            </div>
+
+            <!-- Token Chips Flow -->
+            <div id="tokens-analysis-container" class="gc-chips-container p-2 rounded-3 bg-light border min-vh-25">
+              <span class="text-muted small fst-italic">Translate a sentence to see word availability.</span>
+            </div>
+          </div>
+
+          <!-- Translation Metrics Status (Section 21) -->
+          <div class="row g-2 pt-2 border-top">
+            <div class="col-4">
+              <div class="gc-stat-box text-center p-2">
+                <div id="stat-detected-lang" class="fw-bold text-primary fs-5">-</div>
+                <div class="small text-muted" style="font-size: 0.72rem;">Detected Language</div>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="gc-stat-box text-center p-2">
+                <div id="stat-in-vocab" class="fw-bold text-success fs-5">0</div>
+                <div class="small text-muted" style="font-size: 0.72rem;">Available Signs</div>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="gc-stat-box text-center p-2">
+                <div id="stat-unknown" class="fw-bold text-danger fs-5">0</div>
+                <div class="small text-muted" style="font-size: 0.72rem;">Unavailable Words</div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+{% endblock %}
+
+{% block extra_js %}
+<script src="/static/js/player.js"></script>
+<script src="/static/js/speech.js"></script>
+<script src="/static/js/translate.js"></script>
+{% endblock %}

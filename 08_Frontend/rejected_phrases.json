@@ -1,0 +1,540 @@
+[
+  {
+    "phrase": {
+      "en": "Hello my friend",
+      "mr": "नमस्कार माझ्या मित्रा"
+    },
+    "fallback_eng": [
+      "माझे"
+    ],
+    "fallback_mar": [
+      "माझ्या",
+      "मित्रा"
+    ]
+  },
+  {
+    "phrase": {
+      "en": "Good morning mother",
+      "mr": "शुभ सकाळ आई"
+    },
+    "fallback_eng": [
+      "शुभ",
+      "प्रभात"
+    ],
+    "fallback_mar": []
+  },
+  {
+    "phrase": {
+      "en": "I am very happy",
+      "mr": "मी खूप आनंदी आहे"
+    },
+    "fallback_eng": [
+      "very"
+    ],
+    "fallback_mar": [
+      "खूप"
+    ]
+  },
+  {
+    "phrase": {
+      "en": "We are pleased",
+      "mr": "आम्ही आनंदी आहोत"
+    },
+    "fallback_eng": [],
+    "fallback_mar": [
+      "आहोत"
+    ]
+  },
+  {
+    "phrase": {
+      "en": "You are beautiful",
+      "mr": "तू सुंदर आहेस"
+    },
+    "fallback_eng": [],
+    "fallback_mar": [
+      "आहेस"
+    ]
+  },
+  {
+    "phrase": {
+      "en": "My grandfather is old",
+      "mr": "माझे आजोबा जुने आहेत"
+    },
+    "fallback_eng": [
+      "माझे"
+    ],
+    "fallback_mar": [
+      "माझे"
+    ]
+  },
+  {
+    "phrase": {
+      "en": "My grandmother is old",
+      "mr": "माझी आजी जुनी आहे"
+    },
+    "fallback_eng": [
+      "माझे"
+    ],
+    "fallback_mar": [
+      "माझी",
+      "जुनी"
+    ]
+  },
+  {
+    "phrase": {
+      "en": "The shoes are black",
+      "mr": "बूट काळे आहेत"
+    },
+    "fallback_eng": [],
+    "fallback_mar": [
+      "काळे"
+    ]
+  },
+  {
+    "phrase": {
+      "en": "I have a pen",
+      "mr": "माझ्याकडे पेन आहे"
+    },
+    "fallback_eng": [
+      "have"
+    ],
+    "fallback_mar": [
+      "माझ्याकडे"
+    ]
+  },
+  {
+    "phrase": {
+      "en": "The temple is peaceful",
+      "mr": "मंदिर शांत आहे"
+    },
+    "fallback_eng": [
+      "peaceful"
+    ],
+    "fallback_mar": []
+  },
+  {
+    "phrase": {
+      "en": "The house is big",
+      "mr": "घर मोठे आहे"
+    },
+    "fallback_eng": [],
+    "fallback_mar": [
+      "मोठे"
+    ]
+  },
+  {
+    "phrase": {
+      "en": "The bus is slow",
+      "mr": "बस हळू आहे"
+    },
+    "fallback_eng": [
+      "गाडी"
+    ],
+    "fallback_mar": []
+  },
+  {
+    "phrase": {
+      "en": "The car is fast",
+      "mr": "कार जलद आहे"
+    },
+    "fallback_eng": [
+      "गाडी"
+    ],
+    "fallback_mar": []
+  },
+  {
+    "phrase": {
+      "en": "I need a train ticket",
+      "mr": "मला रेल्वे तिकीट हवे आहे"
+    },
+    "fallback_eng": [
+      "पाहिजे"
+    ],
+    "fallback_mar": [
+      "मला",
+      "हवे"
+    ]
+  },
+  {
+    "phrase": {
+      "en": "The cow is big",
+      "mr": "गाय मोठी आहे"
+    },
+    "fallback_eng": [],
+    "fallback_mar": [
+      "मोठी"
+    ]
+  },
+  {
+    "phrase": {
+      "en": "The bird flies high",
+      "mr": "पक्षी उंच आहे"
+    },
+    "fallback_eng": [
+      "flies"
+    ],
+    "fallback_mar": []
+  },
+  {
+    "phrase": {
+      "en": "The elephant is big",
+      "mr": "हत्ती मोठा आहे"
+    },
+    "fallback_eng": [
+      "elephant"
+    ],
+    "fallback_mar": [
+      "हत्ती"
+    ]
+  },
+  {
+    "phrase": {
+      "en": "The tiger is fast",
+      "mr": "वाघ जलद आहे"
+    },
+    "fallback_eng": [
+      "tiger"
+    ],
+    "fallback_mar": [
+      "वाघ"
+    ]
+  },
+  {
+    "phrase": {
+      "en": "The lion is strong",
+      "mr": "सिंह मजबूत आहे"
+    },
+    "fallback_eng": [
+      "lion"
+    ],
+    "fallback_mar": [
+      "सिंह"
+    ]
+  },
+  {
+    "phrase": {
+      "en": "The food is good",
+      "mr": "अन्न चांगले आहे"
+    },
+    "fallback_eng": [
+      "अन्न"
+    ],
+    "fallback_mar": [
+      "अन्न"
+    ]
+  },
+  {
+    "phrase": {
+      "en": "The water is cold",
+      "mr": "पाणी थंड आहे"
+    },
+    "fallback_eng": [
+      "पाणी"
+    ],
+    "fallback_mar": [
+      "पाणी"
+    ]
+  },
+  {
+    "phrase": {
+      "en": "The tea is hot",
+      "mr": "चहा गरम आहे"
+    },
+    "fallback_eng": [
+      "tea"
+    ],
+    "fallback_mar": [
+      "चहा"
+    ]
+  },
+  {
+    "phrase": {
+      "en": "The apple is red",
+      "mr": "सफरचंद लाल आहे"
+    },
+    "fallback_eng": [
+      "apple"
+    ],
+    "fallback_mar": [
+      "सफरचंद"
+    ]
+  },
+  {
+    "phrase": {
+      "en": "The banana is yellow",
+      "mr": "केळी पिवळी आहे"
+    },
+    "fallback_eng": [
+      "banana"
+    ],
+    "fallback_mar": [
+      "केळी",
+      "पिवळी"
+    ]
+  },
+  {
+    "phrase": {
+      "en": "The milk is white",
+      "mr": "दूध पांढरे आहे"
+    },
+    "fallback_eng": [
+      "milk"
+    ],
+    "fallback_mar": [
+      "दूध",
+      "पांढरे"
+    ]
+  },
+  {
+    "phrase": {
+      "en": "The eye is small",
+      "mr": "डोळा लहान आहे"
+    },
+    "fallback_eng": [
+      "eye"
+    ],
+    "fallback_mar": [
+      "डोळा"
+    ]
+  },
+  {
+    "phrase": {
+      "en": "The ear is big",
+      "mr": "कान मोठा आहे"
+    },
+    "fallback_eng": [
+      "ear"
+    ],
+    "fallback_mar": [
+      "कान"
+    ]
+  },
+  {
+    "phrase": {
+      "en": "The hand is clean",
+      "mr": "हात स्वच्छ आहे"
+    },
+    "fallback_eng": [
+      "hand"
+    ],
+    "fallback_mar": [
+      "हात"
+    ]
+  },
+  {
+    "phrase": {
+      "en": "The foot is dirty",
+      "mr": "पाय अस्वच्छ आहे"
+    },
+    "fallback_eng": [
+      "foot"
+    ],
+    "fallback_mar": [
+      "पाय"
+    ]
+  },
+  {
+    "phrase": {
+      "en": "The head is big",
+      "mr": "डोके मोठे आहे"
+    },
+    "fallback_eng": [
+      "head"
+    ],
+    "fallback_mar": [
+      "डोके",
+      "मोठे"
+    ]
+  },
+  {
+    "phrase": {
+      "en": "The sun is hot",
+      "mr": "सूर्य गरम आहे"
+    },
+    "fallback_eng": [
+      "sun"
+    ],
+    "fallback_mar": [
+      "सूर्य"
+    ]
+  },
+  {
+    "phrase": {
+      "en": "The moon is beautiful",
+      "mr": "चंद्र सुंदर आहे"
+    },
+    "fallback_eng": [
+      "moon"
+    ],
+    "fallback_mar": [
+      "चंद्र"
+    ]
+  },
+  {
+    "phrase": {
+      "en": "The star is small",
+      "mr": "तारा लहान आहे"
+    },
+    "fallback_eng": [
+      "star"
+    ],
+    "fallback_mar": [
+      "तारा"
+    ]
+  },
+  {
+    "phrase": {
+      "en": "The tree is tall",
+      "mr": "झाड उंच आहे"
+    },
+    "fallback_eng": [
+      "tree"
+    ],
+    "fallback_mar": [
+      "झाड"
+    ]
+  },
+  {
+    "phrase": {
+      "en": "The flower is red",
+      "mr": "फूल लाल आहे"
+    },
+    "fallback_eng": [
+      "flower"
+    ],
+    "fallback_mar": [
+      "फूल"
+    ]
+  },
+  {
+    "phrase": {
+      "en": "The river is long",
+      "mr": "नदी लांब आहे"
+    },
+    "fallback_eng": [
+      "river"
+    ],
+    "fallback_mar": [
+      "नदी"
+    ]
+  },
+  {
+    "phrase": {
+      "en": "The mountain is high",
+      "mr": "पर्वत उंच आहे"
+    },
+    "fallback_eng": [
+      "mountain"
+    ],
+    "fallback_mar": [
+      "पर्वत"
+    ]
+  },
+  {
+    "phrase": {
+      "en": "I go to school",
+      "mr": "मी शाळेत जातो"
+    },
+    "fallback_eng": [
+      "जाणे"
+    ],
+    "fallback_mar": [
+      "शाळेत",
+      "जातो"
+    ]
+  },
+  {
+    "phrase": {
+      "en": "You eat food",
+      "mr": "तू अन्न खातोस"
+    },
+    "fallback_eng": [
+      "खाणे",
+      "अन्न"
+    ],
+    "fallback_mar": [
+      "अन्न",
+      "खातोस"
+    ]
+  },
+  {
+    "phrase": {
+      "en": "We drink water",
+      "mr": "आम्ही पाणी पितो"
+    },
+    "fallback_eng": [
+      "पिणे",
+      "पाणी"
+    ],
+    "fallback_mar": [
+      "पाणी",
+      "पितो"
+    ]
+  },
+  {
+    "phrase": {
+      "en": "They sleep early",
+      "mr": "ते लवकर झोपतात"
+    },
+    "fallback_eng": [
+      "sleep",
+      "early"
+    ],
+    "fallback_mar": [
+      "लवकर",
+      "झोपतात"
+    ]
+  },
+  {
+    "phrase": {
+      "en": "She works hard",
+      "mr": "ती कठोर परिश्रम करते"
+    },
+    "fallback_eng": [
+      "works"
+    ],
+    "fallback_mar": [
+      "कठोर",
+      "परिश्रम",
+      "करते"
+    ]
+  },
+  {
+    "phrase": {
+      "en": "He plays football",
+      "mr": "तो फुटबॉल खेळतो"
+    },
+    "fallback_eng": [
+      "plays",
+      "football"
+    ],
+    "fallback_mar": [
+      "फुटबॉल",
+      "खेळतो"
+    ]
+  },
+  {
+    "phrase": {
+      "en": "I read a book",
+      "mr": "मी पुस्तक वाचतो"
+    },
+    "fallback_eng": [
+      "वाचणे"
+    ],
+    "fallback_mar": [
+      "वाचतो"
+    ]
+  },
+  {
+    "phrase": {
+      "en": "You write a letter",
+      "mr": "तू पत्र लिहितोस"
+    },
+    "fallback_eng": [
+      "लिहिणे"
+    ],
+    "fallback_mar": [
+      "लिहितोस"
+    ]
+  }
+]

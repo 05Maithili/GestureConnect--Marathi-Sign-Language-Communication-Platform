@@ -1,0 +1,4773 @@
+[
+    {
+        "sign_id": "SIGN_0001",
+        "canonical_word": "actor",
+        "dataset_word": "98. Actor",
+        "english_terms": [
+            "actor"
+        ],
+        "english_synonyms": [],
+        "marathi_terms": [
+            "अभिनेता"
+        ],
+        "source_category": "unknown",
+        "video_count": 4,
+        "media_pipe": {
+            "raw_available": true,
+            "normalized_available": true
+        }
+    },
+    {
+        "sign_id": "SIGN_0002",
+        "canonical_word": "adult",
+        "dataset_word": "80. Adult",
+        "english_terms": [
+            "adult"
+        ],
+        "english_synonyms": [],
+        "marathi_terms": [
+            "प्रौढ"
+        ],
+        "source_category": "unknown",
+        "video_count": 4,
+        "media_pipe": {
+            "raw_available": true,
+            "normalized_available": true
+        }
+    },
+    {
+        "sign_id": "SIGN_0003",
+        "canonical_word": "afternoon",
+        "dataset_word": "83. Afternoon",
+        "english_terms": [
+            "afternoon"
+        ],
+        "english_synonyms": [],
+        "marathi_terms": [
+            "दुपार"
+        ],
+        "source_category": "unknown",
+        "video_count": 4,
+        "media_pipe": {
+            "raw_available": true,
+            "normalized_available": true
+        }
+    },
+    {
+        "sign_id": "SIGN_0004",
+        "canonical_word": "alive",
+        "dataset_word": "34. alive",
+        "english_terms": [
+            "alive"
+        ],
+        "english_synonyms": [],
+        "marathi_terms": [
+            "जिवंत"
+        ],
+        "source_category": "unknown",
+        "video_count": 8,
+        "media_pipe": {
+            "raw_available": true,
+            "normalized_available": true
+        }
+    },
+    {
+        "sign_id": "SIGN_0005",
+        "canonical_word": "alright",
+        "dataset_word": "50. Alright",
+        "english_terms": [
+            "alright"
+        ],
+        "english_synonyms": [],
+        "marathi_terms": [
+            "ठीक आहे"
+        ],
+        "source_category": "unknown",
+        "video_count": 4,
+        "media_pipe": {
+            "raw_available": true,
+            "normalized_available": true
+        }
+    },
+    {
+        "sign_id": "SIGN_0006",
+        "canonical_word": "animal",
+        "dataset_word": "8. Animal",
+        "english_terms": [
+            "animal"
+        ],
+        "english_synonyms": [],
+        "marathi_terms": [
+            "प्राणी"
+        ],
+        "source_category": "unknown",
+        "video_count": 4,
+        "media_pipe": {
+            "raw_available": true,
+            "normalized_available": true
+        }
+    },
+    {
+        "sign_id": "SIGN_0007",
+        "canonical_word": "artist",
+        "dataset_word": "94. Artist",
+        "english_terms": [
+            "artist"
+        ],
+        "english_synonyms": [],
+        "marathi_terms": [
+            "कलाकार"
+        ],
+        "source_category": "unknown",
+        "video_count": 4,
+        "media_pipe": {
+            "raw_available": true,
+            "normalized_available": true
+        }
+    },
+    {
+        "sign_id": "SIGN_0008",
+        "canonical_word": "attack",
+        "dataset_word": "13. Attack",
+        "english_terms": [
+            "attack"
+        ],
+        "english_synonyms": [],
+        "marathi_terms": [
+            "हल्ला"
+        ],
+        "source_category": "unknown",
+        "video_count": 4,
+        "media_pipe": {
+            "raw_available": true,
+            "normalized_available": true
+        }
+    },
+    {
+        "sign_id": "SIGN_0009",
+        "canonical_word": "author",
+        "dataset_word": "95. Author",
+        "english_terms": [
+            "author"
+        ],
+        "english_synonyms": [],
+        "marathi_terms": [
+            "लेखक"
+        ],
+        "source_category": "unknown",
+        "video_count": 4,
+        "media_pipe": {
+            "raw_available": true,
+            "normalized_available": true
+        }
+    },
+    {
+        "sign_id": "SIGN_0010",
+        "canonical_word": "baby",
+        "dataset_word": "63. Baby",
+        "english_terms": [
+            "baby"
+        ],
+        "english_synonyms": [],
+        "marathi_terms": [
+            "बाळ"
+        ],
+        "source_category": "unknown",
+        "video_count": 4,
+        "media_pipe": {
+            "raw_available": true,
+            "normalized_available": true
+        }
+    },
+    {
+        "sign_id": "SIGN_0011",
+        "canonical_word": "bad",
+        "dataset_word": "95. bad",
+        "english_terms": [
+            "bad"
+        ],
+        "english_synonyms": [],
+        "marathi_terms": [
+            "वाईट"
+        ],
+        "source_category": "unknown",
+        "video_count": 4,
+        "media_pipe": {
+            "raw_available": true,
+            "normalized_available": true
+        }
+    },
+    {
+        "sign_id": "SIGN_0012",
+        "canonical_word": "bag",
+        "dataset_word": "45. Bag",
+        "english_terms": [
+            "bag"
+        ],
+        "english_synonyms": [],
+        "marathi_terms": [
+            "पिशवी"
+        ],
+        "source_category": "unknown",
+        "video_count": 4,
+        "media_pipe": {
+            "raw_available": true,
+            "normalized_available": true
+        }
+    },
+    {
+        "sign_id": "SIGN_0013",
+        "canonical_word": "ball",
+        "dataset_word": "19. Ball",
+        "english_terms": [
+            "ball"
+        ],
+        "english_synonyms": [],
+        "marathi_terms": [
+            "चेंडू"
+        ],
+        "source_category": "unknown",
+        "video_count": 4,
+        "media_pipe": {
+            "raw_available": true,
+            "normalized_available": true
+        }
+    },
+    {
+        "sign_id": "SIGN_0014",
+        "canonical_word": "bank",
+        "dataset_word": "35. Bank",
+        "english_terms": [
+            "bank"
+        ],
+        "english_synonyms": [],
+        "marathi_terms": [
+            "बँक"
+        ],
+        "source_category": "unknown",
+        "video_count": 8,
+        "media_pipe": {
+            "raw_available": true,
+            "normalized_available": true
+        }
+    },
+    {
+        "sign_id": "SIGN_0015",
+        "canonical_word": "bathroom",
+        "dataset_word": "32. Bathroom",
+        "english_terms": [
+            "bathroom"
+        ],
+        "english_synonyms": [],
+        "marathi_terms": [
+            "स्नानगृह"
+        ],
+        "source_category": "unknown",
+        "video_count": 8,
+        "media_pipe": {
+            "raw_available": true,
+            "normalized_available": true
+        }
+    },
+    {
+        "sign_id": "SIGN_0016",
+        "canonical_word": "beautiful",
+        "dataset_word": "5. Beautiful",
+        "english_terms": [
+            "beautiful",
+            "pretty",
+            "gorgeous",
+            "lovely"
+        ],
+        "english_synonyms": [
+            "pretty",
+            "gorgeous",
+            "lovely"
+        ],
+        "marathi_terms": [
+            "सुंदर"
+        ],
+        "source_category": "unknown",
+        "video_count": 4,
+        "media_pipe": {
+            "raw_available": true,
+            "normalized_available": true
+        }
+    },
+    {
+        "sign_id": "SIGN_0017",
+        "canonical_word": "bed",
+        "dataset_word": "26. Bed",
+        "english_terms": [
+            "bed"
+        ],
+        "english_synonyms": [],
+        "marathi_terms": [
+            "बेड"
+        ],
+        "source_category": "unknown",
+        "video_count": 6,
+        "media_pipe": {
+            "raw_available": true,
+            "normalized_available": true
+        }
+    },
+    {
+        "sign_id": "SIGN_0018",
+        "canonical_word": "bedroom",
+        "dataset_word": "30. Bedroom",
+        "english_terms": [
+            "bedroom"
+        ],
+        "english_synonyms": [],
+        "marathi_terms": [
+            "शयनकक्ष"
+        ],
+        "source_category": "unknown",
+        "video_count": 8,
+        "media_pipe": {
+            "raw_available": true,
+            "normalized_available": true
+        }
+    },
+    {
+        "sign_id": "SIGN_0019",
+        "canonical_word": "bicycle",
+        "dataset_word": "13. Bicycle",
+        "english_terms": [
+            "bicycle"
+        ],
+        "english_synonyms": [],
+        "marathi_terms": [
+            "सायकल"
+        ],
+        "source_category": "unknown",
+        "video_count": 4,
+        "media_pipe": {
+            "raw_available": true,
+            "normalized_available": true
+        }
+    },
+    {
+        "sign_id": "SIGN_0020",
+        "canonical_word": "big large",
+        "dataset_word": "83. big large",
+        "english_terms": [
+            "big large",
+            "big",
+            "large",
+            "huge",
+            "giant",
+            "massive"
+        ],
+        "english_synonyms": [
+            "big",
+            "large",
+            "huge",
+            "giant",
+            "massive"
+        ],
+        "marathi_terms": [
+            "मोठा"
+        ],
+        "source_category": "unknown",
+        "video_count": 4,
+        "media_pipe": {
+            "raw_available": true,
+            "normalized_available": true
+        }
+    },
+    {
+        "sign_id": "SIGN_0021",
+        "canonical_word": "bill",
+        "dataset_word": "5. Bill",
+        "english_terms": [
+            "bill"
+        ],
+        "english_synonyms": [],
+        "marathi_terms": [
+            "बिल"
+        ],
+        "source_category": "unknown",
+        "video_count": 4,
+        "media_pipe": {
+            "raw_available": true,
+            "normalized_available": true
+        }
+    },
+    {
+        "sign_id": "SIGN_0022",
+        "canonical_word": "bird",
+        "dataset_word": "4. Bird",
+        "english_terms": [
+            "bird"
+        ],
+        "english_synonyms": [],
+        "marathi_terms": [
+            "पक्षी"
+        ],
+        "source_category": "unknown",
+        "video_count": 4,
+        "media_pipe": {
+            "raw_available": true,
+            "normalized_available": true
+        }
+    },
+    {
+        "sign_id": "SIGN_0023",
+        "canonical_word": "black",
+        "dataset_word": "54. Black",
+        "english_terms": [
+            "black"
+        ],
+        "english_synonyms": [],
+        "marathi_terms": [
+            "काळा"
+        ],
+        "source_category": "unknown",
+        "video_count": 4,
+        "media_pipe": {
+            "raw_available": true,
+            "normalized_available": true
+        }
+    },
+    {
+        "sign_id": "SIGN_0024",
+        "canonical_word": "blind",
+        "dataset_word": "8. Blind",
+        "english_terms": [
+            "blind"
+        ],
+        "english_synonyms": [],
+        "marathi_terms": [
+            "अंध"
+        ],
+        "source_category": "unknown",
+        "video_count": 4,
+        "media_pipe": {
+            "raw_available": true,
+            "normalized_available": true
+        }
+    },
+    {
+        "sign_id": "SIGN_0025",
+        "canonical_word": "blue",
+        "dataset_word": "49. Blue",
+        "english_terms": [
+            "blue"
+        ],
+        "english_synonyms": [],
+        "marathi_terms": [
+            "निळा"
+        ],
+        "source_category": "unknown",
+        "video_count": 4,
+        "media_pipe": {
+            "raw_available": true,
+            "normalized_available": true
+        }
+    },
+    {
+        "sign_id": "SIGN_0026",
+        "canonical_word": "boat",
+        "dataset_word": "15. Boat",
+        "english_terms": [
+            "boat"
+        ],
+        "english_synonyms": [],
+        "marathi_terms": [
+            "बोट"
+        ],
+        "source_category": "unknown",
+        "video_count": 4,
+        "media_pipe": {
+            "raw_available": true,
+            "normalized_available": true
+        }
+    },
+    {
+        "sign_id": "SIGN_0027",
+        "canonical_word": "book",
+        "dataset_word": "37. Book",
+        "english_terms": [
+            "book"
+        ],
+        "english_synonyms": [],
+        "marathi_terms": [
+            "पुस्तक"
+        ],
+        "source_category": "unknown",
+        "video_count": 5,
+        "media_pipe": {
+            "raw_available": true,
+            "normalized_available": true
+        }
+    },
+    {
+        "sign_id": "SIGN_0028",
+        "canonical_word": "box",
+        "dataset_word": "46. Box",
+        "english_terms": [
+            "box"
+        ],
+        "english_synonyms": [],
+        "marathi_terms": [
+            "खोका"
+        ],
+        "source_category": "unknown",
+        "video_count": 4,
+        "media_pipe": {
+            "raw_available": true,
+            "normalized_available": true
+        }
+    },
+    {
+        "sign_id": "SIGN_0029",
+        "canonical_word": "boy",
+        "dataset_word": "77. Boy",
+        "english_terms": [
+            "boy"
+        ],
+        "english_synonyms": [],
+        "marathi_terms": [
+            "मुलगा"
+        ],
+        "source_category": "unknown",
+        "video_count": 4,
+        "media_pipe": {
+            "raw_available": true,
+            "normalized_available": true
+        }
+    },
+    {
+        "sign_id": "SIGN_0030",
+        "canonical_word": "brother",
+        "dataset_word": "66. Brother",
+        "english_terms": [
+            "brother"
+        ],
+        "english_synonyms": [],
+        "marathi_terms": [
+            "भाऊ"
+        ],
+        "source_category": "unknown",
+        "video_count": 4,
+        "media_pipe": {
+            "raw_available": true,
+            "normalized_available": true
+        }
+    },
+    {
+        "sign_id": "SIGN_0031",
+        "canonical_word": "brown",
+        "dataset_word": "51. Brown",
+        "english_terms": [
+            "brown"
+        ],
+        "english_synonyms": [],
+        "marathi_terms": [
+            "तपकिरी"
+        ],
+        "source_category": "unknown",
+        "video_count": 4,
+        "media_pipe": {
+            "raw_available": true,
+            "normalized_available": true
+        }
+    },
+    {
+        "sign_id": "SIGN_0032",
+        "canonical_word": "bus",
+        "dataset_word": "14. Bus",
+        "english_terms": [
+            "bus"
+        ],
+        "english_synonyms": [],
+        "marathi_terms": [
+            "बस"
+        ],
+        "source_category": "unknown",
+        "video_count": 4,
+        "media_pipe": {
+            "raw_available": true,
+            "normalized_available": true
+        }
+    },
+    {
+        "sign_id": "SIGN_0033",
+        "canonical_word": "camera",
+        "dataset_word": "58. Camera",
+        "english_terms": [
+            "camera"
+        ],
+        "english_synonyms": [],
+        "marathi_terms": [
+            "कॅमेरा"
+        ],
+        "source_category": "unknown",
+        "video_count": 4,
+        "media_pipe": {
+            "raw_available": true,
+            "normalized_available": true
+        }
+    },
+    {
+        "sign_id": "SIGN_0034",
+        "canonical_word": "car",
+        "dataset_word": "11. Car",
+        "english_terms": [
+            "car",
+            "automobile",
+            "vehicle"
+        ],
+        "english_synonyms": [
+            "automobile",
+            "vehicle"
+        ],
+        "marathi_terms": [
+            "कार"
+        ],
+        "source_category": "unknown",
+        "video_count": 4,
+        "media_pipe": {
+            "raw_available": true,
+            "normalized_available": true
+        }
+    },
+    {
+        "sign_id": "SIGN_0035",
+        "canonical_word": "card",
+        "dataset_word": "48. Card",
+        "english_terms": [
+            "card"
+        ],
+        "english_synonyms": [],
+        "marathi_terms": [
+            "कार्ड"
+        ],
+        "source_category": "unknown",
+        "video_count": 4,
+        "media_pipe": {
+            "raw_available": true,
+            "normalized_available": true
+        }
+    },
+    {
+        "sign_id": "SIGN_0036",
+        "canonical_word": "cat",
+        "dataset_word": "2. Cat",
+        "english_terms": [
+            "cat"
+        ],
+        "english_synonyms": [],
+        "marathi_terms": [
+            "मांजर"
+        ],
+        "source_category": "unknown",
+        "video_count": 4,
+        "media_pipe": {
+            "raw_available": true,
+            "normalized_available": true
+        }
+    },
+    {
+        "sign_id": "SIGN_0037",
+        "canonical_word": "cell phone",
+        "dataset_word": "54. Cell phone",
+        "english_terms": [
+            "cell phone"
+        ],
+        "english_synonyms": [],
+        "marathi_terms": [
+            "मोबाईल"
+        ],
+        "source_category": "unknown",
+        "video_count": 4,
+        "media_pipe": {
+            "raw_available": true,
+            "normalized_available": true
+        }
+    },
+    {
+        "sign_id": "SIGN_0038",
+        "canonical_word": "chair",
+        "dataset_word": "25. Chair",
+        "english_terms": [
+            "chair"
+        ],
+        "english_synonyms": [],
+        "marathi_terms": [
+            "खुर्ची"
+        ],
+        "source_category": "unknown",
+        "video_count": 8,
+        "media_pipe": {
+            "raw_available": true,
+            "normalized_available": true
+        }
+    },
+    {
+        "sign_id": "SIGN_0039",
+        "canonical_word": "cheap",
+        "dataset_word": "16. cheap",
+        "english_terms": [
+            "cheap"
+        ],
+        "english_synonyms": [],
+        "marathi_terms": [
+            "स्वस्त"
+        ],
+        "source_category": "unknown",
+        "video_count": 4,
+        "media_pipe": {
+            "raw_available": true,
+            "normalized_available": true
+        }
+    },
+    {
+        "sign_id": "SIGN_0040",
+        "canonical_word": "child",
+        "dataset_word": "79. Child",
+        "english_terms": [
+            "child"
+        ],
+        "english_synonyms": [],
+        "marathi_terms": [
+            "मूल"
+        ],
+        "source_category": "unknown",
+        "video_count": 4,
+        "media_pipe": {
+            "raw_available": true,
+            "normalized_available": true
+        }
+    },
+    {
+        "sign_id": "SIGN_0041",
+        "canonical_word": "city",
+        "dataset_word": "18. City",
+        "english_terms": [
+            "city"
+        ],
+        "english_synonyms": [],
+        "marathi_terms": [
+            "शहर"
+        ],
+        "source_category": "unknown",
+        "video_count": 4,
+        "media_pipe": {
+            "raw_available": true,
+            "normalized_available": true
+        }
+    },
+    {
+        "sign_id": "SIGN_0042",
+        "canonical_word": "clean",
+        "dataset_word": "29. clean",
+        "english_terms": [
+            "clean"
+        ],
+        "english_synonyms": [],
+        "marathi_terms": [
+            "स्वच्छ"
+        ],
+        "source_category": "unknown",
+        "video_count": 8,
+        "media_pipe": {
+            "raw_available": true,
+            "normalized_available": true
+        }
+    },
+    {
+        "sign_id": "SIGN_0043",
+        "canonical_word": "clock",
+        "dataset_word": "51. Clock",
+        "english_terms": [
+            "clock"
+        ],
+        "english_synonyms": [],
+        "marathi_terms": [
+            "घड्याळ"
+        ],
+        "source_category": "unknown",
+        "video_count": 4,
+        "media_pipe": {
+            "raw_available": true,
+            "normalized_available": true
+        }
+    },
+    {
+        "sign_id": "SIGN_0044",
+        "canonical_word": "clothing",
+        "dataset_word": "46. Clothing",
+        "english_terms": [
+            "clothing"
+        ],
+        "english_synonyms": [],
+        "marathi_terms": [
+            "कपडे"
+        ],
+        "source_category": "unknown",
+        "video_count": 4,
+        "media_pipe": {
+            "raw_available": true,
+            "normalized_available": true
+        }
+    },
+    {
+        "sign_id": "SIGN_0045",
+        "canonical_word": "cold",
+        "dataset_word": "88. cold",
+        "english_terms": [
+            "cold"
+        ],
+        "english_synonyms": [],
+        "marathi_terms": [
+            "थंड"
+        ],
+        "source_category": "unknown",
+        "video_count": 4,
+        "media_pipe": {
+            "raw_available": true,
+            "normalized_available": true
+        }
+    },
+    {
+        "sign_id": "SIGN_0046",
+        "canonical_word": "colour",
+        "dataset_word": "57. Colour",
+        "english_terms": [
+            "colour"
+        ],
+        "english_synonyms": [],
+        "marathi_terms": [
+            "रंग"
+        ],
+        "source_category": "unknown",
+        "video_count": 4,
+        "media_pipe": {
+            "raw_available": true,
+            "normalized_available": true
+        }
+    },
+    {
+        "sign_id": "SIGN_0047",
+        "canonical_word": "computer",
+        "dataset_word": "55. Computer",
+        "english_terms": [
+            "computer"
+        ],
+        "english_synonyms": [],
+        "marathi_terms": [
+            "संगणक"
+        ],
+        "source_category": "unknown",
+        "video_count": 4,
+        "media_pipe": {
+            "raw_available": true,
+            "normalized_available": true
+        }
+    },
+    {
+        "sign_id": "SIGN_0048",
+        "canonical_word": "cool",
+        "dataset_word": "90. cool",
+        "english_terms": [
+            "cool"
+        ],
+        "english_synonyms": [],
+        "marathi_terms": [
+            "थंडगार"
+        ],
+        "source_category": "unknown",
+        "video_count": 4,
+        "media_pipe": {
+            "raw_available": true,
+            "normalized_available": true
+        }
+    },
+    {
+        "sign_id": "SIGN_0049",
+        "canonical_word": "court",
+        "dataset_word": "23. Court",
+        "english_terms": [
+            "court"
+        ],
+        "english_synonyms": [],
+        "marathi_terms": [
+            "न्यायालय"
+        ],
+        "source_category": "unknown",
+        "video_count": 8,
+        "media_pipe": {
+            "raw_available": true,
+            "normalized_available": true
+        }
+    },
+    {
+        "sign_id": "SIGN_0050",
+        "canonical_word": "cow",
+        "dataset_word": "5. Cow",
+        "english_terms": [
+            "cow"
+        ],
+        "english_synonyms": [],
+        "marathi_terms": [
+            "गाय"
+        ],
+        "source_category": "unknown",
+        "video_count": 4,
+        "media_pipe": {
+            "raw_available": true,
+            "normalized_available": true
+        }
+    },
+    {
+        "sign_id": "SIGN_0051",
+        "canonical_word": "crowd",
+        "dataset_word": "83. Crowd",
+        "english_terms": [
+            "crowd"
+        ],
+        "english_synonyms": [],
+        "marathi_terms": [
+            "गर्दी"
+        ],
+        "source_category": "unknown",
+        "video_count": 4,
+        "media_pipe": {
+            "raw_available": true,
+            "normalized_available": true
+        }
+    },
+    {
+        "sign_id": "SIGN_0052",
+        "canonical_word": "curved",
+        "dataset_word": "18. curved",
+        "english_terms": [
+            "curved"
+        ],
+        "english_synonyms": [],
+        "marathi_terms": [
+            "वक्र"
+        ],
+        "source_category": "unknown",
+        "video_count": 4,
+        "media_pipe": {
+            "raw_available": true,
+            "normalized_available": true
+        }
+    },
+    {
+        "sign_id": "SIGN_0053",
+        "canonical_word": "daughter",
+        "dataset_word": "59. Daughter",
+        "english_terms": [
+            "daughter"
+        ],
+        "english_synonyms": [],
+        "marathi_terms": [
+            "मुलगी"
+        ],
+        "source_category": "unknown",
+        "video_count": 4,
+        "media_pipe": {
+            "raw_available": true,
+            "normalized_available": true
+        }
+    },
+    {
+        "sign_id": "SIGN_0054",
+        "canonical_word": "dead",
+        "dataset_word": "33. dead",
+        "english_terms": [
+            "dead"
+        ],
+        "english_synonyms": [],
+        "marathi_terms": [
+            "मृत"
+        ],
+        "source_category": "unknown",
+        "video_count": 8,
+        "media_pipe": {
+            "raw_available": true,
+            "normalized_available": true
+        }
+    },
+    {
+        "sign_id": "SIGN_0055",
+        "canonical_word": "deaf",
+        "dataset_word": "7. Deaf",
+        "english_terms": [
+            "deaf"
+        ],
+        "english_synonyms": [],
+        "marathi_terms": [
+            "बधिर"
+        ],
+        "source_category": "unknown",
+        "video_count": 4,
+        "media_pipe": {
+            "raw_available": true,
+            "normalized_available": true
+        }
+    },
+    {
+        "sign_id": "SIGN_0056",
+        "canonical_word": "death",
+        "dataset_word": "2. Death",
+        "english_terms": [
+            "death"
+        ],
+        "english_synonyms": [],
+        "marathi_terms": [
+            "मृत्यू"
+        ],
+        "source_category": "unknown",
+        "video_count": 4,
+        "media_pipe": {
+            "raw_available": true,
+            "normalized_available": true
+        }
+    },
+    {
+        "sign_id": "SIGN_0057",
+        "canonical_word": "deep",
+        "dataset_word": "27. deep",
+        "english_terms": [
+            "deep"
+        ],
+        "english_synonyms": [],
+        "marathi_terms": [
+            "खोल"
+        ],
+        "source_category": "unknown",
+        "video_count": 8,
+        "media_pipe": {
+            "raw_available": true,
+            "normalized_available": true
+        }
+    },
+    {
+        "sign_id": "SIGN_0058",
+        "canonical_word": "dirty",
+        "dataset_word": "30. dirty",
+        "english_terms": [
+            "dirty"
+        ],
+        "english_synonyms": [],
+        "marathi_terms": [
+            "अस्वच्छ"
+        ],
+        "source_category": "unknown",
+        "video_count": 8,
+        "media_pipe": {
+            "raw_available": true,
+            "normalized_available": true
+        }
+    },
+    {
+        "sign_id": "SIGN_0059",
+        "canonical_word": "doctor",
+        "dataset_word": "87. Doctor",
+        "english_terms": [
+            "doctor",
+            "physician"
+        ],
+        "english_synonyms": [
+            "physician"
+        ],
+        "marathi_terms": [
+            "डॉक्टर"
+        ],
+        "source_category": "unknown",
+        "video_count": 4,
+        "media_pipe": {
+            "raw_available": true,
+            "normalized_available": true
+        }
+    },
+    {
+        "sign_id": "SIGN_0060",
+        "canonical_word": "dog",
+        "dataset_word": "1. Dog",
+        "english_terms": [
+            "dog"
+        ],
+        "english_synonyms": [],
+        "marathi_terms": [
+            "कुत्रा"
+        ],
+        "source_category": "unknown",
+        "video_count": 8,
+        "media_pipe": {
+            "raw_available": true,
+            "normalized_available": true
+        }
+    },
+    {
+        "sign_id": "SIGN_0061",
+        "canonical_word": "door",
+        "dataset_word": "29. Door",
+        "english_terms": [
+            "door"
+        ],
+        "english_synonyms": [],
+        "marathi_terms": [
+            "दार"
+        ],
+        "source_category": "unknown",
+        "video_count": 8,
+        "media_pipe": {
+            "raw_available": true,
+            "normalized_available": true
+        }
+    },
+    {
+        "sign_id": "SIGN_0062",
+        "canonical_word": "dream",
+        "dataset_word": "27. Dream",
+        "english_terms": [
+            "dream"
+        ],
+        "english_synonyms": [],
+        "marathi_terms": [
+            "स्वप्न"
+        ],
+        "source_category": "unknown",
+        "video_count": 8,
+        "media_pipe": {
+            "raw_available": true,
+            "normalized_available": true
+        }
+    },
+    {
+        "sign_id": "SIGN_0063",
+        "canonical_word": "dress",
+        "dataset_word": "38. Dress",
+        "english_terms": [
+            "dress"
+        ],
+        "english_synonyms": [],
+        "marathi_terms": [
+            "पोशाख"
+        ],
+        "source_category": "unknown",
+        "video_count": 4,
+        "media_pipe": {
+            "raw_available": true,
+            "normalized_available": true
+        }
+    },
+    {
+        "sign_id": "SIGN_0064",
+        "canonical_word": "dry",
+        "dataset_word": "97. dry",
+        "english_terms": [
+            "dry"
+        ],
+        "english_synonyms": [],
+        "marathi_terms": [
+            "कोरडा"
+        ],
+        "source_category": "unknown",
+        "video_count": 4,
+        "media_pipe": {
+            "raw_available": true,
+            "normalized_available": true
+        }
+    },
+    {
+        "sign_id": "SIGN_0065",
+        "canonical_word": "election",
+        "dataset_word": "14. Election",
+        "english_terms": [
+            "election"
+        ],
+        "english_synonyms": [],
+        "marathi_terms": [
+            "निवडणूक"
+        ],
+        "source_category": "unknown",
+        "video_count": 4,
+        "media_pipe": {
+            "raw_available": true,
+            "normalized_available": true
+        }
+    },
+    {
+        "sign_id": "SIGN_0066",
+        "canonical_word": "energy",
+        "dataset_word": "10. Energy",
+        "english_terms": [
+            "energy"
+        ],
+        "english_synonyms": [],
+        "marathi_terms": [
+            "ऊर्जा"
+        ],
+        "source_category": "unknown",
+        "video_count": 4,
+        "media_pipe": {
+            "raw_available": true,
+            "normalized_available": true
+        }
+    },
+    {
+        "sign_id": "SIGN_0067",
+        "canonical_word": "evening",
+        "dataset_word": "84. Evening",
+        "english_terms": [
+            "evening"
+        ],
+        "english_synonyms": [],
+        "marathi_terms": [
+            "संध्याकाळ"
+        ],
+        "source_category": "unknown",
+        "video_count": 4,
+        "media_pipe": {
+            "raw_available": true,
+            "normalized_available": true
+        }
+    },
+    {
+        "sign_id": "SIGN_0068",
+        "canonical_word": "exercise",
+        "dataset_word": "18. Exercise",
+        "english_terms": [
+            "exercise"
+        ],
+        "english_synonyms": [],
+        "marathi_terms": [
+            "व्यायाम"
+        ],
+        "source_category": "unknown",
+        "video_count": 4,
+        "media_pipe": {
+            "raw_available": true,
+            "normalized_available": true
+        }
+    },
+    {
+        "sign_id": "SIGN_0069",
+        "canonical_word": "expensive",
+        "dataset_word": "15. expensive",
+        "english_terms": [
+            "expensive"
+        ],
+        "english_synonyms": [],
+        "marathi_terms": [
+            "महाग"
+        ],
+        "source_category": "unknown",
+        "video_count": 4,
+        "media_pipe": {
+            "raw_available": true,
+            "normalized_available": true
+        }
+    },
+    {
+        "sign_id": "SIGN_0070",
+        "canonical_word": "fall",
+        "dataset_word": "64. Fall",
+        "english_terms": [
+            "fall"
+        ],
+        "english_synonyms": [],
+        "marathi_terms": [
+            "पडणे"
+        ],
+        "source_category": "unknown",
+        "video_count": 4,
+        "media_pipe": {
+            "raw_available": true,
+            "normalized_available": true
+        }
+    },
+    {
+        "sign_id": "SIGN_0071",
+        "canonical_word": "family",
+        "dataset_word": "68. Family",
+        "english_terms": [
+            "family"
+        ],
+        "english_synonyms": [],
+        "marathi_terms": [
+            "कुटुंब"
+        ],
+        "source_category": "unknown",
+        "video_count": 4,
+        "media_pipe": {
+            "raw_available": true,
+            "normalized_available": true
+        }
+    },
+    {
+        "sign_id": "SIGN_0072",
+        "canonical_word": "famous",
+        "dataset_word": "39. famous",
+        "english_terms": [
+            "famous"
+        ],
+        "english_synonyms": [],
+        "marathi_terms": [
+            "प्रसिद्ध"
+        ],
+        "source_category": "unknown",
+        "video_count": 4,
+        "media_pipe": {
+            "raw_available": true,
+            "normalized_available": true
+        }
+    },
+    {
+        "sign_id": "SIGN_0073",
+        "canonical_word": "fan",
+        "dataset_word": "53. Fan",
+        "english_terms": [
+            "fan"
+        ],
+        "english_synonyms": [],
+        "marathi_terms": [
+            "पंखा"
+        ],
+        "source_category": "unknown",
+        "video_count": 4,
+        "media_pipe": {
+            "raw_available": true,
+            "normalized_available": true
+        }
+    },
+    {
+        "sign_id": "SIGN_0074",
+        "canonical_word": "fast",
+        "dataset_word": "86. fast",
+        "english_terms": [
+            "fast"
+        ],
+        "english_synonyms": [],
+        "marathi_terms": [
+            "जलद"
+        ],
+        "source_category": "unknown",
+        "video_count": 4,
+        "media_pipe": {
+            "raw_available": true,
+            "normalized_available": true
+        }
+    },
+    {
+        "sign_id": "SIGN_0075",
+        "canonical_word": "father",
+        "dataset_word": "61. Father",
+        "english_terms": [
+            "father"
+        ],
+        "english_synonyms": [],
+        "marathi_terms": [
+            "वडील"
+        ],
+        "source_category": "unknown",
+        "video_count": 4,
+        "media_pipe": {
+            "raw_available": true,
+            "normalized_available": true
+        }
+    },
+    {
+        "sign_id": "SIGN_0076",
+        "canonical_word": "female",
+        "dataset_word": "20. female",
+        "english_terms": [
+            "female"
+        ],
+        "english_synonyms": [],
+        "marathi_terms": [
+            "स्त्री"
+        ],
+        "source_category": "unknown",
+        "video_count": 4,
+        "media_pipe": {
+            "raw_available": true,
+            "normalized_available": true
+        }
+    },
+    {
+        "sign_id": "SIGN_0077",
+        "canonical_word": "fish",
+        "dataset_word": "3. Fish",
+        "english_terms": [
+            "fish"
+        ],
+        "english_synonyms": [],
+        "marathi_terms": [
+            "मासा"
+        ],
+        "source_category": "unknown",
+        "video_count": 8,
+        "media_pipe": {
+            "raw_available": true,
+            "normalized_available": true
+        }
+    },
+    {
+        "sign_id": "SIGN_0078",
+        "canonical_word": "flat",
+        "dataset_word": "17. flat",
+        "english_terms": [
+            "flat"
+        ],
+        "english_synonyms": [],
+        "marathi_terms": [
+            "सपाट"
+        ],
+        "source_category": "unknown",
+        "video_count": 4,
+        "media_pipe": {
+            "raw_available": true,
+            "normalized_available": true
+        }
+    },
+    {
+        "sign_id": "SIGN_0079",
+        "canonical_word": "friday",
+        "dataset_word": "71. Friday",
+        "english_terms": [
+            "friday"
+        ],
+        "english_synonyms": [],
+        "marathi_terms": [
+            "शुक्रवार"
+        ],
+        "source_category": "unknown",
+        "video_count": 4,
+        "media_pipe": {
+            "raw_available": true,
+            "normalized_available": true
+        }
+    },
+    {
+        "sign_id": "SIGN_0080",
+        "canonical_word": "friend",
+        "dataset_word": "81. Friend",
+        "english_terms": [
+            "friend"
+        ],
+        "english_synonyms": [],
+        "marathi_terms": [
+            "मित्र"
+        ],
+        "source_category": "unknown",
+        "video_count": 4,
+        "media_pipe": {
+            "raw_available": true,
+            "normalized_available": true
+        }
+    },
+    {
+        "sign_id": "SIGN_0081",
+        "canonical_word": "gift",
+        "dataset_word": "47. Gift",
+        "english_terms": [
+            "gift"
+        ],
+        "english_synonyms": [],
+        "marathi_terms": [
+            "भेटवस्तू"
+        ],
+        "source_category": "unknown",
+        "video_count": 4,
+        "media_pipe": {
+            "raw_available": true,
+            "normalized_available": true
+        }
+    },
+    {
+        "sign_id": "SIGN_0082",
+        "canonical_word": "girl",
+        "dataset_word": "78. Girl",
+        "english_terms": [
+            "girl"
+        ],
+        "english_synonyms": [],
+        "marathi_terms": [
+            "मुलगी"
+        ],
+        "source_category": "unknown",
+        "video_count": 4,
+        "media_pipe": {
+            "raw_available": true,
+            "normalized_available": true
+        }
+    },
+    {
+        "sign_id": "SIGN_0083",
+        "canonical_word": "god",
+        "dataset_word": "23. God",
+        "english_terms": [
+            "god"
+        ],
+        "english_synonyms": [],
+        "marathi_terms": [
+            "देव"
+        ],
+        "source_category": "unknown",
+        "video_count": 8,
+        "media_pipe": {
+            "raw_available": true,
+            "normalized_available": true
+        }
+    },
+    {
+        "sign_id": "SIGN_0084",
+        "canonical_word": "good",
+        "dataset_word": "94. good",
+        "english_terms": [
+            "good"
+        ],
+        "english_synonyms": [],
+        "marathi_terms": [
+            "चांगले"
+        ],
+        "source_category": "unknown",
+        "video_count": 4,
+        "media_pipe": {
+            "raw_available": true,
+            "normalized_available": true
+        }
+    },
+    {
+        "sign_id": "SIGN_0085",
+        "canonical_word": "good afternoon",
+        "dataset_word": "52. Good afternoon",
+        "english_terms": [
+            "good afternoon"
+        ],
+        "english_synonyms": [],
+        "marathi_terms": [
+            "शुभ दुपार"
+        ],
+        "source_category": "unknown",
+        "video_count": 4,
+        "media_pipe": {
+            "raw_available": true,
+            "normalized_available": true
+        }
+    },
+    {
+        "sign_id": "SIGN_0086",
+        "canonical_word": "good evening",
+        "dataset_word": "53. Good evening",
+        "english_terms": [
+            "good evening"
+        ],
+        "english_synonyms": [],
+        "marathi_terms": [
+            "शुभ संध्याकाळ"
+        ],
+        "source_category": "unknown",
+        "video_count": 4,
+        "media_pipe": {
+            "raw_available": true,
+            "normalized_available": true
+        }
+    },
+    {
+        "sign_id": "SIGN_0087",
+        "canonical_word": "good morning",
+        "dataset_word": "51. Good Morning",
+        "english_terms": [
+            "good morning"
+        ],
+        "english_synonyms": [],
+        "marathi_terms": [
+            "शुभ सकाळ"
+        ],
+        "source_category": "unknown",
+        "video_count": 4,
+        "media_pipe": {
+            "raw_available": true,
+            "normalized_available": true
+        }
+    },
+    {
+        "sign_id": "SIGN_0088",
+        "canonical_word": "good night",
+        "dataset_word": "54. Good night",
+        "english_terms": [
+            "good night"
+        ],
+        "english_synonyms": [],
+        "marathi_terms": [
+            "शुभ रात्री"
+        ],
+        "source_category": "unknown",
+        "video_count": 4,
+        "media_pipe": {
+            "raw_available": true,
+            "normalized_available": true
+        }
+    },
+    {
+        "sign_id": "SIGN_0089",
+        "canonical_word": "grandfather",
+        "dataset_word": "69. Grandfather",
+        "english_terms": [
+            "grandfather"
+        ],
+        "english_synonyms": [],
+        "marathi_terms": [
+            "आजोबा"
+        ],
+        "source_category": "unknown",
+        "video_count": 4,
+        "media_pipe": {
+            "raw_available": true,
+            "normalized_available": true
+        }
+    },
+    {
+        "sign_id": "SIGN_0090",
+        "canonical_word": "grandmother",
+        "dataset_word": "70. Grandmother",
+        "english_terms": [
+            "grandmother"
+        ],
+        "english_synonyms": [],
+        "marathi_terms": [
+            "आजी"
+        ],
+        "source_category": "unknown",
+        "video_count": 4,
+        "media_pipe": {
+            "raw_available": true,
+            "normalized_available": true
+        }
+    },
+    {
+        "sign_id": "SIGN_0091",
+        "canonical_word": "green",
+        "dataset_word": "48. Green",
+        "english_terms": [
+            "green"
+        ],
+        "english_synonyms": [],
+        "marathi_terms": [
+            "हिरवा"
+        ],
+        "source_category": "unknown",
+        "video_count": 4,
+        "media_pipe": {
+            "raw_available": true,
+            "normalized_available": true
+        }
+    },
+    {
+        "sign_id": "SIGN_0092",
+        "canonical_word": "grey",
+        "dataset_word": "56. Grey",
+        "english_terms": [
+            "grey"
+        ],
+        "english_synonyms": [],
+        "marathi_terms": [
+            "राखाडी"
+        ],
+        "source_category": "unknown",
+        "video_count": 4,
+        "media_pipe": {
+            "raw_available": true,
+            "normalized_available": true
+        }
+    },
+    {
+        "sign_id": "SIGN_0093",
+        "canonical_word": "ground",
+        "dataset_word": "34. Ground",
+        "english_terms": [
+            "ground"
+        ],
+        "english_synonyms": [],
+        "marathi_terms": [
+            "जमीन"
+        ],
+        "source_category": "unknown",
+        "video_count": 8,
+        "media_pipe": {
+            "raw_available": true,
+            "normalized_available": true
+        }
+    },
+    {
+        "sign_id": "SIGN_0094",
+        "canonical_word": "gun",
+        "dataset_word": "16. Gun",
+        "english_terms": [
+            "gun"
+        ],
+        "english_synonyms": [],
+        "marathi_terms": [
+            "बंदूक"
+        ],
+        "source_category": "unknown",
+        "video_count": 4,
+        "media_pipe": {
+            "raw_available": true,
+            "normalized_available": true
+        }
+    },
+    {
+        "sign_id": "SIGN_0095",
+        "canonical_word": "happy",
+        "dataset_word": "3. happy",
+        "english_terms": [
+            "happy"
+        ],
+        "english_synonyms": [],
+        "marathi_terms": [
+            "आनंदी"
+        ],
+        "source_category": "unknown",
+        "video_count": 8,
+        "media_pipe": {
+            "raw_available": true,
+            "normalized_available": true
+        }
+    },
+    {
+        "sign_id": "SIGN_0096",
+        "canonical_word": "hard",
+        "dataset_word": "26. hard",
+        "english_terms": [
+            "hard"
+        ],
+        "english_synonyms": [],
+        "marathi_terms": [
+            "कठीण"
+        ],
+        "source_category": "unknown",
+        "video_count": 8,
+        "media_pipe": {
+            "raw_available": true,
+            "normalized_available": true
+        }
+    },
+    {
+        "sign_id": "SIGN_0097",
+        "canonical_word": "hat",
+        "dataset_word": "37. Hat",
+        "english_terms": [
+            "hat"
+        ],
+        "english_synonyms": [],
+        "marathi_terms": [
+            "टोपी"
+        ],
+        "source_category": "unknown",
+        "video_count": 4,
+        "media_pipe": {
+            "raw_available": true,
+            "normalized_available": true
+        }
+    },
+    {
+        "sign_id": "SIGN_0098",
+        "canonical_word": "he",
+        "dataset_word": "42. he",
+        "english_terms": [
+            "he"
+        ],
+        "english_synonyms": [],
+        "marathi_terms": [
+            "तो"
+        ],
+        "source_category": "unknown",
+        "video_count": 4,
+        "media_pipe": {
+            "raw_available": true,
+            "normalized_available": true
+        }
+    },
+    {
+        "sign_id": "SIGN_0099",
+        "canonical_word": "healthy",
+        "dataset_word": "99. healthy",
+        "english_terms": [
+            "healthy"
+        ],
+        "english_synonyms": [],
+        "marathi_terms": [
+            "निरोगी"
+        ],
+        "source_category": "unknown",
+        "video_count": 4,
+        "media_pipe": {
+            "raw_available": true,
+            "normalized_available": true
+        }
+    },
+    {
+        "sign_id": "SIGN_0100",
+        "canonical_word": "heavy",
+        "dataset_word": "35. heavy",
+        "english_terms": [
+            "heavy"
+        ],
+        "english_synonyms": [],
+        "marathi_terms": [
+            "जड"
+        ],
+        "source_category": "unknown",
+        "video_count": 8,
+        "media_pipe": {
+            "raw_available": true,
+            "normalized_available": true
+        }
+    },
+    {
+        "sign_id": "SIGN_0101",
+        "canonical_word": "hello",
+        "dataset_word": "48. Hello",
+        "english_terms": [
+            "hello"
+        ],
+        "english_synonyms": [],
+        "marathi_terms": [
+            "नमस्कार"
+        ],
+        "source_category": "unknown",
+        "video_count": 4,
+        "media_pipe": {
+            "raw_available": true,
+            "normalized_available": true
+        }
+    },
+    {
+        "sign_id": "SIGN_0102",
+        "canonical_word": "high",
+        "dataset_word": "23. high",
+        "english_terms": [
+            "high"
+        ],
+        "english_synonyms": [],
+        "marathi_terms": [
+            "उंच"
+        ],
+        "source_category": "unknown",
+        "video_count": 8,
+        "media_pipe": {
+            "raw_available": true,
+            "normalized_available": true
+        }
+    },
+    {
+        "sign_id": "SIGN_0103",
+        "canonical_word": "horse",
+        "dataset_word": "7. Horse",
+        "english_terms": [
+            "horse"
+        ],
+        "english_synonyms": [],
+        "marathi_terms": [
+            "घोडा"
+        ],
+        "source_category": "unknown",
+        "video_count": 4,
+        "media_pipe": {
+            "raw_available": true,
+            "normalized_available": true
+        }
+    },
+    {
+        "sign_id": "SIGN_0104",
+        "canonical_word": "hospital",
+        "dataset_word": "30. Hospital",
+        "english_terms": [
+            "hospital"
+        ],
+        "english_synonyms": [],
+        "marathi_terms": [
+            "रुग्णालय"
+        ],
+        "source_category": "unknown",
+        "video_count": 8,
+        "media_pipe": {
+            "raw_available": true,
+            "normalized_available": true
+        }
+    },
+    {
+        "sign_id": "SIGN_0105",
+        "canonical_word": "hot",
+        "dataset_word": "87. hot",
+        "english_terms": [
+            "hot"
+        ],
+        "english_synonyms": [],
+        "marathi_terms": [
+            "गरम"
+        ],
+        "source_category": "unknown",
+        "video_count": 4,
+        "media_pipe": {
+            "raw_available": true,
+            "normalized_available": true
+        }
+    },
+    {
+        "sign_id": "SIGN_0106",
+        "canonical_word": "hour",
+        "dataset_word": "79. Hour",
+        "english_terms": [
+            "hour"
+        ],
+        "english_synonyms": [],
+        "marathi_terms": [
+            "तास"
+        ],
+        "source_category": "unknown",
+        "video_count": 4,
+        "media_pipe": {
+            "raw_available": true,
+            "normalized_available": true
+        }
+    },
+    {
+        "sign_id": "SIGN_0107",
+        "canonical_word": "house",
+        "dataset_word": "19. House",
+        "english_terms": [
+            "house"
+        ],
+        "english_synonyms": [],
+        "marathi_terms": [
+            "घर"
+        ],
+        "source_category": "unknown",
+        "video_count": 4,
+        "media_pipe": {
+            "raw_available": true,
+            "normalized_available": true
+        }
+    },
+    {
+        "sign_id": "SIGN_0108",
+        "canonical_word": "how are you",
+        "dataset_word": "49. How are you",
+        "english_terms": [
+            "how are you"
+        ],
+        "english_synonyms": [],
+        "marathi_terms": [
+            "तू कसा आहेस"
+        ],
+        "source_category": "unknown",
+        "video_count": 4,
+        "media_pipe": {
+            "raw_available": true,
+            "normalized_available": true
+        }
+    },
+    {
+        "sign_id": "SIGN_0109",
+        "canonical_word": "husband",
+        "dataset_word": "71. Husband",
+        "english_terms": [
+            "husband"
+        ],
+        "english_synonyms": [],
+        "marathi_terms": [
+            "पती"
+        ],
+        "source_category": "unknown",
+        "video_count": 4,
+        "media_pipe": {
+            "raw_available": true,
+            "normalized_available": true
+        }
+    },
+    {
+        "sign_id": "SIGN_0110",
+        "canonical_word": "i",
+        "dataset_word": "40. I",
+        "english_terms": [
+            "i"
+        ],
+        "english_synonyms": [],
+        "marathi_terms": [
+            "मी"
+        ],
+        "source_category": "unknown",
+        "video_count": 4,
+        "media_pipe": {
+            "raw_available": true,
+            "normalized_available": true
+        }
+    },
+    {
+        "sign_id": "SIGN_0111",
+        "canonical_word": "india",
+        "dataset_word": "33. India",
+        "english_terms": [
+            "india"
+        ],
+        "english_synonyms": [],
+        "marathi_terms": [
+            "भारत"
+        ],
+        "source_category": "unknown",
+        "video_count": 8,
+        "media_pipe": {
+            "raw_available": true,
+            "normalized_available": true
+        }
+    },
+    {
+        "sign_id": "SIGN_0112",
+        "canonical_word": "it",
+        "dataset_word": "44. it",
+        "english_terms": [
+            "it"
+        ],
+        "english_synonyms": [],
+        "marathi_terms": [
+            "ते"
+        ],
+        "source_category": "unknown",
+        "video_count": 4,
+        "media_pipe": {
+            "raw_available": true,
+            "normalized_available": true
+        }
+    },
+    {
+        "sign_id": "SIGN_0113",
+        "canonical_word": "job",
+        "dataset_word": "99. Job",
+        "english_terms": [
+            "job"
+        ],
+        "english_synonyms": [],
+        "marathi_terms": [
+            "नोकरी"
+        ],
+        "source_category": "unknown",
+        "video_count": 4,
+        "media_pipe": {
+            "raw_available": true,
+            "normalized_available": true
+        }
+    },
+    {
+        "sign_id": "SIGN_0114",
+        "canonical_word": "key",
+        "dataset_word": "39. Key",
+        "english_terms": [
+            "key"
+        ],
+        "english_synonyms": [],
+        "marathi_terms": [
+            "चावी"
+        ],
+        "source_category": "unknown",
+        "video_count": 4,
+        "media_pipe": {
+            "raw_available": true,
+            "normalized_available": true
+        }
+    },
+    {
+        "sign_id": "SIGN_0115",
+        "canonical_word": "king",
+        "dataset_word": "73. King",
+        "english_terms": [
+            "king"
+        ],
+        "english_synonyms": [],
+        "marathi_terms": [
+            "राजा"
+        ],
+        "source_category": "unknown",
+        "video_count": 4,
+        "media_pipe": {
+            "raw_available": true,
+            "normalized_available": true
+        }
+    },
+    {
+        "sign_id": "SIGN_0116",
+        "canonical_word": "kitchen",
+        "dataset_word": "31. Kitchen",
+        "english_terms": [
+            "kitchen"
+        ],
+        "english_synonyms": [],
+        "marathi_terms": [
+            "स्वयंपाकघर"
+        ],
+        "source_category": "unknown",
+        "video_count": 8,
+        "media_pipe": {
+            "raw_available": true,
+            "normalized_available": true
+        }
+    },
+    {
+        "sign_id": "SIGN_0117",
+        "canonical_word": "lamp",
+        "dataset_word": "52. Lamp",
+        "english_terms": [
+            "lamp"
+        ],
+        "english_synonyms": [],
+        "marathi_terms": [
+            "दिवा"
+        ],
+        "source_category": "unknown",
+        "video_count": 4,
+        "media_pipe": {
+            "raw_available": true,
+            "normalized_available": true
+        }
+    },
+    {
+        "sign_id": "SIGN_0118",
+        "canonical_word": "laptop",
+        "dataset_word": "56. Laptop",
+        "english_terms": [
+            "laptop"
+        ],
+        "english_synonyms": [],
+        "marathi_terms": [
+            "लॅपटॉप"
+        ],
+        "source_category": "unknown",
+        "video_count": 4,
+        "media_pipe": {
+            "raw_available": true,
+            "normalized_available": true
+        }
+    },
+    {
+        "sign_id": "SIGN_0119",
+        "canonical_word": "lawyer",
+        "dataset_word": "86. Lawyer",
+        "english_terms": [
+            "lawyer"
+        ],
+        "english_synonyms": [],
+        "marathi_terms": [
+            "वकील"
+        ],
+        "source_category": "unknown",
+        "video_count": 4,
+        "media_pipe": {
+            "raw_available": true,
+            "normalized_available": true
+        }
+    },
+    {
+        "sign_id": "SIGN_0120",
+        "canonical_word": "letter",
+        "dataset_word": "41. Letter",
+        "english_terms": [
+            "letter"
+        ],
+        "english_synonyms": [],
+        "marathi_terms": [
+            "पत्र"
+        ],
+        "source_category": "unknown",
+        "video_count": 4,
+        "media_pipe": {
+            "raw_available": true,
+            "normalized_available": true
+        }
+    },
+    {
+        "sign_id": "SIGN_0121",
+        "canonical_word": "library",
+        "dataset_word": "29. Library",
+        "english_terms": [
+            "library"
+        ],
+        "english_synonyms": [],
+        "marathi_terms": [
+            "ग्रंथालय"
+        ],
+        "source_category": "unknown",
+        "video_count": 8,
+        "media_pipe": {
+            "raw_available": true,
+            "normalized_available": true
+        }
+    },
+    {
+        "sign_id": "SIGN_0122",
+        "canonical_word": "light",
+        "dataset_word": "36. light",
+        "english_terms": [
+            "light"
+        ],
+        "english_synonyms": [],
+        "marathi_terms": [
+            "प्रकाश"
+        ],
+        "source_category": "unknown",
+        "video_count": 8,
+        "media_pipe": {
+            "raw_available": true,
+            "normalized_available": true
+        }
+    },
+    {
+        "sign_id": "SIGN_0123",
+        "canonical_word": "location",
+        "dataset_word": "36. Location",
+        "english_terms": [
+            "location"
+        ],
+        "english_synonyms": [],
+        "marathi_terms": [
+            "ठिकाण"
+        ],
+        "source_category": "unknown",
+        "video_count": 8,
+        "media_pipe": {
+            "raw_available": true,
+            "normalized_available": true
+        }
+    },
+    {
+        "sign_id": "SIGN_0124",
+        "canonical_word": "lock",
+        "dataset_word": "43. Lock",
+        "english_terms": [
+            "lock"
+        ],
+        "english_synonyms": [],
+        "marathi_terms": [
+            "कुलूप"
+        ],
+        "source_category": "unknown",
+        "video_count": 4,
+        "media_pipe": {
+            "raw_available": true,
+            "normalized_available": true
+        }
+    },
+    {
+        "sign_id": "SIGN_0125",
+        "canonical_word": "long",
+        "dataset_word": "78. long",
+        "english_terms": [
+            "long"
+        ],
+        "english_synonyms": [],
+        "marathi_terms": [
+            "लांब"
+        ],
+        "source_category": "unknown",
+        "video_count": 4,
+        "media_pipe": {
+            "raw_available": true,
+            "normalized_available": true
+        }
+    },
+    {
+        "sign_id": "SIGN_0126",
+        "canonical_word": "loose",
+        "dataset_word": "22. loose",
+        "english_terms": [
+            "loose"
+        ],
+        "english_synonyms": [],
+        "marathi_terms": [
+            "सैल"
+        ],
+        "source_category": "unknown",
+        "video_count": 8,
+        "media_pipe": {
+            "raw_available": true,
+            "normalized_available": true
+        }
+    },
+    {
+        "sign_id": "SIGN_0127",
+        "canonical_word": "loud",
+        "dataset_word": "1. loud",
+        "english_terms": [
+            "loud"
+        ],
+        "english_synonyms": [],
+        "marathi_terms": [
+            "मोठ्याने"
+        ],
+        "source_category": "unknown",
+        "video_count": 4,
+        "media_pipe": {
+            "raw_available": true,
+            "normalized_available": true
+        }
+    },
+    {
+        "sign_id": "SIGN_0128",
+        "canonical_word": "low",
+        "dataset_word": "24. low",
+        "english_terms": [
+            "low"
+        ],
+        "english_synonyms": [],
+        "marathi_terms": [
+            "कमी"
+        ],
+        "source_category": "unknown",
+        "video_count": 8,
+        "media_pipe": {
+            "raw_available": true,
+            "normalized_available": true
+        }
+    },
+    {
+        "sign_id": "SIGN_0129",
+        "canonical_word": "male",
+        "dataset_word": "19. male",
+        "english_terms": [
+            "male"
+        ],
+        "english_synonyms": [],
+        "marathi_terms": [
+            "पुरुष"
+        ],
+        "source_category": "unknown",
+        "video_count": 4,
+        "media_pipe": {
+            "raw_available": true,
+            "normalized_available": true
+        }
+    },
+    {
+        "sign_id": "SIGN_0130",
+        "canonical_word": "man",
+        "dataset_word": "64. Man",
+        "english_terms": [
+            "man"
+        ],
+        "english_synonyms": [],
+        "marathi_terms": [
+            "माणूस"
+        ],
+        "source_category": "unknown",
+        "video_count": 4,
+        "media_pipe": {
+            "raw_available": true,
+            "normalized_available": true
+        }
+    },
+    {
+        "sign_id": "SIGN_0131",
+        "canonical_word": "manager",
+        "dataset_word": "96. Manager",
+        "english_terms": [
+            "manager"
+        ],
+        "english_synonyms": [],
+        "marathi_terms": [
+            "व्यवस्थापक"
+        ],
+        "source_category": "unknown",
+        "video_count": 4,
+        "media_pipe": {
+            "raw_available": true,
+            "normalized_available": true
+        }
+    },
+    {
+        "sign_id": "SIGN_0132",
+        "canonical_word": "market",
+        "dataset_word": "32. Market",
+        "english_terms": [
+            "market"
+        ],
+        "english_synonyms": [],
+        "marathi_terms": [
+            "बाजार"
+        ],
+        "source_category": "unknown",
+        "video_count": 8,
+        "media_pipe": {
+            "raw_available": true,
+            "normalized_available": true
+        }
+    },
+    {
+        "sign_id": "SIGN_0133",
+        "canonical_word": "marriage",
+        "dataset_word": "6. Marriage",
+        "english_terms": [
+            "marriage"
+        ],
+        "english_synonyms": [],
+        "marathi_terms": [
+            "लग्न"
+        ],
+        "source_category": "unknown",
+        "video_count": 4,
+        "media_pipe": {
+            "raw_available": true,
+            "normalized_available": true
+        }
+    },
+    {
+        "sign_id": "SIGN_0134",
+        "canonical_word": "mean",
+        "dataset_word": "10. Mean",
+        "english_terms": [
+            "mean"
+        ],
+        "english_synonyms": [],
+        "marathi_terms": [
+            "अर्थ"
+        ],
+        "source_category": "unknown",
+        "video_count": 4,
+        "media_pipe": {
+            "raw_available": true,
+            "normalized_available": true
+        }
+    },
+    {
+        "sign_id": "SIGN_0135",
+        "canonical_word": "medicine",
+        "dataset_word": "3. Medicine",
+        "english_terms": [
+            "medicine"
+        ],
+        "english_synonyms": [],
+        "marathi_terms": [
+            "औषध"
+        ],
+        "source_category": "unknown",
+        "video_count": 8,
+        "media_pipe": {
+            "raw_available": true,
+            "normalized_available": true
+        }
+    },
+    {
+        "sign_id": "SIGN_0136",
+        "canonical_word": "minute",
+        "dataset_word": "80. Minute",
+        "english_terms": [
+            "minute"
+        ],
+        "english_synonyms": [],
+        "marathi_terms": [
+            "मिनिट"
+        ],
+        "source_category": "unknown",
+        "video_count": 4,
+        "media_pipe": {
+            "raw_available": true,
+            "normalized_available": true
+        }
+    },
+    {
+        "sign_id": "SIGN_0137",
+        "canonical_word": "monday",
+        "dataset_word": "67. Monday",
+        "english_terms": [
+            "monday"
+        ],
+        "english_synonyms": [],
+        "marathi_terms": [
+            "सोमवार"
+        ],
+        "source_category": "unknown",
+        "video_count": 4,
+        "media_pipe": {
+            "raw_available": true,
+            "normalized_available": true
+        }
+    },
+    {
+        "sign_id": "SIGN_0138",
+        "canonical_word": "money",
+        "dataset_word": "4. Money",
+        "english_terms": [
+            "money"
+        ],
+        "english_synonyms": [],
+        "marathi_terms": [
+            "पैसे"
+        ],
+        "source_category": "unknown",
+        "video_count": 4,
+        "media_pipe": {
+            "raw_available": true,
+            "normalized_available": true
+        }
+    },
+    {
+        "sign_id": "SIGN_0139",
+        "canonical_word": "monsoon",
+        "dataset_word": "Ex. Monsoon",
+        "english_terms": [
+            "monsoon"
+        ],
+        "english_synonyms": [],
+        "marathi_terms": [
+            "पावसाळा"
+        ],
+        "source_category": "unknown",
+        "video_count": 4,
+        "media_pipe": {
+            "raw_available": true,
+            "normalized_available": true
+        }
+    },
+    {
+        "sign_id": "SIGN_0140",
+        "canonical_word": "month",
+        "dataset_word": "77. Month",
+        "english_terms": [
+            "month"
+        ],
+        "english_synonyms": [],
+        "marathi_terms": [
+            "महिना"
+        ],
+        "source_category": "unknown",
+        "video_count": 4,
+        "media_pipe": {
+            "raw_available": true,
+            "normalized_available": true
+        }
+    },
+    {
+        "sign_id": "SIGN_0141",
+        "canonical_word": "morning",
+        "dataset_word": "82. Morning",
+        "english_terms": [
+            "morning"
+        ],
+        "english_synonyms": [],
+        "marathi_terms": [
+            "सकाळ"
+        ],
+        "source_category": "unknown",
+        "video_count": 4,
+        "media_pipe": {
+            "raw_available": true,
+            "normalized_available": true
+        }
+    },
+    {
+        "sign_id": "SIGN_0142",
+        "canonical_word": "mother",
+        "dataset_word": "60. Mother",
+        "english_terms": [
+            "mother"
+        ],
+        "english_synonyms": [],
+        "marathi_terms": [
+            "आई"
+        ],
+        "source_category": "unknown",
+        "video_count": 4,
+        "media_pipe": {
+            "raw_available": true,
+            "normalized_available": true
+        }
+    },
+    {
+        "sign_id": "SIGN_0143",
+        "canonical_word": "mouse",
+        "dataset_word": "6. Mouse",
+        "english_terms": [
+            "mouse"
+        ],
+        "english_synonyms": [],
+        "marathi_terms": [
+            "उंदीर"
+        ],
+        "source_category": "unknown",
+        "video_count": 4,
+        "media_pipe": {
+            "raw_available": true,
+            "normalized_available": true
+        }
+    },
+    {
+        "sign_id": "SIGN_0144",
+        "canonical_word": "narrow",
+        "dataset_word": "82. narrow",
+        "english_terms": [
+            "narrow"
+        ],
+        "english_synonyms": [],
+        "marathi_terms": [
+            "अरुंद"
+        ],
+        "source_category": "unknown",
+        "video_count": 4,
+        "media_pipe": {
+            "raw_available": true,
+            "normalized_available": true
+        }
+    },
+    {
+        "sign_id": "SIGN_0145",
+        "canonical_word": "neighbour",
+        "dataset_word": "76. Neighbour",
+        "english_terms": [
+            "neighbour"
+        ],
+        "english_synonyms": [],
+        "marathi_terms": [
+            "शेजारी"
+        ],
+        "source_category": "unknown",
+        "video_count": 4,
+        "media_pipe": {
+            "raw_available": true,
+            "normalized_available": true
+        }
+    },
+    {
+        "sign_id": "SIGN_0146",
+        "canonical_word": "new",
+        "dataset_word": "91. new",
+        "english_terms": [
+            "new"
+        ],
+        "english_synonyms": [],
+        "marathi_terms": [
+            "नवीन"
+        ],
+        "source_category": "unknown",
+        "video_count": 4,
+        "media_pipe": {
+            "raw_available": true,
+            "normalized_available": true
+        }
+    },
+    {
+        "sign_id": "SIGN_0147",
+        "canonical_word": "newspaper",
+        "dataset_word": "15. Newspaper",
+        "english_terms": [
+            "newspaper"
+        ],
+        "english_synonyms": [],
+        "marathi_terms": [
+            "वर्तमानपत्र"
+        ],
+        "source_category": "unknown",
+        "video_count": 4,
+        "media_pipe": {
+            "raw_available": true,
+            "normalized_available": true
+        }
+    },
+    {
+        "sign_id": "SIGN_0148",
+        "canonical_word": "nice",
+        "dataset_word": "9. Nice",
+        "english_terms": [
+            "nice"
+        ],
+        "english_synonyms": [],
+        "marathi_terms": [
+            "छान"
+        ],
+        "source_category": "unknown",
+        "video_count": 4,
+        "media_pipe": {
+            "raw_available": true,
+            "normalized_available": true
+        }
+    },
+    {
+        "sign_id": "SIGN_0149",
+        "canonical_word": "night",
+        "dataset_word": "85. Night",
+        "english_terms": [
+            "night"
+        ],
+        "english_synonyms": [],
+        "marathi_terms": [
+            "रात्र"
+        ],
+        "source_category": "unknown",
+        "video_count": 4,
+        "media_pipe": {
+            "raw_available": true,
+            "normalized_available": true
+        }
+    },
+    {
+        "sign_id": "SIGN_0150",
+        "canonical_word": "office",
+        "dataset_word": "25. Office",
+        "english_terms": [
+            "office"
+        ],
+        "english_synonyms": [],
+        "marathi_terms": [
+            "कार्यालय"
+        ],
+        "source_category": "unknown",
+        "video_count": 6,
+        "media_pipe": {
+            "raw_available": true,
+            "normalized_available": true
+        }
+    },
+    {
+        "sign_id": "SIGN_0151",
+        "canonical_word": "old",
+        "dataset_word": "92. old",
+        "english_terms": [
+            "old"
+        ],
+        "english_synonyms": [],
+        "marathi_terms": [
+            "जुने"
+        ],
+        "source_category": "unknown",
+        "video_count": 4,
+        "media_pipe": {
+            "raw_available": true,
+            "normalized_available": true
+        }
+    },
+    {
+        "sign_id": "SIGN_0152",
+        "canonical_word": "orange",
+        "dataset_word": "53. Orange",
+        "english_terms": [
+            "orange"
+        ],
+        "english_synonyms": [],
+        "marathi_terms": [
+            "नारंगी"
+        ],
+        "source_category": "unknown",
+        "video_count": 4,
+        "media_pipe": {
+            "raw_available": true,
+            "normalized_available": true
+        }
+    },
+    {
+        "sign_id": "SIGN_0153",
+        "canonical_word": "page",
+        "dataset_word": "38. Page",
+        "english_terms": [
+            "page"
+        ],
+        "english_synonyms": [],
+        "marathi_terms": [
+            "पान"
+        ],
+        "source_category": "unknown",
+        "video_count": 4,
+        "media_pipe": {
+            "raw_available": true,
+            "normalized_available": true
+        }
+    },
+    {
+        "sign_id": "SIGN_0154",
+        "canonical_word": "paint",
+        "dataset_word": "40. Paint",
+        "english_terms": [
+            "paint"
+        ],
+        "english_synonyms": [],
+        "marathi_terms": [
+            "रंगविणे"
+        ],
+        "source_category": "unknown",
+        "video_count": 4,
+        "media_pipe": {
+            "raw_available": true,
+            "normalized_available": true
+        }
+    },
+    {
+        "sign_id": "SIGN_0155",
+        "canonical_word": "pant",
+        "dataset_word": "43. Pant",
+        "english_terms": [
+            "pant"
+        ],
+        "english_synonyms": [],
+        "marathi_terms": [
+            "पँट"
+        ],
+        "source_category": "unknown",
+        "video_count": 4,
+        "media_pipe": {
+            "raw_available": true,
+            "normalized_available": true
+        }
+    },
+    {
+        "sign_id": "SIGN_0156",
+        "canonical_word": "paper",
+        "dataset_word": "42. Paper",
+        "english_terms": [
+            "paper"
+        ],
+        "english_synonyms": [],
+        "marathi_terms": [
+            "कागद"
+        ],
+        "source_category": "unknown",
+        "video_count": 4,
+        "media_pipe": {
+            "raw_available": true,
+            "normalized_available": true
+        }
+    },
+    {
+        "sign_id": "SIGN_0157",
+        "canonical_word": "parent",
+        "dataset_word": "62. Parent",
+        "english_terms": [
+            "parent"
+        ],
+        "english_synonyms": [],
+        "marathi_terms": [
+            "पालक"
+        ],
+        "source_category": "unknown",
+        "video_count": 4,
+        "media_pipe": {
+            "raw_available": true,
+            "normalized_available": true
+        }
+    },
+    {
+        "sign_id": "SIGN_0158",
+        "canonical_word": "park",
+        "dataset_word": "27. Park",
+        "english_terms": [
+            "park"
+        ],
+        "english_synonyms": [],
+        "marathi_terms": [
+            "उद्यान"
+        ],
+        "source_category": "unknown",
+        "video_count": 8,
+        "media_pipe": {
+            "raw_available": true,
+            "normalized_available": true
+        }
+    },
+    {
+        "sign_id": "SIGN_0159",
+        "canonical_word": "patient",
+        "dataset_word": "88. Patient",
+        "english_terms": [
+            "patient"
+        ],
+        "english_synonyms": [],
+        "marathi_terms": [
+            "रुग्ण"
+        ],
+        "source_category": "unknown",
+        "video_count": 4,
+        "media_pipe": {
+            "raw_available": true,
+            "normalized_available": true
+        }
+    },
+    {
+        "sign_id": "SIGN_0160",
+        "canonical_word": "peace",
+        "dataset_word": "12. Peace",
+        "english_terms": [
+            "peace"
+        ],
+        "english_synonyms": [],
+        "marathi_terms": [
+            "शांतता"
+        ],
+        "source_category": "unknown",
+        "video_count": 4,
+        "media_pipe": {
+            "raw_available": true,
+            "normalized_available": true
+        }
+    },
+    {
+        "sign_id": "SIGN_0161",
+        "canonical_word": "pen",
+        "dataset_word": "34. Pen",
+        "english_terms": [
+            "pen"
+        ],
+        "english_synonyms": [],
+        "marathi_terms": [
+            "पेन"
+        ],
+        "source_category": "unknown",
+        "video_count": 8,
+        "media_pipe": {
+            "raw_available": true,
+            "normalized_available": true
+        }
+    },
+    {
+        "sign_id": "SIGN_0162",
+        "canonical_word": "pencil",
+        "dataset_word": "33. Pencil",
+        "english_terms": [
+            "pencil"
+        ],
+        "english_synonyms": [],
+        "marathi_terms": [
+            "पेन्सिल"
+        ],
+        "source_category": "unknown",
+        "video_count": 8,
+        "media_pipe": {
+            "raw_available": true,
+            "normalized_available": true
+        }
+    },
+    {
+        "sign_id": "SIGN_0163",
+        "canonical_word": "photograph",
+        "dataset_word": "35. Photograph",
+        "english_terms": [
+            "photograph"
+        ],
+        "english_synonyms": [],
+        "marathi_terms": [
+            "छायाचित्र"
+        ],
+        "source_category": "unknown",
+        "video_count": 8,
+        "media_pipe": {
+            "raw_available": true,
+            "normalized_available": true
+        }
+    },
+    {
+        "sign_id": "SIGN_0164",
+        "canonical_word": "pink",
+        "dataset_word": "52. Pink",
+        "english_terms": [
+            "pink"
+        ],
+        "english_synonyms": [],
+        "marathi_terms": [
+            "गुलाबी"
+        ],
+        "source_category": "unknown",
+        "video_count": 4,
+        "media_pipe": {
+            "raw_available": true,
+            "normalized_available": true
+        }
+    },
+    {
+        "sign_id": "SIGN_0165",
+        "canonical_word": "plane",
+        "dataset_word": "10. Plane",
+        "english_terms": [
+            "plane"
+        ],
+        "english_synonyms": [],
+        "marathi_terms": [
+            "विमान"
+        ],
+        "source_category": "unknown",
+        "video_count": 4,
+        "media_pipe": {
+            "raw_available": true,
+            "normalized_available": true
+        }
+    },
+    {
+        "sign_id": "SIGN_0166",
+        "canonical_word": "player",
+        "dataset_word": "82. Player",
+        "english_terms": [
+            "player"
+        ],
+        "english_synonyms": [],
+        "marathi_terms": [
+            "खेळाडू"
+        ],
+        "source_category": "unknown",
+        "video_count": 4,
+        "media_pipe": {
+            "raw_available": true,
+            "normalized_available": true
+        }
+    },
+    {
+        "sign_id": "SIGN_0167",
+        "canonical_word": "pleased",
+        "dataset_word": "56. Pleased",
+        "english_terms": [
+            "pleased"
+        ],
+        "english_synonyms": [],
+        "marathi_terms": [
+            "आनंदी"
+        ],
+        "source_category": "unknown",
+        "video_count": 4,
+        "media_pipe": {
+            "raw_available": true,
+            "normalized_available": true
+        }
+    },
+    {
+        "sign_id": "SIGN_0168",
+        "canonical_word": "pocket",
+        "dataset_word": "45. Pocket",
+        "english_terms": [
+            "pocket"
+        ],
+        "english_synonyms": [],
+        "marathi_terms": [
+            "खिसा"
+        ],
+        "source_category": "unknown",
+        "video_count": 4,
+        "media_pipe": {
+            "raw_available": true,
+            "normalized_available": true
+        }
+    },
+    {
+        "sign_id": "SIGN_0169",
+        "canonical_word": "police",
+        "dataset_word": "92. Police",
+        "english_terms": [
+            "police"
+        ],
+        "english_synonyms": [],
+        "marathi_terms": [
+            "पोलीस"
+        ],
+        "source_category": "unknown",
+        "video_count": 4,
+        "media_pipe": {
+            "raw_available": true,
+            "normalized_available": true
+        }
+    },
+    {
+        "sign_id": "SIGN_0170",
+        "canonical_word": "poor",
+        "dataset_word": "12. poor",
+        "english_terms": [
+            "poor"
+        ],
+        "english_synonyms": [],
+        "marathi_terms": [
+            "गरीब"
+        ],
+        "source_category": "unknown",
+        "video_count": 4,
+        "media_pipe": {
+            "raw_available": true,
+            "normalized_available": true
+        }
+    },
+    {
+        "sign_id": "SIGN_0171",
+        "canonical_word": "president",
+        "dataset_word": "75. President",
+        "english_terms": [
+            "president"
+        ],
+        "english_synonyms": [],
+        "marathi_terms": [
+            "अध्यक्ष"
+        ],
+        "source_category": "unknown",
+        "video_count": 4,
+        "media_pipe": {
+            "raw_available": true,
+            "normalized_available": true
+        }
+    },
+    {
+        "sign_id": "SIGN_0172",
+        "canonical_word": "price",
+        "dataset_word": "20. Price",
+        "english_terms": [
+            "price"
+        ],
+        "english_synonyms": [],
+        "marathi_terms": [
+            "किंमत"
+        ],
+        "source_category": "unknown",
+        "video_count": 4,
+        "media_pipe": {
+            "raw_available": true,
+            "normalized_available": true
+        }
+    },
+    {
+        "sign_id": "SIGN_0173",
+        "canonical_word": "priest",
+        "dataset_word": "91. Priest",
+        "english_terms": [
+            "priest"
+        ],
+        "english_synonyms": [],
+        "marathi_terms": [
+            "पुजारी"
+        ],
+        "source_category": "unknown",
+        "video_count": 4,
+        "media_pipe": {
+            "raw_available": true,
+            "normalized_available": true
+        }
+    },
+    {
+        "sign_id": "SIGN_0174",
+        "canonical_word": "queen",
+        "dataset_word": "74. Queen",
+        "english_terms": [
+            "queen"
+        ],
+        "english_synonyms": [],
+        "marathi_terms": [
+            "राणी"
+        ],
+        "source_category": "unknown",
+        "video_count": 4,
+        "media_pipe": {
+            "raw_available": true,
+            "normalized_available": true
+        }
+    },
+    {
+        "sign_id": "SIGN_0175",
+        "canonical_word": "quiet",
+        "dataset_word": "2. quiet",
+        "english_terms": [
+            "quiet"
+        ],
+        "english_synonyms": [],
+        "marathi_terms": [
+            "शांत"
+        ],
+        "source_category": "unknown",
+        "video_count": 4,
+        "media_pipe": {
+            "raw_available": true,
+            "normalized_available": true
+        }
+    },
+    {
+        "sign_id": "SIGN_0176",
+        "canonical_word": "race (ethnicity)",
+        "dataset_word": "8. Race (ethnicity)",
+        "english_terms": [
+            "race (ethnicity)"
+        ],
+        "english_synonyms": [],
+        "marathi_terms": [
+            "वंश"
+        ],
+        "source_category": "unknown",
+        "video_count": 4,
+        "media_pipe": {
+            "raw_available": true,
+            "normalized_available": true
+        }
+    },
+    {
+        "sign_id": "SIGN_0177",
+        "canonical_word": "radio",
+        "dataset_word": "60. Radio",
+        "english_terms": [
+            "radio"
+        ],
+        "english_synonyms": [],
+        "marathi_terms": [
+            "रेडिओ"
+        ],
+        "source_category": "unknown",
+        "video_count": 4,
+        "media_pipe": {
+            "raw_available": true,
+            "normalized_available": true
+        }
+    },
+    {
+        "sign_id": "SIGN_0178",
+        "canonical_word": "red",
+        "dataset_word": "47. Red",
+        "english_terms": [
+            "red"
+        ],
+        "english_synonyms": [],
+        "marathi_terms": [
+            "लाल"
+        ],
+        "source_category": "unknown",
+        "video_count": 4,
+        "media_pipe": {
+            "raw_available": true,
+            "normalized_available": true
+        }
+    },
+    {
+        "sign_id": "SIGN_0179",
+        "canonical_word": "religion",
+        "dataset_word": "1. Religion",
+        "english_terms": [
+            "religion"
+        ],
+        "english_synonyms": [],
+        "marathi_terms": [
+            "धर्म"
+        ],
+        "source_category": "unknown",
+        "video_count": 5,
+        "media_pipe": {
+            "raw_available": true,
+            "normalized_available": true
+        }
+    },
+    {
+        "sign_id": "SIGN_0180",
+        "canonical_word": "reporter",
+        "dataset_word": "97. Reporter",
+        "english_terms": [
+            "reporter"
+        ],
+        "english_synonyms": [],
+        "marathi_terms": [
+            "पत्रकार"
+        ],
+        "source_category": "unknown",
+        "video_count": 4,
+        "media_pipe": {
+            "raw_available": true,
+            "normalized_available": true
+        }
+    },
+    {
+        "sign_id": "SIGN_0181",
+        "canonical_word": "restaurant",
+        "dataset_word": "22. Restaurant",
+        "english_terms": [
+            "restaurant"
+        ],
+        "english_synonyms": [],
+        "marathi_terms": [
+            "उपहारगृह"
+        ],
+        "source_category": "unknown",
+        "video_count": 6,
+        "media_pipe": {
+            "raw_available": true,
+            "normalized_available": true
+        }
+    },
+    {
+        "sign_id": "SIGN_0182",
+        "canonical_word": "rich",
+        "dataset_word": "11. rich",
+        "english_terms": [
+            "rich"
+        ],
+        "english_synonyms": [],
+        "marathi_terms": [
+            "श्रीमंत"
+        ],
+        "source_category": "unknown",
+        "video_count": 4,
+        "media_pipe": {
+            "raw_available": true,
+            "normalized_available": true
+        }
+    },
+    {
+        "sign_id": "SIGN_0183",
+        "canonical_word": "ring",
+        "dataset_word": "49. Ring",
+        "english_terms": [
+            "ring"
+        ],
+        "english_synonyms": [],
+        "marathi_terms": [
+            "अंगठी"
+        ],
+        "source_category": "unknown",
+        "video_count": 4,
+        "media_pipe": {
+            "raw_available": true,
+            "normalized_available": true
+        }
+    },
+    {
+        "sign_id": "SIGN_0184",
+        "canonical_word": "sad",
+        "dataset_word": "4. sad",
+        "english_terms": [
+            "sad"
+        ],
+        "english_synonyms": [],
+        "marathi_terms": [
+            "दुःखी"
+        ],
+        "source_category": "unknown",
+        "video_count": 4,
+        "media_pipe": {
+            "raw_available": true,
+            "normalized_available": true
+        }
+    },
+    {
+        "sign_id": "SIGN_0185",
+        "canonical_word": "saturday",
+        "dataset_word": "72. Saturday",
+        "english_terms": [
+            "saturday"
+        ],
+        "english_synonyms": [],
+        "marathi_terms": [
+            "शनिवार"
+        ],
+        "source_category": "unknown",
+        "video_count": 4,
+        "media_pipe": {
+            "raw_available": true,
+            "normalized_available": true
+        }
+    },
+    {
+        "sign_id": "SIGN_0186",
+        "canonical_word": "school",
+        "dataset_word": "24. School",
+        "english_terms": [
+            "school"
+        ],
+        "english_synonyms": [],
+        "marathi_terms": [
+            "शाळा"
+        ],
+        "source_category": "unknown",
+        "video_count": 8,
+        "media_pipe": {
+            "raw_available": true,
+            "normalized_available": true
+        }
+    },
+    {
+        "sign_id": "SIGN_0187",
+        "canonical_word": "science",
+        "dataset_word": "22. Science",
+        "english_terms": [
+            "science"
+        ],
+        "english_synonyms": [],
+        "marathi_terms": [
+            "विज्ञान"
+        ],
+        "source_category": "unknown",
+        "video_count": 7,
+        "media_pipe": {
+            "raw_available": true,
+            "normalized_available": true
+        }
+    },
+    {
+        "sign_id": "SIGN_0188",
+        "canonical_word": "screen",
+        "dataset_word": "57. Screen",
+        "english_terms": [
+            "screen"
+        ],
+        "english_synonyms": [],
+        "marathi_terms": [
+            "पडदा"
+        ],
+        "source_category": "unknown",
+        "video_count": 4,
+        "media_pipe": {
+            "raw_available": true,
+            "normalized_available": true
+        }
+    },
+    {
+        "sign_id": "SIGN_0189",
+        "canonical_word": "season",
+        "dataset_word": "65. Season",
+        "english_terms": [
+            "season"
+        ],
+        "english_synonyms": [],
+        "marathi_terms": [
+            "ऋतू"
+        ],
+        "source_category": "unknown",
+        "video_count": 4,
+        "media_pipe": {
+            "raw_available": true,
+            "normalized_available": true
+        }
+    },
+    {
+        "sign_id": "SIGN_0190",
+        "canonical_word": "second",
+        "dataset_word": "81. Second",
+        "english_terms": [
+            "second"
+        ],
+        "english_synonyms": [],
+        "marathi_terms": [
+            "सेकंद"
+        ],
+        "source_category": "unknown",
+        "video_count": 4,
+        "media_pipe": {
+            "raw_available": true,
+            "normalized_available": true
+        }
+    },
+    {
+        "sign_id": "SIGN_0191",
+        "canonical_word": "secretary",
+        "dataset_word": "90. Secretary",
+        "english_terms": [
+            "secretary"
+        ],
+        "english_synonyms": [],
+        "marathi_terms": [
+            "सचिव"
+        ],
+        "source_category": "unknown",
+        "video_count": 4,
+        "media_pipe": {
+            "raw_available": true,
+            "normalized_available": true
+        }
+    },
+    {
+        "sign_id": "SIGN_0192",
+        "canonical_word": "shallow",
+        "dataset_word": "28. shallow",
+        "english_terms": [
+            "shallow"
+        ],
+        "english_synonyms": [],
+        "marathi_terms": [
+            "उथळ"
+        ],
+        "source_category": "unknown",
+        "video_count": 8,
+        "media_pipe": {
+            "raw_available": true,
+            "normalized_available": true
+        }
+    },
+    {
+        "sign_id": "SIGN_0193",
+        "canonical_word": "she",
+        "dataset_word": "43. she",
+        "english_terms": [
+            "she"
+        ],
+        "english_synonyms": [],
+        "marathi_terms": [
+            "ती"
+        ],
+        "source_category": "unknown",
+        "video_count": 4,
+        "media_pipe": {
+            "raw_available": true,
+            "normalized_available": true
+        }
+    },
+    {
+        "sign_id": "SIGN_0194",
+        "canonical_word": "shirt",
+        "dataset_word": "41. Shirt",
+        "english_terms": [
+            "shirt"
+        ],
+        "english_synonyms": [],
+        "marathi_terms": [
+            "शर्ट"
+        ],
+        "source_category": "unknown",
+        "video_count": 4,
+        "media_pipe": {
+            "raw_available": true,
+            "normalized_available": true
+        }
+    },
+    {
+        "sign_id": "SIGN_0195",
+        "canonical_word": "shoes",
+        "dataset_word": "44. Shoes",
+        "english_terms": [
+            "shoes"
+        ],
+        "english_synonyms": [],
+        "marathi_terms": [
+            "बूट"
+        ],
+        "source_category": "unknown",
+        "video_count": 4,
+        "media_pipe": {
+            "raw_available": true,
+            "normalized_available": true
+        }
+    },
+    {
+        "sign_id": "SIGN_0196",
+        "canonical_word": "short",
+        "dataset_word": "79. short",
+        "english_terms": [
+            "short"
+        ],
+        "english_synonyms": [],
+        "marathi_terms": [
+            "लहान"
+        ],
+        "source_category": "unknown",
+        "video_count": 4,
+        "media_pipe": {
+            "raw_available": true,
+            "normalized_available": true
+        }
+    },
+    {
+        "sign_id": "SIGN_0197",
+        "canonical_word": "sick",
+        "dataset_word": "98. sick",
+        "english_terms": [
+            "sick",
+            "ill",
+            "unwell"
+        ],
+        "english_synonyms": [
+            "ill",
+            "unwell"
+        ],
+        "marathi_terms": [
+            "आजारी"
+        ],
+        "source_category": "unknown",
+        "video_count": 4,
+        "media_pipe": {
+            "raw_available": true,
+            "normalized_available": true
+        }
+    },
+    {
+        "sign_id": "SIGN_0198",
+        "canonical_word": "sign",
+        "dataset_word": "21. Sign",
+        "english_terms": [
+            "sign"
+        ],
+        "english_synonyms": [],
+        "marathi_terms": [
+            "खूण"
+        ],
+        "source_category": "unknown",
+        "video_count": 4,
+        "media_pipe": {
+            "raw_available": true,
+            "normalized_available": true
+        }
+    },
+    {
+        "sign_id": "SIGN_0199",
+        "canonical_word": "sister",
+        "dataset_word": "67. Sister",
+        "english_terms": [
+            "sister"
+        ],
+        "english_synonyms": [],
+        "marathi_terms": [
+            "बहीण"
+        ],
+        "source_category": "unknown",
+        "video_count": 4,
+        "media_pipe": {
+            "raw_available": true,
+            "normalized_available": true
+        }
+    },
+    {
+        "sign_id": "SIGN_0200",
+        "canonical_word": "skirt",
+        "dataset_word": "40. Skirt",
+        "english_terms": [
+            "skirt"
+        ],
+        "english_synonyms": [],
+        "marathi_terms": [
+            "स्कर्ट"
+        ],
+        "source_category": "unknown",
+        "video_count": 4,
+        "media_pipe": {
+            "raw_available": true,
+            "normalized_available": true
+        }
+    },
+    {
+        "sign_id": "SIGN_0201",
+        "canonical_word": "slow",
+        "dataset_word": "85. slow",
+        "english_terms": [
+            "slow"
+        ],
+        "english_synonyms": [],
+        "marathi_terms": [
+            "हळू"
+        ],
+        "source_category": "unknown",
+        "video_count": 4,
+        "media_pipe": {
+            "raw_available": true,
+            "normalized_available": true
+        }
+    },
+    {
+        "sign_id": "SIGN_0202",
+        "canonical_word": "small little",
+        "dataset_word": "84. small little",
+        "english_terms": [
+            "small little",
+            "small",
+            "little",
+            "tiny"
+        ],
+        "english_synonyms": [
+            "small",
+            "little",
+            "tiny"
+        ],
+        "marathi_terms": [
+            "लहान"
+        ],
+        "source_category": "unknown",
+        "video_count": 4,
+        "media_pipe": {
+            "raw_available": true,
+            "normalized_available": true
+        }
+    },
+    {
+        "sign_id": "SIGN_0203",
+        "canonical_word": "soap",
+        "dataset_word": "36. Soap",
+        "english_terms": [
+            "soap"
+        ],
+        "english_synonyms": [],
+        "marathi_terms": [
+            "साबण"
+        ],
+        "source_category": "unknown",
+        "video_count": 8,
+        "media_pipe": {
+            "raw_available": true,
+            "normalized_available": true
+        }
+    },
+    {
+        "sign_id": "SIGN_0204",
+        "canonical_word": "soft",
+        "dataset_word": "25. soft",
+        "english_terms": [
+            "soft"
+        ],
+        "english_synonyms": [],
+        "marathi_terms": [
+            "मऊ"
+        ],
+        "source_category": "unknown",
+        "video_count": 5,
+        "media_pipe": {
+            "raw_available": true,
+            "normalized_available": true
+        }
+    },
+    {
+        "sign_id": "SIGN_0205",
+        "canonical_word": "soldier",
+        "dataset_word": "93. Soldier",
+        "english_terms": [
+            "soldier"
+        ],
+        "english_synonyms": [],
+        "marathi_terms": [
+            "सैनिक"
+        ],
+        "source_category": "unknown",
+        "video_count": 4,
+        "media_pipe": {
+            "raw_available": true,
+            "normalized_available": true
+        }
+    },
+    {
+        "sign_id": "SIGN_0206",
+        "canonical_word": "son",
+        "dataset_word": "58. Son",
+        "english_terms": [
+            "son"
+        ],
+        "english_synonyms": [],
+        "marathi_terms": [
+            "मुलगा"
+        ],
+        "source_category": "unknown",
+        "video_count": 4,
+        "media_pipe": {
+            "raw_available": true,
+            "normalized_available": true
+        }
+    },
+    {
+        "sign_id": "SIGN_0207",
+        "canonical_word": "sport",
+        "dataset_word": "17. Sport",
+        "english_terms": [
+            "sport"
+        ],
+        "english_synonyms": [],
+        "marathi_terms": [
+            "खेळ"
+        ],
+        "source_category": "unknown",
+        "video_count": 4,
+        "media_pipe": {
+            "raw_available": true,
+            "normalized_available": true
+        }
+    },
+    {
+        "sign_id": "SIGN_0208",
+        "canonical_word": "spring",
+        "dataset_word": "62. Spring",
+        "english_terms": [
+            "spring"
+        ],
+        "english_synonyms": [],
+        "marathi_terms": [
+            "वसंत ऋतू"
+        ],
+        "source_category": "unknown",
+        "video_count": 4,
+        "media_pipe": {
+            "raw_available": true,
+            "normalized_available": true
+        }
+    },
+    {
+        "sign_id": "SIGN_0209",
+        "canonical_word": "store or shop",
+        "dataset_word": "28. Store or Shop",
+        "english_terms": [
+            "store or shop",
+            "store",
+            "shop",
+            "market"
+        ],
+        "english_synonyms": [
+            "store",
+            "shop",
+            "market"
+        ],
+        "marathi_terms": [
+            "दुकान"
+        ],
+        "source_category": "unknown",
+        "video_count": 8,
+        "media_pipe": {
+            "raw_available": true,
+            "normalized_available": true
+        }
+    },
+    {
+        "sign_id": "SIGN_0210",
+        "canonical_word": "street or road",
+        "dataset_word": "20. Street or Road",
+        "english_terms": [
+            "street or road",
+            "street",
+            "road",
+            "path"
+        ],
+        "english_synonyms": [
+            "street",
+            "road",
+            "path"
+        ],
+        "marathi_terms": [
+            "रस्ता"
+        ],
+        "source_category": "unknown",
+        "video_count": 4,
+        "media_pipe": {
+            "raw_available": true,
+            "normalized_available": true
+        }
+    },
+    {
+        "sign_id": "SIGN_0211",
+        "canonical_word": "strong",
+        "dataset_word": "31. strong",
+        "english_terms": [
+            "strong"
+        ],
+        "english_synonyms": [],
+        "marathi_terms": [
+            "मजबूत"
+        ],
+        "source_category": "unknown",
+        "video_count": 8,
+        "media_pipe": {
+            "raw_available": true,
+            "normalized_available": true
+        }
+    },
+    {
+        "sign_id": "SIGN_0212",
+        "canonical_word": "student",
+        "dataset_word": "85. Student",
+        "english_terms": [
+            "student",
+            "pupil"
+        ],
+        "english_synonyms": [
+            "pupil"
+        ],
+        "marathi_terms": [
+            "विद्यार्थी"
+        ],
+        "source_category": "unknown",
+        "video_count": 4,
+        "media_pipe": {
+            "raw_available": true,
+            "normalized_available": true
+        }
+    },
+    {
+        "sign_id": "SIGN_0213",
+        "canonical_word": "suit",
+        "dataset_word": "39. Suit",
+        "english_terms": [
+            "suit"
+        ],
+        "english_synonyms": [],
+        "marathi_terms": [
+            "सूट"
+        ],
+        "source_category": "unknown",
+        "video_count": 4,
+        "media_pipe": {
+            "raw_available": true,
+            "normalized_available": true
+        }
+    },
+    {
+        "sign_id": "SIGN_0214",
+        "canonical_word": "summer",
+        "dataset_word": "61. Summer",
+        "english_terms": [
+            "summer"
+        ],
+        "english_synonyms": [],
+        "marathi_terms": [
+            "उन्हाळा"
+        ],
+        "source_category": "unknown",
+        "video_count": 4,
+        "media_pipe": {
+            "raw_available": true,
+            "normalized_available": true
+        }
+    },
+    {
+        "sign_id": "SIGN_0215",
+        "canonical_word": "sunday",
+        "dataset_word": "66. Sunday",
+        "english_terms": [
+            "sunday"
+        ],
+        "english_synonyms": [],
+        "marathi_terms": [
+            "रविवार"
+        ],
+        "source_category": "unknown",
+        "video_count": 4,
+        "media_pipe": {
+            "raw_available": true,
+            "normalized_available": true
+        }
+    },
+    {
+        "sign_id": "SIGN_0216",
+        "canonical_word": "t-shirt",
+        "dataset_word": "42. T-Shirt",
+        "english_terms": [
+            "t-shirt"
+        ],
+        "english_synonyms": [],
+        "marathi_terms": [
+            "टी-शर्ट"
+        ],
+        "source_category": "unknown",
+        "video_count": 4,
+        "media_pipe": {
+            "raw_available": true,
+            "normalized_available": true
+        }
+    },
+    {
+        "sign_id": "SIGN_0217",
+        "canonical_word": "table",
+        "dataset_word": "24. Table",
+        "english_terms": [
+            "table"
+        ],
+        "english_synonyms": [],
+        "marathi_terms": [
+            "टेबल"
+        ],
+        "source_category": "unknown",
+        "video_count": 8,
+        "media_pipe": {
+            "raw_available": true,
+            "normalized_available": true
+        }
+    },
+    {
+        "sign_id": "SIGN_0218",
+        "canonical_word": "tall",
+        "dataset_word": "80. tall",
+        "english_terms": [
+            "tall"
+        ],
+        "english_synonyms": [],
+        "marathi_terms": [
+            "उंच"
+        ],
+        "source_category": "unknown",
+        "video_count": 4,
+        "media_pipe": {
+            "raw_available": true,
+            "normalized_available": true
+        }
+    },
+    {
+        "sign_id": "SIGN_0219",
+        "canonical_word": "teacher",
+        "dataset_word": "84. Teacher",
+        "english_terms": [
+            "teacher"
+        ],
+        "english_synonyms": [],
+        "marathi_terms": [
+            "शिक्षक"
+        ],
+        "source_category": "unknown",
+        "video_count": 4,
+        "media_pipe": {
+            "raw_available": true,
+            "normalized_available": true
+        }
+    },
+    {
+        "sign_id": "SIGN_0220",
+        "canonical_word": "team",
+        "dataset_word": "7. Team",
+        "english_terms": [
+            "team"
+        ],
+        "english_synonyms": [],
+        "marathi_terms": [
+            "संघ"
+        ],
+        "source_category": "unknown",
+        "video_count": 4,
+        "media_pipe": {
+            "raw_available": true,
+            "normalized_available": true
+        }
+    },
+    {
+        "sign_id": "SIGN_0221",
+        "canonical_word": "technology",
+        "dataset_word": "9. Technology",
+        "english_terms": [
+            "technology"
+        ],
+        "english_synonyms": [],
+        "marathi_terms": [
+            "तंत्रज्ञान"
+        ],
+        "source_category": "unknown",
+        "video_count": 4,
+        "media_pipe": {
+            "raw_available": true,
+            "normalized_available": true
+        }
+    },
+    {
+        "sign_id": "SIGN_0222",
+        "canonical_word": "telephone",
+        "dataset_word": "44. Telephone",
+        "english_terms": [
+            "telephone"
+        ],
+        "english_synonyms": [],
+        "marathi_terms": [
+            "दूरध्वनी"
+        ],
+        "source_category": "unknown",
+        "video_count": 4,
+        "media_pipe": {
+            "raw_available": true,
+            "normalized_available": true
+        }
+    },
+    {
+        "sign_id": "SIGN_0223",
+        "canonical_word": "television",
+        "dataset_word": "59. Television",
+        "english_terms": [
+            "television"
+        ],
+        "english_synonyms": [],
+        "marathi_terms": [
+            "दूरदर्शन"
+        ],
+        "source_category": "unknown",
+        "video_count": 4,
+        "media_pipe": {
+            "raw_available": true,
+            "normalized_available": true
+        }
+    },
+    {
+        "sign_id": "SIGN_0224",
+        "canonical_word": "temple",
+        "dataset_word": "31. Temple",
+        "english_terms": [
+            "temple"
+        ],
+        "english_synonyms": [],
+        "marathi_terms": [
+            "मंदिर"
+        ],
+        "source_category": "unknown",
+        "video_count": 8,
+        "media_pipe": {
+            "raw_available": true,
+            "normalized_available": true
+        }
+    },
+    {
+        "sign_id": "SIGN_0225",
+        "canonical_word": "thank you",
+        "dataset_word": "55. Thank you",
+        "english_terms": [
+            "thank you"
+        ],
+        "english_synonyms": [],
+        "marathi_terms": [
+            "धन्यवाद"
+        ],
+        "source_category": "unknown",
+        "video_count": 4,
+        "media_pipe": {
+            "raw_available": true,
+            "normalized_available": true
+        }
+    },
+    {
+        "sign_id": "SIGN_0226",
+        "canonical_word": "they",
+        "dataset_word": "47. they",
+        "english_terms": [
+            "they"
+        ],
+        "english_synonyms": [],
+        "marathi_terms": [
+            "ते"
+        ],
+        "source_category": "unknown",
+        "video_count": 4,
+        "media_pipe": {
+            "raw_available": true,
+            "normalized_available": true
+        }
+    },
+    {
+        "sign_id": "SIGN_0227",
+        "canonical_word": "thick",
+        "dataset_word": "13. thick",
+        "english_terms": [
+            "thick"
+        ],
+        "english_synonyms": [],
+        "marathi_terms": [
+            "जाड"
+        ],
+        "source_category": "unknown",
+        "video_count": 4,
+        "media_pipe": {
+            "raw_available": true,
+            "normalized_available": true
+        }
+    },
+    {
+        "sign_id": "SIGN_0228",
+        "canonical_word": "thin",
+        "dataset_word": "14. thin",
+        "english_terms": [
+            "thin"
+        ],
+        "english_synonyms": [],
+        "marathi_terms": [
+            "पातळ"
+        ],
+        "source_category": "unknown",
+        "video_count": 4,
+        "media_pipe": {
+            "raw_available": true,
+            "normalized_available": true
+        }
+    },
+    {
+        "sign_id": "SIGN_0229",
+        "canonical_word": "thursday",
+        "dataset_word": "70. Thursday",
+        "english_terms": [
+            "thursday"
+        ],
+        "english_synonyms": [],
+        "marathi_terms": [
+            "गुरुवार"
+        ],
+        "source_category": "unknown",
+        "video_count": 4,
+        "media_pipe": {
+            "raw_available": true,
+            "normalized_available": true
+        }
+    },
+    {
+        "sign_id": "SIGN_0230",
+        "canonical_word": "tight",
+        "dataset_word": "21. tight",
+        "english_terms": [
+            "tight"
+        ],
+        "english_synonyms": [],
+        "marathi_terms": [
+            "घट्ट"
+        ],
+        "source_category": "unknown",
+        "video_count": 8,
+        "media_pipe": {
+            "raw_available": true,
+            "normalized_available": true
+        }
+    },
+    {
+        "sign_id": "SIGN_0231",
+        "canonical_word": "time",
+        "dataset_word": "86. Time",
+        "english_terms": [
+            "time"
+        ],
+        "english_synonyms": [],
+        "marathi_terms": [
+            "वेळ"
+        ],
+        "source_category": "unknown",
+        "video_count": 4,
+        "media_pipe": {
+            "raw_available": true,
+            "normalized_available": true
+        }
+    },
+    {
+        "sign_id": "SIGN_0232",
+        "canonical_word": "today",
+        "dataset_word": "73. Today",
+        "english_terms": [
+            "today"
+        ],
+        "english_synonyms": [],
+        "marathi_terms": [
+            "आज"
+        ],
+        "source_category": "unknown",
+        "video_count": 4,
+        "media_pipe": {
+            "raw_available": true,
+            "normalized_available": true
+        }
+    },
+    {
+        "sign_id": "SIGN_0233",
+        "canonical_word": "tomorrow",
+        "dataset_word": "74. Tomorrow",
+        "english_terms": [
+            "tomorrow"
+        ],
+        "english_synonyms": [],
+        "marathi_terms": [
+            "उद्या"
+        ],
+        "source_category": "unknown",
+        "video_count": 4,
+        "media_pipe": {
+            "raw_available": true,
+            "normalized_available": true
+        }
+    },
+    {
+        "sign_id": "SIGN_0234",
+        "canonical_word": "tool",
+        "dataset_word": "50. Tool",
+        "english_terms": [
+            "tool"
+        ],
+        "english_synonyms": [],
+        "marathi_terms": [
+            "साधन"
+        ],
+        "source_category": "unknown",
+        "video_count": 4,
+        "media_pipe": {
+            "raw_available": true,
+            "normalized_available": true
+        }
+    },
+    {
+        "sign_id": "SIGN_0235",
+        "canonical_word": "train",
+        "dataset_word": "9. Train",
+        "english_terms": [
+            "train"
+        ],
+        "english_synonyms": [],
+        "marathi_terms": [
+            "रेल्वे"
+        ],
+        "source_category": "unknown",
+        "video_count": 4,
+        "media_pipe": {
+            "raw_available": true,
+            "normalized_available": true
+        }
+    },
+    {
+        "sign_id": "SIGN_0236",
+        "canonical_word": "train station",
+        "dataset_word": "21. Train Station",
+        "english_terms": [
+            "train station"
+        ],
+        "english_synonyms": [],
+        "marathi_terms": [
+            "रेल्वे स्थानक"
+        ],
+        "source_category": "unknown",
+        "video_count": 7,
+        "media_pipe": {
+            "raw_available": true,
+            "normalized_available": true
+        }
+    },
+    {
+        "sign_id": "SIGN_0237",
+        "canonical_word": "train ticket",
+        "dataset_word": "16. train ticket",
+        "english_terms": [
+            "train ticket"
+        ],
+        "english_synonyms": [],
+        "marathi_terms": [
+            "रेल्वे तिकीट"
+        ],
+        "source_category": "unknown",
+        "video_count": 4,
+        "media_pipe": {
+            "raw_available": true,
+            "normalized_available": true
+        }
+    },
+    {
+        "sign_id": "SIGN_0238",
+        "canonical_word": "transportation",
+        "dataset_word": "17. Transportation",
+        "english_terms": [
+            "transportation"
+        ],
+        "english_synonyms": [],
+        "marathi_terms": [
+            "वाहतूक"
+        ],
+        "source_category": "unknown",
+        "video_count": 4,
+        "media_pipe": {
+            "raw_available": true,
+            "normalized_available": true
+        }
+    },
+    {
+        "sign_id": "SIGN_0239",
+        "canonical_word": "truck",
+        "dataset_word": "12. Truck",
+        "english_terms": [
+            "truck"
+        ],
+        "english_synonyms": [],
+        "marathi_terms": [
+            "ट्रक"
+        ],
+        "source_category": "unknown",
+        "video_count": 4,
+        "media_pipe": {
+            "raw_available": true,
+            "normalized_available": true
+        }
+    },
+    {
+        "sign_id": "SIGN_0240",
+        "canonical_word": "tuesday",
+        "dataset_word": "68. Tuesday",
+        "english_terms": [
+            "tuesday"
+        ],
+        "english_synonyms": [],
+        "marathi_terms": [
+            "मंगळवार"
+        ],
+        "source_category": "unknown",
+        "video_count": 4,
+        "media_pipe": {
+            "raw_available": true,
+            "normalized_available": true
+        }
+    },
+    {
+        "sign_id": "SIGN_0241",
+        "canonical_word": "ugly",
+        "dataset_word": "6. Ugly",
+        "english_terms": [
+            "ugly"
+        ],
+        "english_synonyms": [],
+        "marathi_terms": [
+            "कुरूप"
+        ],
+        "source_category": "unknown",
+        "video_count": 4,
+        "media_pipe": {
+            "raw_available": true,
+            "normalized_available": true
+        }
+    },
+    {
+        "sign_id": "SIGN_0242",
+        "canonical_word": "university",
+        "dataset_word": "26. University",
+        "english_terms": [
+            "university"
+        ],
+        "english_synonyms": [],
+        "marathi_terms": [
+            "विद्यापीठ"
+        ],
+        "source_category": "unknown",
+        "video_count": 6,
+        "media_pipe": {
+            "raw_available": true,
+            "normalized_available": true
+        }
+    },
+    {
+        "sign_id": "SIGN_0243",
+        "canonical_word": "waiter",
+        "dataset_word": "89. Waiter",
+        "english_terms": [
+            "waiter"
+        ],
+        "english_synonyms": [],
+        "marathi_terms": [
+            "वेटर"
+        ],
+        "source_category": "unknown",
+        "video_count": 4,
+        "media_pipe": {
+            "raw_available": true,
+            "normalized_available": true
+        }
+    },
+    {
+        "sign_id": "SIGN_0244",
+        "canonical_word": "war",
+        "dataset_word": "11. War",
+        "english_terms": [
+            "war"
+        ],
+        "english_synonyms": [],
+        "marathi_terms": [
+            "युद्ध"
+        ],
+        "source_category": "unknown",
+        "video_count": 4,
+        "media_pipe": {
+            "raw_available": true,
+            "normalized_available": true
+        }
+    },
+    {
+        "sign_id": "SIGN_0245",
+        "canonical_word": "warm",
+        "dataset_word": "89. warm",
+        "english_terms": [
+            "warm"
+        ],
+        "english_synonyms": [],
+        "marathi_terms": [
+            "उबदार"
+        ],
+        "source_category": "unknown",
+        "video_count": 4,
+        "media_pipe": {
+            "raw_available": true,
+            "normalized_available": true
+        }
+    },
+    {
+        "sign_id": "SIGN_0246",
+        "canonical_word": "we",
+        "dataset_word": "45. we",
+        "english_terms": [
+            "we"
+        ],
+        "english_synonyms": [],
+        "marathi_terms": [
+            "आम्ही"
+        ],
+        "source_category": "unknown",
+        "video_count": 4,
+        "media_pipe": {
+            "raw_available": true,
+            "normalized_available": true
+        }
+    },
+    {
+        "sign_id": "SIGN_0247",
+        "canonical_word": "weak",
+        "dataset_word": "32. weak",
+        "english_terms": [
+            "weak"
+        ],
+        "english_synonyms": [],
+        "marathi_terms": [
+            "कमकुवत"
+        ],
+        "source_category": "unknown",
+        "video_count": 8,
+        "media_pipe": {
+            "raw_available": true,
+            "normalized_available": true
+        }
+    },
+    {
+        "sign_id": "SIGN_0248",
+        "canonical_word": "wednesday",
+        "dataset_word": "69. Wednesday",
+        "english_terms": [
+            "wednesday"
+        ],
+        "english_synonyms": [],
+        "marathi_terms": [
+            "बुधवार"
+        ],
+        "source_category": "unknown",
+        "video_count": 4,
+        "media_pipe": {
+            "raw_available": true,
+            "normalized_available": true
+        }
+    },
+    {
+        "sign_id": "SIGN_0249",
+        "canonical_word": "week",
+        "dataset_word": "76. Week",
+        "english_terms": [
+            "week"
+        ],
+        "english_synonyms": [],
+        "marathi_terms": [
+            "आठवडा"
+        ],
+        "source_category": "unknown",
+        "video_count": 4,
+        "media_pipe": {
+            "raw_available": true,
+            "normalized_available": true
+        }
+    },
+    {
+        "sign_id": "SIGN_0250",
+        "canonical_word": "wet",
+        "dataset_word": "96. wet",
+        "english_terms": [
+            "wet"
+        ],
+        "english_synonyms": [],
+        "marathi_terms": [
+            "ओले"
+        ],
+        "source_category": "unknown",
+        "video_count": 4,
+        "media_pipe": {
+            "raw_available": true,
+            "normalized_available": true
+        }
+    },
+    {
+        "sign_id": "SIGN_0251",
+        "canonical_word": "white",
+        "dataset_word": "55. White",
+        "english_terms": [
+            "white"
+        ],
+        "english_synonyms": [],
+        "marathi_terms": [
+            "पांढरा"
+        ],
+        "source_category": "unknown",
+        "video_count": 4,
+        "media_pipe": {
+            "raw_available": true,
+            "normalized_available": true
+        }
+    },
+    {
+        "sign_id": "SIGN_0252",
+        "canonical_word": "wide",
+        "dataset_word": "81. wide",
+        "english_terms": [
+            "wide"
+        ],
+        "english_synonyms": [],
+        "marathi_terms": [
+            "रुंद"
+        ],
+        "source_category": "unknown",
+        "video_count": 4,
+        "media_pipe": {
+            "raw_available": true,
+            "normalized_available": true
+        }
+    },
+    {
+        "sign_id": "SIGN_0253",
+        "canonical_word": "wife",
+        "dataset_word": "72. Wife",
+        "english_terms": [
+            "wife"
+        ],
+        "english_synonyms": [],
+        "marathi_terms": [
+            "पत्नी"
+        ],
+        "source_category": "unknown",
+        "video_count": 4,
+        "media_pipe": {
+            "raw_available": true,
+            "normalized_available": true
+        }
+    },
+    {
+        "sign_id": "SIGN_0254",
+        "canonical_word": "window",
+        "dataset_word": "28. Window",
+        "english_terms": [
+            "window"
+        ],
+        "english_synonyms": [],
+        "marathi_terms": [
+            "खिडकी"
+        ],
+        "source_category": "unknown",
+        "video_count": 8,
+        "media_pipe": {
+            "raw_available": true,
+            "normalized_available": true
+        }
+    },
+    {
+        "sign_id": "SIGN_0255",
+        "canonical_word": "winter",
+        "dataset_word": "63. Winter",
+        "english_terms": [
+            "winter"
+        ],
+        "english_synonyms": [],
+        "marathi_terms": [
+            "हिवाळा"
+        ],
+        "source_category": "unknown",
+        "video_count": 4,
+        "media_pipe": {
+            "raw_available": true,
+            "normalized_available": true
+        }
+    },
+    {
+        "sign_id": "SIGN_0256",
+        "canonical_word": "woman",
+        "dataset_word": "65. Woman",
+        "english_terms": [
+            "woman"
+        ],
+        "english_synonyms": [],
+        "marathi_terms": [
+            "स्त्री"
+        ],
+        "source_category": "unknown",
+        "video_count": 4,
+        "media_pipe": {
+            "raw_available": true,
+            "normalized_available": true
+        }
+    },
+    {
+        "sign_id": "SIGN_0257",
+        "canonical_word": "year",
+        "dataset_word": "78. Year",
+        "english_terms": [
+            "year"
+        ],
+        "english_synonyms": [],
+        "marathi_terms": [
+            "वर्ष"
+        ],
+        "source_category": "unknown",
+        "video_count": 4,
+        "media_pipe": {
+            "raw_available": true,
+            "normalized_available": true
+        }
+    },
+    {
+        "sign_id": "SIGN_0258",
+        "canonical_word": "yellow",
+        "dataset_word": "50. Yellow",
+        "english_terms": [
+            "yellow"
+        ],
+        "english_synonyms": [],
+        "marathi_terms": [
+            "पिवळा"
+        ],
+        "source_category": "unknown",
+        "video_count": 4,
+        "media_pipe": {
+            "raw_available": true,
+            "normalized_available": true
+        }
+    },
+    {
+        "sign_id": "SIGN_0259",
+        "canonical_word": "yesterday",
+        "dataset_word": "75. Yesterday",
+        "english_terms": [
+            "yesterday"
+        ],
+        "english_synonyms": [],
+        "marathi_terms": [
+            "काल"
+        ],
+        "source_category": "unknown",
+        "video_count": 4,
+        "media_pipe": {
+            "raw_available": true,
+            "normalized_available": true
+        }
+    },
+    {
+        "sign_id": "SIGN_0260",
+        "canonical_word": "you",
+        "dataset_word": "41. you",
+        "english_terms": [
+            "you"
+        ],
+        "english_synonyms": [],
+        "marathi_terms": [
+            "तू"
+        ],
+        "source_category": "unknown",
+        "video_count": 4,
+        "media_pipe": {
+            "raw_available": true,
+            "normalized_available": true
+        }
+    },
+    {
+        "sign_id": "SIGN_0261",
+        "canonical_word": "you (plural)",
+        "dataset_word": "46. you (plural)",
+        "english_terms": [
+            "you (plural)"
+        ],
+        "english_synonyms": [],
+        "marathi_terms": [
+            "तुम्ही"
+        ],
+        "source_category": "unknown",
+        "video_count": 4,
+        "media_pipe": {
+            "raw_available": true,
+            "normalized_available": true
+        }
+    },
+    {
+        "sign_id": "SIGN_0262",
+        "canonical_word": "young",
+        "dataset_word": "93. young",
+        "english_terms": [
+            "young"
+        ],
+        "english_synonyms": [],
+        "marathi_terms": [
+            "तरुण"
+        ],
+        "source_category": "unknown",
+        "video_count": 4,
+        "media_pipe": {
+            "raw_available": true,
+            "normalized_available": true
+        }
+    }
+]

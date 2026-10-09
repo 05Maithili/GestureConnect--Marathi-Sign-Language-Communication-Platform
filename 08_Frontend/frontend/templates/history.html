@@ -1,0 +1,172 @@
+{% extends 'base.html' %}
+
+{% block title %}Translation History - GestureConnect ISL Sessions{% endblock %}
+
+{% block page_title %}Translation Session History{% endblock %}
+{% block breadcrumb %}Comprehensive audit log of recent bilingual English &amp; Marathi translation sessions{% endblock %}
+
+{% block content %}
+<div class="container-fluid px-0">
+
+  <!-- Header -->
+  <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-center mb-4 pb-2 border-bottom">
+    <div>
+      <h2 class="gc-page-title mb-1">Translation Audit History</h2>
+      <p class="gc-page-subtitle">Inspect past speech and text translation sessions, canonical sign resolutions, and latency metrics.</p>
+    </div>
+    <div class="mt-2 mt-md-0 d-flex gap-2">
+      <span class="badge bg-primary-subtle text-primary border border-primary-subtle fs-6 px-3 py-2 rounded-pill">
+        Total Recorded: {{ total_translations }} Sessions
+      </span>
+      <a href="{% url 'translator:translate' %}" class="btn btn-sm btn-gc-primary">
+        <i class="bi bi-plus-lg me-1"></i> New Translation
+      </a>
+    </div>
+  </div>
+
+  <!-- Search & Filter Controls (Section 23) -->
+  <div class="gc-card p-3 mb-4">
+    <form method="GET" action="{% url 'translator:history' %}" class="row g-2 align-items-center">
+      <!-- Search Input -->
+      <div class="col-lg-5 col-md-12">
+        <div class="input-group">
+          <span class="input-group-text bg-light border-end-0"><i class="bi bi-search text-muted"></i></span>
+          <input 
+            type="text" 
+            name="q" 
+            class="form-control border-start-0" 
+            placeholder="Search by input sentence or Marathi term..."
+            value="{{ query|default:'' }}"
+          >
+        </div>
+      </div>
+
+      <!-- Language Filter -->
+      <div class="col-lg-2 col-sm-6">
+        <select name="lang" class="form-select" onchange="this.form.submit()">
+          <option value="">All Languages</option>
+          <option value="mr" {% if selected_lang == 'mr' %}selected{% endif %}>Marathi (मराठी)</option>
+          <option value="en" {% if selected_lang == 'en' %}selected{% endif %}>English</option>
+        </select>
+      </div>
+
+      <!-- Modality Filter -->
+      <div class="col-lg-2 col-sm-6">
+        <select name="mode" class="form-select" onchange="this.form.submit()">
+          <option value="">All Modalities</option>
+          <option value="speech" {% if selected_mode == 'speech' %}selected{% endif %}>Speech Input</option>
+          <option value="text" {% if selected_mode == 'text' %}selected{% endif %}>Text Input</option>
+        </select>
+      </div>
+
+      <!-- Buttons -->
+      <div class="col-lg-3 col-12 d-flex gap-2">
+        <button type="submit" class="btn btn-gc-primary flex-grow-1">
+          <i class="bi bi-funnel me-1"></i> Apply Filter
+        </button>
+        {% if query or selected_lang or selected_mode %}
+          <a href="{% url 'translator:history' %}" class="btn btn-outline-secondary" title="Reset filters">
+            <i class="bi bi-x-lg"></i>
+          </a>
+        {% endif %}
+      </div>
+    </form>
+  </div>
+
+  <!-- History Records Table (Section 23) -->
+  <div class="gc-card overflow-hidden shadow-sm">
+    <div class="table-responsive">
+      <table class="table table-hover align-middle mb-0">
+        <thead class="table-light">
+          <tr>
+            <th scope="col" style="width: 5%;">#</th>
+            <th scope="col" style="width: 12%;">Modality</th>
+            <th scope="col" style="width: 10%;">Language</th>
+            <th scope="col" style="width: 28%;">Original Input Text</th>
+            <th scope="col" style="width: 25%;">Canonical Sign Sequence</th>
+            <th scope="col" style="width: 10%;">Timestamp</th>
+            <th scope="col" class="text-end" style="width: 10%;">Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for item in history %}
+            <tr>
+              <td class="text-muted small font-monospace">{{ item.id }}</td>
+              <td>
+                {% if item.input_mode == 'speech' %}
+                  <span class="badge bg-warning-subtle text-warning-emphasis border border-warning-subtle">
+                    <i class="bi bi-mic me-1"></i> Speech
+                  </span>
+                {% else %}
+                  <span class="badge bg-light text-secondary border">
+                    <i class="bi bi-keyboard me-1"></i> Text
+                  </span>
+                {% endif %}
+              </td>
+              <td>
+                <span class="badge {% if item.input_language == 'mr' %}bg-primary-subtle text-primary border border-primary-subtle{% else %}bg-info-subtle text-info-emphasis border border-info-subtle{% endif %} text-uppercase">
+                  {{ item.input_language }} &rarr; ISL
+                </span>
+              </td>
+              <td>
+                <div class="fw-semibold text-dark">{{ item.input_text }}</div>
+                <div class="text-muted small" style="font-size: 0.76rem;">
+                  Normalized: {{ item.normalized_text }}
+                </div>
+                {% if item.fallback_words %}
+                  <div class="small text-warning-emphasis mt-1" style="font-size: 0.74rem;">
+                    <i class="bi bi-exclamation-triangle me-1"></i>
+                    Fingerspelled: {{ item.fallback_words|join:", " }}
+                  </div>
+                {% endif %}
+              </td>
+              <td>
+                <div class="d-flex flex-wrap gap-1 mb-1">
+                  {% for s in item.generated_sign_sequence %}
+                    <span class="badge {% if s.is_fallback %}bg-warning-subtle text-warning-emphasis border border-warning{% else %}bg-primary-subtle text-primary border border-primary-subtle{% endif %}" style="font-size: 0.72rem;">
+                      {{ s.marathi_term|default:s.sign_id }}
+                    </span>
+                  {% empty %}
+                    <span class="text-muted small">None</span>
+                  {% endfor %}
+                </div>
+                <span class="text-muted" style="font-size: 0.72rem;">
+                  {{ item.generated_sign_sequence|length }} signs &bull; {{ item.processing_time_ms }}ms
+                </span>
+              </td>
+              <td>
+                <div class="text-dark small fw-medium">{{ item.created_at|date:"M d, Y" }}</div>
+                <div class="text-muted" style="font-size: 0.72rem;">{{ item.created_at|date:"h:i A" }}</div>
+              </td>
+              <td class="text-end">
+                <a href="{% url 'translator:translate' %}?q={{ item.input_text|urlencode }}" class="btn btn-sm btn-gc-outline" title="Replay in Studio">
+                  <i class="bi bi-play-circle me-1"></i> Replay
+                </a>
+              </td>
+            </tr>
+          {% empty %}
+            <!-- Professional Empty State (Section 36) -->
+            <tr>
+              <td colspan="7" class="text-center py-5">
+                <div class="py-4">
+                  <div class="mb-3">
+                    <i class="bi bi-clock-history fs-1 text-primary opacity-50"></i>
+                  </div>
+                  <h5 class="fw-bold text-dark mb-2">No Translations Yet</h5>
+                  <p class="text-muted small mb-4" style="max-width: 400px; margin: auto;">
+                    Your translation history will appear here once you begin translating speech or text into Indian Sign Language.
+                  </p>
+                  <a href="{% url 'translator:translate' %}" class="btn btn-gc-primary">
+                    <i class="bi bi-translate me-2"></i> Start Your First Translation
+                  </a>
+                </div>
+              </td>
+            </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+</div>
+{% endblock %}
