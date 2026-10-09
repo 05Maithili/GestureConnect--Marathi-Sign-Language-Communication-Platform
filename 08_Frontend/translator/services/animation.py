@@ -40,12 +40,13 @@ def get_animation(sign_id: str, asset_path: Optional[str] = None, metadata: Opti
         duration = metadata.get('duration_seconds', 2.0)
 
     # Determine URL
+    normalized_path = asset_path.replace('\\', '/')
     if asset_exists:
-        anim_url = f"{media_url}{asset_path.replace('\\', '/')}"
+        anim_url = f"{media_url}{normalized_path}"
         placeholder_mode = False
     else:
         # Graceful placeholder resolution - points to standard placeholder or category asset
-        anim_url = f"{media_url}{asset_path.replace('\\', '/')}"
+        anim_url = f"{media_url}{normalized_path}"
         placeholder_mode = True
 
     return {
