@@ -11,8 +11,8 @@
 
 ## 2. Text Translation Pipeline (`/translate/`)
 * **Test:** Translate English phrase ("I need water").
-* **Status:** [PENDING EXECUTION]
-* **Notes:**
+* **Status:** PASS
+* **Notes:** Translation page loaded successfully. The translation API returned HTTP 200, and the sign video was served successfully with HTTP 206 partial content.
 * **Test:** Translate Marathi phrase ("माझी आई घरी जात आहे").
 * **Status:** [PENDING EXECUTION]
 * **Notes:**
